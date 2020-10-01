@@ -4,7 +4,6 @@ $('.carousels').owlCarousel({
     dots:false,
     autoplay:true,
     autoplayTimeout: 6000,
-    touchDrag:true,
     smartSpeed:2000,
     items:1
 })
