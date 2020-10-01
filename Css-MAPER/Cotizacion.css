@@ -91,11 +91,9 @@ html{
     }
      #Imagen-logo{
         height: 100%;
-        max-width: 80%;
         width: 20%;
         position: relative;
-        box-shadow: 7px 10px rgba(158, 150, 150, .30);
-        margin:auto auto;
+        margin:10px auto;
     
         }
         #Imagen-logo img{
@@ -301,16 +299,13 @@ html{
              display: none;
          }
          #Imagen-logo{
-            height: 100%;
-            max-width: 100%;
-            width: 30%;
-            position: relative;
-            box-shadow: 7px 10px rgba(158, 150, 150, .30);
-            margin: 0;
+            width: 40%;
+            height: 110px;
+            margin:10px 0;
             }
             .btn-menu{
                 width: 100px;
-                height: 70%;
+                height: 90px;
                 position: absolute;
                 display: flex;
                 right: 0;
@@ -329,7 +324,7 @@ html{
             .navega{
                 max-width: 1100px;
                 width: 81%;
-                margin: 20px auto;
+                margin:40px auto 10px auto;
                 padding: 0px;
                 height: 0px;
 
@@ -453,6 +448,7 @@ html{
         .btn-menu{
             width: 80px;
             height: 50%;
+            top:30%;
             transition: all linear .5s;
     }
     #Imagen-logo{

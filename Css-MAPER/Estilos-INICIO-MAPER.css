@@ -93,10 +93,9 @@ width: 100%;
 }
  #Imagen-logo{
     height: 100%;
-    max-width: 80%;
     width: 20%;
     position: relative;
-    margin:auto auto;
+    margin:10px auto;
     }
     #Imagen-logo img{
         width: 100%;
@@ -317,12 +316,13 @@ width: 100%;
          display: none;
      }
      #Imagen-logo{
-        width: 30%;
-        margin: 0;
+        width: 40%;
+        height: 110px;
+        margin:10px 0;
         }
         .btn-menu{
             width: 120px;
-            height: 90%;
+            height: 110px;
             position: absolute;
             display: flex;
             right: 0;
@@ -345,7 +345,7 @@ width: 100%;
             text-align: justify;
             color:black;
             overflow: hidden;
-            margin: 20px auto;
+            margin:40px auto 10px auto;
             padding: 0px;
             height: 0px;
             transition: all linear 0.6s;
@@ -461,10 +461,11 @@ width: 100%;
         .btn-menu{
             width: 100px;
             height: 70%;
+            top:30%;
             transition: all linear .5s;
     }
     #Imagen-logo{
-        width: 40%;
+        width: 50%;
     }
 }
 @media screen and (max-width:390px){
