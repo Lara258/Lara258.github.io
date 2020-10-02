@@ -11,7 +11,6 @@ html{
     }
     /* propiedades del la cabecera */
     #contacto{
-        max-width: 100%;
         width: 100%;
         height: auto;
         position:relative;
@@ -21,7 +20,6 @@ html{
     
             }
         .centrado-contacto{
-        max-width: 1100px;
         width: 81%;
         height: 50px;
         position: relative;
@@ -31,7 +29,7 @@ html{
             .Contenedor-contacto{
             position: relative;
             height: 100%;
-            max-width: 80%;
+            width: 80%;
             margin:0px auto;
             display: flex;
             flex-wrap: wrap;
@@ -54,7 +52,7 @@ html{
     }
     .Contenedor-contacto i{
        color: black;
-       font-size: 10px;
+       font-size: 13px;
     
     }
     .iconos-social{
@@ -82,7 +80,6 @@ html{
     
             }
     .centrado-nav-logo{
-        max-width: 1100px;
         width: 81%;
         height: 100px;
         position: relative;
@@ -131,7 +128,6 @@ html{
     .menu{
         background: white;
         position: relative;
-        max-width: 80%;
         width: 100%;
         height: 100%;
         margin-left: 30px;
@@ -215,6 +211,16 @@ html{
         transition: all .7s;
     }
     /*media querys de menu navegacion de cabecera */
+    @media screen and (min-width:1650px){
+        .menu  > ul > li{
+            margin-left: 20px;
+        }
+    }
+    @media screen and (min-width:1500px){
+        .menu  > ul > li{
+            margin-right: 20px;
+        }
+    }
     @media screen and (max-width:1270px){
         .menu  a{
             padding:50px 10px;
@@ -467,9 +473,8 @@ html{
     /*fin de media querys cabecera*/
     /*propiedades imagen de fondo y texto servicios*/
 .img-fondo{
-max-width: 1500px;
 width: 100%;
-height: 200px;
+height: 300px;
 position: relative;
 }
 .img-fondo img{
@@ -483,7 +488,6 @@ top:0;
 left: 0;
 right: 0;
 bottom: 0;
-max-width: 1500px;
 width: 81%;
 height: 80px;
 margin: 60px auto 60px;
@@ -499,7 +503,6 @@ line-height: 40px;
     position: relative;
 }
 .div-info-posicion{
-    max-width: 1100px;
     width: 81%;
     height: 100%;
     margin: 0px auto;
@@ -534,14 +537,13 @@ line-height: 40px;
     margin: 20px auto 0px;
     box-sizing: border-box;
     position: relative;
-    max-width: 1100px;
     width: 81%;
     height: auto;
     display: flex;
 }
 /*propiedades del menu de servicios */
 .menu-servicios{
-    max-width: 25%;
+    width: 25%;
     height: 50%;
     position: relative;
     margin-right: 30px;
@@ -681,6 +683,12 @@ display: block;
 /*fin de propiedades de servicios*/
 
 /*media querys de servicio*/
+@media screen and (min-width:1650px){
+    .servicios-instalacion{
+        height: 180px;
+    }
+}
+
 @media screen and (max-width: 1070px){
     .menu-servicios a{
         padding: 20px;
@@ -776,7 +784,6 @@ display: block;
 /*propiedades de pie de pagina*/
 .pie-pagina{
     position: relative;
-    max-width: 1500px;
     width: 100%;
     height: auto;
     background: white;
@@ -784,7 +791,6 @@ display: block;
 }
 .div-pie-pagina{
     position: relative;
-    max-width: 1100px;
     width: 81%;
     height: auto;
     margin: 0px auto;
@@ -799,7 +805,6 @@ display: block;
     display: block;
 }
 .acerca-de{
-    max-width: 350px;
     width: auto;
     position: relative;
     border-bottom: 2px solid red;
