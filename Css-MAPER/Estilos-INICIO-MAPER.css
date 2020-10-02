@@ -475,6 +475,94 @@ width: 100%;
 }
 /*fin de media querys cabecera*/
 
+/* propiedades del icono de whatsapp */
+.w-contenedor{
+    position: fixed;
+    height: 70px;
+    width: 80px;
+    right: 0px;
+    bottom: 10px;
+    display: flex;
+    z-index: 300;
+    justify-content: right;
+    transition: all linear 0.6s;
+    justify-content: center;
+    align-items: center;
+}
+.w-contenedor a#ref{
+   visibility: hidden;
+}
+.w-contenedor:hover{
+width: 25%;
+transition: all linear 0.6s;
+}
+.w-contenedor:hover .w-texto{
+    width:73%;
+    transition: all linear 0.6s;
+    visibility: visible;
+}
+.w-contenedor:hover a#ref{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    visibility: visible;
+}
+.w-texto{
+    height: 60%;
+    width: 0px;
+    overflow:hidden;
+    background: #f5f5f5;
+    transition: all linear 0.6s;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.w-texto p{
+    margin: 5px 15px;
+    font-size:14px;
+    font-weight: 700;
+}
+
+.icono-w{
+width: 70px;
+height: 70px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+border-radius: 50%;
+background: #0fbe43;
+}
+.icono-w span{
+   font-size: 50px;
+   width: 50px;
+   height: 50px;
+   display: flex;
+align-items: center;
+justify-content: center;
+transition: all 2s;
+}
+/*fin de las propiedades */
+
+/*Media querys de boton whatsapp*/
+@media screen and (max-width:1070px){
+    .w-contenedor{
+        height: 60px;
+    }
+    .w-texto p{
+        font-size:12px;
+    }
+    
+    .icono-w{
+    width: 60px;
+    height: 60px;
+    }
+    .icono-w span{
+       font-size: 50px;
+       width: 55px;
+       height: 55px;
+}
+}
 /* propiedades del slider */
 .Contenedor-slider{
     position: relative;
