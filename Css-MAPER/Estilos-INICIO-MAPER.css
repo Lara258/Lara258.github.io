@@ -573,6 +573,8 @@ transition: all 2s;
 @media screen and (max-width:570px){
     .w-contenedor{
         height: 50px;
+        width: 50px;
+        margin-right: 5px;
     }
     .icono-w{
     width: 50px;
