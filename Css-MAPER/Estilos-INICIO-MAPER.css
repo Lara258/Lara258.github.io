@@ -939,11 +939,10 @@ transition: all 2s;
 }
 .separador-info-medio{
     height: 100%;
-    max-width: 100%;
     width: 81%;
     position: relative;
-    margin:0 auto;
     display: flex;
+    margin: 2% auto;
     justify-content: space-between;
 }
 .separador-info-medio h3{
@@ -961,7 +960,7 @@ display: block;
 text-align: justify;
 }
 .img-info-empresa{
-height: 40%;
+height: 50%;
 width: 40%;
 position: relative;
 vertical-align: text-bottom;
