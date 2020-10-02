@@ -549,6 +549,12 @@ transition: all 2s;
     .w-contenedor{
         height: 60px;
     }
+    .w-contenedor:hover{
+        width: 80px;
+    }
+    .w-contenedor:hover .w-texto{
+        display: none;
+    }
     .w-texto p{
         font-size:12px;
     }
@@ -562,6 +568,11 @@ transition: all 2s;
        width: 55px;
        height: 55px;
 }
+}
+@media screen and (max-width:970){
+    .w-contenedor:hover{
+    
+    }
 }
 /* propiedades del slider */
 .Contenedor-slider{
