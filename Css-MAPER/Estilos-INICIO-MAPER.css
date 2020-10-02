@@ -549,16 +549,9 @@ transition: all 2s;
     .w-contenedor{
         height: 60px;
     }
-    .w-contenedor:hover{
-        width: 80px;
-    }
-    .w-contenedor:hover .w-texto{
-        display: none;
-    }
     .w-texto p{
         font-size:12px;
     }
-    
     .icono-w{
     width: 60px;
     height: 60px;
@@ -569,10 +562,27 @@ transition: all 2s;
        height: 55px;
 }
 }
-@media screen and (max-width:970){
-    .w-contenedor:hover{
-    
+@media screen and (max-width:970px){
+    .w-contenedor:hover .w-texto{
+        display:none;
     }
+    .w-contenedor:hover{
+        width: 80px;
+    }
+}
+@media screen and (max-width:570px){
+    .w-contenedor{
+        height: 50px;
+    }
+    .icono-w{
+    width: 50px;
+    height: 50px;
+    }
+    .icono-w span{
+       font-size: 40px;
+       width: 45px;
+       height: 45px;
+}
 }
 /* propiedades del slider */
 .Contenedor-slider{
