@@ -20,8 +20,8 @@ body{
     display:flex;
     font: bold 15px arial;
     background: whitesmoke;
-
         }
+
     .centrado-contacto{
     max-width: 100%;
     width: 81%;
@@ -520,6 +520,7 @@ transition: all linear 0.6s;
 .w-texto{
     height: 60%;
     width: 0px;
+    display: flex;
     overflow:hidden;
     background: #f5f5f5;
     transition: all linear 0.6s;
@@ -528,8 +529,7 @@ transition: all linear 0.6s;
     align-items: center;
 }
 .w-texto p{
-    margin: 5px 15px;
-    font-size:14px;
+    font-size:13px;
     font-weight: 700;
 }
 
