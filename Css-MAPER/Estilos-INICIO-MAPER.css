@@ -174,6 +174,7 @@ width: 100%;
     font-weight: 800;
     display: block;
     padding:50px 15px;
+    border-bottom: 1px solid transparent;
 
 }
 .menu  > ul > li{
@@ -598,7 +599,6 @@ transition: all 2s;
 /* propiedades del slider */
 .Contenedor-slider{
     position: relative;
-    max-width: 2000px;
     width: 100%;
     height: 450px;
     border-radius: 10px;
@@ -697,6 +697,14 @@ transition: all 2s;
 
 /* fin de las  propiedades del slider */    
 /*medias querys del slider*/
+@media screen and (min-width:1650px){
+    .Contenedor-slider{
+        height: 600px;
+    }
+    .slider-item{
+        height: 600px;
+    }
+}
 @media screen and (max-width:970px){
     .Contenedor-slider{
         height: 350px;
@@ -820,7 +828,7 @@ transition: all 2s;
 .imagen-caja-servicios{
   position: relative;
   border-radius: 5px;
-  height: 50%;
+  height: 60%;
   width: 100%;
 }
 .imagen-caja-servicios img{
