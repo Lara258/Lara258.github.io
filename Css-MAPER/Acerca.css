@@ -806,7 +806,7 @@ height: 150px;
 }
 
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:450px){
     .div-cualidades h1{
         font-size: 30px;
         font-weight: 500;
