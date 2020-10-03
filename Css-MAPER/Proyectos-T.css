@@ -849,13 +849,12 @@ margin-bottom: 30px;
 @media screen and (max-width:970px){
     .cip{
         width: 100%;
-        display: block;
         margin-bottom: 10px;
     }
     .cip-navegacion{
         text-align: center;
     }
- 
+
     .contenedor-info-proyecto{
         width: 100%;
         display: block;
