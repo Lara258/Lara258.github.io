@@ -843,12 +843,12 @@ background: white;
         height: 350px;
     }
 }
-@media screen and (max-width:440px){
+@media screen and (max-width:450px){
     .informacion-img p,h3{
         font-size: 14px;
     }
-    .div-posicion a,p{
-        font-size: 12px;
+    .div-info-posicion a,p{
+        font-size: 14px;
     }
     .contenedor-img img{
         height: 50%;
@@ -861,8 +861,8 @@ background: white;
         position: absolute;
         width: 0;
         height: 0;
-        left: 90px;
-        bottom: 22px;
+        left: 100px;
+        bottom: 20px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
         border-right:6px solid transparent;

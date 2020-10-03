@@ -884,16 +884,18 @@ display: block;
         height: 450px;
     }
 }
-@media screen and (max-width:400px){
-    .div-posicion a,p{
-        font-size: 10px;
-    }
+@media screen and (max-width:450px){
+
     .div-info-posicion a::after{
-        bottom: 22px;
+        bottom: 20px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
         border-right:6px solid transparent;
         border-bottom:6px solid transparent;
+    }
+    .div-info-posicion a,p{
+        font-size: 14px;
+        margin-right: 25px;
     }
     .contenedor-servicios-instalacion{
         height: 500px;
