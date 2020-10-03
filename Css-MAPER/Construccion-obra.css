@@ -851,7 +851,7 @@ margin-bottom: 30px;
 @media screen and (max-width:450px){
 
     .div-info-posicion a::after{
-        bottom: 20px;
+        bottom: 22px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
         border-right:6px solid transparent;
