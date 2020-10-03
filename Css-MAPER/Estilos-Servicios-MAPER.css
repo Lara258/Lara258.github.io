@@ -277,6 +277,9 @@ html{
         .menu li ul{
             width: 220px;
         }
+        .Contenedor-contacto i{
+            font-size: 11px;
+         }
     }
     @media screen and (max-width:1020px){
         .menu  a{
@@ -468,6 +471,7 @@ html{
 
     }
     /*fin de media querys cabecera*/
+    
     /* propiedades del icono de whatsapp */
 .w-contenedor{
     position: fixed;
@@ -491,7 +495,7 @@ width: 25%;
 transition: all linear 0.6s;
 }
 .w-contenedor:hover .w-texto{
-    width:73%;
+    width:75%;
     transition: all linear 0.6s;
     visibility: visible;
 }
@@ -539,6 +543,11 @@ transition: all 2s;
 /*fin de las propiedades */
 
 /*Media querys de boton whatsapp*/
+@media screen and (max-width:1260px){
+    .w-texto p{
+    text-align: center;
+    }
+}
 @media screen and (max-width:1070px){
     .w-contenedor{
         height: 60px;

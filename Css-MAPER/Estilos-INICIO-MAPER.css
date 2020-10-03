@@ -292,6 +292,9 @@ width: 100%;
     .menu li ul{
         width: 220px;
     }
+    .Contenedor-contacto i{
+        font-size: 11px;
+     }
 }
 @media screen and (max-width:1020px){
     .menu  a{
@@ -555,6 +558,11 @@ transition: all 2s;
 /*fin de las propiedades */
 
 /*Media querys de boton whatsapp*/
+@media screen and (max-width:1260px){
+    .w-texto p{
+    text-align: center;
+    }
+}
 @media screen and (max-width:1070px){
     .w-contenedor{
         height: 60px;
