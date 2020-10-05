@@ -361,7 +361,7 @@ html{
                 margin:40px auto 10px auto;
             }
             #mn:checked ~ #mna{
-                transition: all linear 1s;
+                transition: all linear 0.6s;
                 overflow: visible;
                 height: 560px;
             }
