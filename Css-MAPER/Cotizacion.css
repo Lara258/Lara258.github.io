@@ -739,6 +739,8 @@ border-radius: 5px;
     text-align: justify;
     color:#999999;
     margin: 0;
+    line-height: 25px;
+    font-weight: 400;
 }
 .contenedor-info-diseño label::before{
 content: "+";

@@ -780,6 +780,8 @@ margin-bottom: 30px;
     color:#999999;
     margin: 0px;
     padding-top: 5px;
+    line-height: 25px;
+    font-weight: 400;
 }
 .info-proyecto{
     position: relative;

@@ -744,6 +744,8 @@ margin-bottom: 30px;
     text-align: justify;
     color:#999999;
     margin: 0;
+    line-height: 25px;
+    font-weight: 400;
 }
 
 .texto-descarga{

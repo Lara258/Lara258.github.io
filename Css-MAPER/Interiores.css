@@ -742,6 +742,8 @@ border-radius: 5px;
     text-align: justify;
     color:#999999;
     margin: 0;
+    line-height: 25px;
+    font-weight: 400;
 }
 #t3{
     text-align: right;

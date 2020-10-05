@@ -806,6 +806,8 @@ transition: all 2s;
     height: 100%;
     margin:20px 0px;
     display: block;
+    line-height: 25px;
+    font-weight: 100;
 }
 .seccion-servicios-img{
     width: 100%;
@@ -826,7 +828,6 @@ transition: all 2s;
 }
 .seccion-servicios-txt p{
     margin-top:10px;
-    line-height: 25px;
 }
 .seccion-servicios-txt a{
     display: inline-block;
@@ -935,6 +936,7 @@ width: calc(33.3333% - 20px);
 position: relative;
 display: block;
 text-align: justify;
+line-height: 25px;
 }
 .img-info-empresa{
 height: 120px;
@@ -1269,7 +1271,8 @@ text-align: justify;
 margin-top: 20px;
 }
 .div-footer p{
-    line-height: 15px;
+    line-height: 25px;
+    font-weight: 100;
     margin-top: 20px;
 }
 .imagen-empresa{
@@ -1289,6 +1292,7 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: right;
+    
 }
 .texto-icono span{
     color:black;

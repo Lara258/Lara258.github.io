@@ -763,6 +763,8 @@ display: block;
     color:#999999;
     margin-top: 10px;
     padding: 0;
+    line-height: 25px;
+    font-weight: 400;
 }
 .contenedor-servicios-instalacion-txt h4{
     margin-top: 5px;
@@ -799,6 +801,8 @@ display: block;
     text-align: justify;
     margin-left: 10px;
     color: #999999;
+    line-height: 25px;
+    font-weight: 400;
 }
 .texto-servicios-instalacion h4{
     margin-left: 10px;

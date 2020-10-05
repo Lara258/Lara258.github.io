@@ -723,7 +723,8 @@ position: relative;
     text-align: justify;
     color:#999999;
     margin: 0;
-    line-height: 30px;
+    line-height: 25px;
+    font-weight: 400;
 }
 .contenedor-info-cualidades {
 position: relative;
@@ -861,10 +862,7 @@ display: block;
 text-align: justify;
 margin-top: 20px;
 }
-.div-footer p{
-    line-height: 15px;
-    margin-top: 20px;
-}
+
 .imagen-empresa{
      width: 50%;
      height: 100px;

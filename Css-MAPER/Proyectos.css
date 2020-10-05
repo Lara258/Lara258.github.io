@@ -971,7 +971,8 @@ text-align: justify;
 margin-top: 20px;
 }
 .div-footer p{
-    line-height: 15px;
+    line-height: 25px;
+    font-weight: 400;
     margin-top: 20px;
     margin-left: 0px;
 }
