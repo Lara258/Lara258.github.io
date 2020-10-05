@@ -743,7 +743,7 @@ position: relative;
     background: aqua;
     position: absolute;
     left: 50%;
-    bottom: 5px;
+    bottom: 0px;
     transition: all linear 0.5s;
 }
 .nav-galeria-btn label:hover::before{
@@ -755,12 +755,17 @@ position: relative;
     color:black;
   
 }
-#gt:checked ~ .nav-galeria #lgt,
-#gc:checked ~ .nav-galeria #lgc,
-#gr:checked ~ .nav-galeria #lgr,
-#gi:checked ~ .nav-galeria #lgi{
-    color: blue;
-    border-bottom: 2px solid aqua;
+#gt:checked ~ .nav-galeria #lgt::before,
+#gc:checked ~ .nav-galeria #lgc::before,
+#gr:checked ~ .nav-galeria #lgr::before,
+#gi:checked ~ .nav-galeria #lgi::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
 #gt, #gc, #gr, #gi{
     display: none;
@@ -903,7 +908,6 @@ position: relative;
 #gr:checked ~ .nav-galeria #lgr,
 #gi:checked ~ .nav-galeria #lgi{
     color:white;
-    border-bottom: 2px solid aqua;
 }
 .item-proyecto{
     width: calc(50% - 20px);

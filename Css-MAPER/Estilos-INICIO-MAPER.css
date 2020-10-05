@@ -611,7 +611,7 @@ transition: all 2s;
 .Contenedor-slider{
     position: relative;
     width: 100%;
-    height: 450px;
+    height: auto;
     border-radius: 10px;
     transition: all linear .5s;
     } 
@@ -709,17 +709,13 @@ transition: all 2s;
 /* fin de las  propiedades del slider */    
 /*medias querys del slider*/
 @media screen and (min-width:1650px){
-    .Contenedor-slider{
-        height: 600px;
-    }
+
     .slider-item{
         height: 600px;
     }
 }
 @media screen and (max-width:970px){
-    .Contenedor-slider{
-        height: 350px;
-        } 
+
         .slider-item{
             height: 350px;
         }
@@ -737,27 +733,26 @@ transition: all 2s;
 }
 @media screen and (max-width:720px){
     .Contenedor-slider{
-        height: 400px;
         background: #eee8e8;
     }
     .slider-item{
-        height: 450px;
+        height: 500px;
     }
     .slider-item2{
         width: 100%;
-        height: 200px;
-        background-size: 100% 200px;
+        height: 300px;
+        background-size: 100% 300px;
     }
     .slider-item1{
-        background-size: 100% 200px;
+        background-size: 100% 300px;
         width: 100%;
-        height: 200px;
+        height: 300px;
     }
     .texto-fondo{
         height: 200px;
         width: 80%;
         left: 0px;
-        top: 120px;
+        top: 220px;
         color: black;
     }
     .navegacion-btn{
@@ -791,7 +786,7 @@ transition: all 2s;
     background: #f5f5f5;
     max-width: 100%;
     width: 100%;
-    height: 500px;
+    height: auto;
     margin: 0 auto;
     position: relative;
 }
@@ -832,14 +827,14 @@ transition: all 2s;
     display: block;
     position: relative;
     width: calc(33.3333% - 20px);
-    height: 450px;
+    height: auto;
     margin-top:20px;
     margin-bottom: 20px;
 }
 .imagen-caja-servicios{
   position: relative;
   border-radius: 5px;
-  height: 60%;
+  height: 250px;
   width: 100%;
 }
 .imagen-caja-servicios img{
@@ -1117,13 +1112,17 @@ margin: 0 auto;
     color:blue;
   
 }
-#gt:checked ~ .nav-galeria #lgt,
-#gc:checked ~ .nav-galeria #lgc,
-#gr:checked ~ .nav-galeria #lgr,
-#gi:checked ~ .nav-galeria #lgi{
-    color: blue;
-    border-bottom: 2px solid aqua;
-    transition: all linear 0.6s;
+#gt:checked ~ .nav-galeria #lgt::before,
+#gc:checked ~ .nav-galeria #lgc::before,
+#gr:checked ~ .nav-galeria #lgr::before,
+#gi:checked ~ .nav-galeria #lgi::before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: aqua;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
 }
 #gt, #gc, #gr, #gi{
     display: none;
@@ -1248,7 +1247,6 @@ margin: 0 auto;
 #gr:checked ~ .nav-galeria #lgr,
 #gi:checked ~ .nav-galeria #lgi{
     color:white;
-    border-bottom: 2px solid aqua;
 }
 }
 @media screen and (max-width:790px){
