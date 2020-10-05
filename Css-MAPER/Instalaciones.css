@@ -770,14 +770,14 @@ display: block;
 
 .servicios-instalacion{
     width: 100%;
-    height: calc(25% - 20px);
+    height: auto;
     margin-bottom: 20px;
     display: flex;
   
 }
 .servicios-instalacion-img{
     width: 150px;
-    height: 100%;
+    height: 160px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }

@@ -735,7 +735,7 @@ border-radius: 5px;
 }
 .contenedor-info-diseño img{
     width: 100%;
-    height: 400;
+    height: 300px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
 }
@@ -753,7 +753,7 @@ border-radius: 5px;
 }
 .texto-descarga{
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
     border: 1px solid #999999;
     border-left: 4px solid #999999; 
@@ -846,10 +846,7 @@ border-radius: 5px;
         border-radius: 5px;
         margin-bottom: 5px;
     }
-    .texto-descarga{
-        width: 100%;
-        height: 100%;
-}
+
 #t3{
     text-align: left;
 }
