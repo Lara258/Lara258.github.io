@@ -845,7 +845,7 @@ transition: all 2s;
     width: 0;
     height: 0;
     left: 100%;
-    bottom: 2px;
+    bottom: 6px;
     margin-left: 10px;
     border-top: 6px solid transparent ;
     border-left: 6px solid blue;
