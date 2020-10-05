@@ -771,7 +771,7 @@ color: #999999;
     display: none;
 }
 #acordeon1:checked ~ #info1, #acordeon2:checked ~ #info2, #acordeon3:checked ~ #info3{
-    height: 100px;
+    height: 150px;
     padding: 0 30px;
     transition: all linear 0.6s ;
     overflow: visible;
