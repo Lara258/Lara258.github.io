@@ -953,7 +953,7 @@ margin-bottom: 30px;
 
 .titulo-lightbox-proyecto{
     text-align: center;
-    width: 70%;
+    width: 85%;
     height: auto;
     margin: auto;
 }
@@ -962,7 +962,7 @@ margin-bottom: 30px;
     color: white;
 }
 .Contendor-carousel-lightbox{
-    width: 70%;
+    width: 85%;
     margin:30px auto 10px auto;
     position: relative;
 }
@@ -1057,12 +1057,13 @@ margin-bottom: 30px;
     .titulo-lightbox-proyecto h1{
         font-size: 25px;
     }
+    
     .Contendor-carousel-lightbox, .titulo-lightbox-proyecto{
         max-width: 90%;
         width: 90%;
     }
     .Contendor-carousel-lightbox{
-        margin: auto;
+     margin: 5% auto;
     }
     .item-lightbox{
         height: 450px;
@@ -1072,7 +1073,7 @@ margin-bottom: 30px;
         width: 40%;
         height: 10%;
         position: absolute;
-        bottom: 5px;
+        bottom: 30px;
         left: 30%;
     }
     .SigBtn, .AntBtn{
