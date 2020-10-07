@@ -860,11 +860,264 @@ margin-bottom: 30px;
     .contenedor-info-proyecto{
         width: 100%;
         display: block;
+        margin-bottom: 0px;
     }
     .contenedor-info-proyecto img{
-        height: 250px;
+        display: none;
     }
 }
+/*fin de media querys*/
+
+/*Propiedades galeria de imagenes */
+.titulo-imagenes-proyecto{
+    text-align: center;
+    font-size: 24px;
+}
+.carousel-proyectos{
+    margin: 30px 0;
+    height: auto;
+    width: 100%;
+    box-shadow: 0 0 0 6px #d1cfcf,
+                0 0 0 10px #999999,
+                0 0 0 14px black;
+}
+.item-carousel{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.item-carousel img{
+    height: 100%;
+    object-fit: fill;
+}
+.navegacion-btn{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 35%;
+    left: 0;
+    text-align: center;
+    justify-content: center;
+}   
+.btns{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+.btns span{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+.NBtn{
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 40px;
+    background: rgba(158, 150, 150, .80);
+    z-index: 100;
+    cursor: pointer;
+}
+.PBtn{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   height: 100%;
+   width: 40px;
+   background: rgba(158, 150, 150, .80);
+   z-index: 100;
+   cursor: pointer;
+}
+.NBtn:hover, .PBtn:hover{
+    background: rgba(238, 229, 229, 0.8);
+}
+/*fin de las propiedades*/
+
+/*Propiedades del lightbox de galeria de imagenes del proyecto*/
+.lightbox{
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    transition: all linear 0.2s;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+.lightbox:target{
+    overflow: visible;
+    visibility: visible;
+    transition: all linear 0.2s;
+    background: rgba(0, 0, 0, 0.8);
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 200;
+}
+.titulo-lightbox-proyecto{
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+.titulo-lightbox-proyecto h1{
+    font-size: 50px;
+    color: white;
+}
+.Contendor-carousel-lightbox{
+    width: 70%;
+    margin:30px auto 10px auto;
+    position: relative;
+}
+.carousel-lightbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.item-lightbox{
+    width: 100%;
+    height: 450px;
+}
+.item-lightbox img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.contenedor-navegacion-btn{
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    bottom: 40%;
+    left: 0px;
+}
+.a-btns{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.a-btns span{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+}
+.a-cerrar{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+.a-cerrar span{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: red;
+}
+.SigBtn{
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 40px;
+    background: rgba(158, 150, 150, .80);
+    z-index: 100;
+    cursor: pointer;
+}
+.AntBtn{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   height: 100%;
+   width: 40px;
+   background: rgba(158, 150, 150, .80);
+   z-index: 100;
+   cursor: pointer;
+}
+.SigBtn:hover, .AntBtn:hover{
+    background: rgba(238, 229, 229, 0.8);
+}
+/*fin de las propiedades*/
+
+/*media querys de lightbox*/
+@media screen and (max-width:950px){
+    .titulo-lightbox-proyecto h1{
+        font-size: 40px;
+    }
+    .Contendor-carousel-lightbox, .titulo-lightbox-proyecto{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:800px){
+    .titulo-lightbox-proyecto h1{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:650px){
+    .titulo-lightbox-proyecto h1{
+        font-size: 25px;
+    }
+    .Contendor-carousel-lightbox, .titulo-lightbox-proyecto{
+        max-width: 90%;
+        width: 90%;
+    }
+    .item-lightbox{
+        height: 450px;
+        width: 100%;
+    }
+    .contenedor-navegacion-btn{
+        width: 40%;
+        height: 10%;
+        position: absolute;
+        bottom: 5px;
+        left: 30%;
+    }
+    .SigBtn, .AntBtn{
+        height: 100%;
+        width: calc(50% - 10px);
+    }
+
+}
+/*fin de media querys*/
+
+/*Media querys de galeria imagenes del proyecto*/
+@media screen and (max-width:860px){
+.btns span{
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+}
+}
+@media screen and (max-width:710px){
+    .navegacion-btn{
+        width: 150px;
+        height: 10%;
+        bottom: 5px;
+        left: 35%;
+    }   
+    .NexBtn, .PreBtn{
+        width: calc(50% - 5px);
+    }
+}
+@media screen and (max-width:500px){
+    .navegacion-btn{
+        height: 10%;
+        bottom: 5px;
+        left: 30%;
+    }   
+    .NexBtn, .PreBtn{
+        width: calc(50% - 5px);
+    }
+}
+
 /*propiedades de pie de pagina*/
 .pie-pagina{
     position: relative;
