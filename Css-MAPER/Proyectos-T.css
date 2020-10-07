@@ -938,19 +938,11 @@ margin-bottom: 30px;
 
 /*Propiedades del lightbox de galeria de imagenes del proyecto*/
 .lightbox{
-    width: 0px;
-    height: 0px;
-    overflow: hidden;
-    visibility: hidden;
-    transition: all linear 0.2s;
+    display: none;
     position: fixed;
-    top: 50%;
-    left: 50%;
 }
 .lightbox:target{
-    overflow: visible;
-    visibility: visible;
-    transition: all linear 0.2s;
+    display: block;
     background: rgba(0, 0, 0, 0.8);
     top: 0px;
     left: 0px;
@@ -958,6 +950,7 @@ margin-bottom: 30px;
     height: 100%;
     z-index: 200;
 }
+
 .titulo-lightbox-proyecto{
     text-align: center;
     width: 70%;
@@ -976,7 +969,6 @@ margin-bottom: 30px;
 .carousel-lightbox{
     width: 100%;
     height: 100%;
-    position: relative;
 }
 .item-lightbox{
     width: 100%;

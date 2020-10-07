@@ -10,21 +10,21 @@ $('.carousels').owlCarousel({
     items:1
 })
 
-var owl = $('.carousels');
-owl.owlCarousel();
+var owli = $('.carousels');
+owli.owlCarousel();
 // Go to the next item
 $('.NextBtn').click(function() {
-    owl.trigger('next.owl.carousel');
-    owl.trigger('stop.owl.autoplay')
-    owl.trigger('play.owl.autoplay',[6000])
+    owli.trigger('next.owl.carousel');
+    owli.trigger('stop.owl.autoplay')
+    owli.trigger('play.owl.autoplay',[6000])
 })
 // Go to the previous item
 $('.PrevBtn').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owl.trigger('prev.owl.carousel', [2000]);
-    owl.trigger('stop.owl.autoplay')
-    owl.trigger('play.owl.autoplay',[6000])
+    owli.trigger('prev.owl.carousel');
+    owli.trigger('stop.owl.autoplay')
+    owli.trigger('play.owl.autoplay',[6000])
 })
 
 $('.carousel1').owlCarousel({
@@ -158,9 +158,10 @@ $('.PBtn').click(function() {
     owl1.trigger('stop.owl.autoplay')
     owl1.trigger('play.owl.autoplay',[6000])
 })
+
 owl1.on('click', '.item-carousel', function () {
     var nid=this.id;
-    $('.carousel-lightbox').trigger('to.owl.carousel',nid);
+    owls.trigger('to.owl.carousel',nid);
 });
 
 $('.carousel-lightbox').owlCarousel({
