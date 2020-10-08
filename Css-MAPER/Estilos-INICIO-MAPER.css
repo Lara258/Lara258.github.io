@@ -226,9 +226,19 @@ width: 100%;
     transition: all .7s;
 }
 /*media querys de menu navegacion de cabecera */
+@media screen and (min-width:2100px){
+.menu > ul > li{
+    margin-left: 50px;
+}
+}
+@media screen and (min-width:1900px){
+    .menu > ul > li{
+        margin-left: 40px;
+    }
+}
 @media screen and (min-width:1650px){
     .menu  > ul > li{
-        margin-left: 20px;
+        margin-left: 30px;
     }
 }
 @media screen and (min-width:1500px){
@@ -537,8 +547,8 @@ transition: all linear 0.6s;
 }
 
 .icono-w{
-width: 70px;
-height: 70px;
+width: 60px;
+height: 60px;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -558,6 +568,11 @@ transition: all 2s;
 /*fin de las propiedades */
 
 /*Media querys de boton whatsapp*/
+@media screen and (min-width:1500px){
+    .w-contenedor:hover{
+        width: 20%;
+        }
+}
 @media screen and (max-width:1260px){
     .w-texto p{
     text-align: center;
@@ -571,33 +586,6 @@ transition: all 2s;
         font-size:12px;
     }
     .icono-w{
-    width: 60px;
-    height: 60px;
-    }
-    .icono-w span{
-       font-size: 50px;
-       width: 55px;
-       height: 55px;
-}
-}
-@media screen and (max-width:970px){
-    .w-contenedor:hover .w-texto{
-        display:none;
-    }
-    .w-contenedor:hover{
-        width: 80px;
-    }
-}
-@media screen and (max-width:570px){
-    .w-contenedor{
-        height: 50px;
-        width: 50px;
-        margin-right: 5px;
-    }
-    .w-contenedor:hover{
-        width: 50px;
-    }
-    .icono-w{
     width: 50px;
     height: 50px;
     }
@@ -606,6 +594,27 @@ transition: all 2s;
        width: 45px;
        height: 45px;
 }
+}
+@media screen and (max-width:970px){
+    .w-contenedor:hover .w-texto{
+        display:none;
+    }
+    .w-contenedor{
+        width: 70px;
+    }
+    .w-contenedor:hover{
+        width: 70px;
+    }
+}
+@media screen and (max-width:570px){
+    .w-contenedor{
+        height: 60px;
+        width: 60px;
+        margin-right: 5px;
+    }
+    .w-contenedor:hover{
+        width: 60px;
+    }
 }
 /* propiedades del slider */
 .Contenedor-slider{
@@ -879,6 +888,7 @@ transition: all 2s;
 .servicios-pequeños-txt h4,.servicios-pequeños-txt p {
     margin-left: 10px;
 }
+
 .servicios-pequeños-txt a > h4{
     text-decoration: none;
     color: black;

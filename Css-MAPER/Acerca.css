@@ -221,11 +221,21 @@ html{
         transition: all .7s;
     }
     /*media querys de menu navegacion de cabecera */
-    @media screen and (min-width:1650px){
-        .menu  > ul > li{
-            margin-left: 20px;
+    @media screen and (min-width:2100px){
+        .menu > ul > li{
+            margin-left: 50px;
         }
-    }
+        }
+        @media screen and (min-width:1900px){
+            .menu > ul > li{
+                margin-left: 40px;
+            }
+        }
+        @media screen and (min-width:1650px){
+            .menu  > ul > li{
+                margin-left: 30px;
+            }
+        }
     @media screen and (min-width:1500px){
         .menu  > ul > li{
             margin-right: 20px;
@@ -534,76 +544,75 @@ transition: all linear 0.6s;
 }
 
 .icono-w{
-width: 70px;
-height: 70px;
-display: flex;
-align-items: center;
-justify-content: center;
-color: white;
-border-radius: 50%;
-background: #0fbe43;
-}
-.icono-w span{
-   font-size: 50px;
-   width: 50px;
-   height: 50px;
-   display: flex;
-align-items: center;
-justify-content: center;
-transition: all 2s;
-}
-/*fin de las propiedades */
-
-/*Media querys de boton whatsapp*/
-@media screen and (max-width:1260px){
-    .w-texto p{
-    text-align: center;
-    }
-}
-@media screen and (max-width:1070px){
-    .w-contenedor{
-        height: 60px;
-    }
-    .w-texto p{
-        font-size:12px;
-    }
-    .icono-w{
     width: 60px;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    background: #0fbe43;
     }
     .icono-w span{
        font-size: 50px;
-       width: 55px;
-       height: 55px;
-}
-}
-@media screen and (max-width:970px){
-    .w-contenedor:hover .w-texto{
-        display:none;
+       width: 50px;
+       height: 50px;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
     }
-    .w-contenedor:hover{
-        width: 80px;
+    /*fin de las propiedades */
+    
+    /*Media querys de boton whatsapp*/
+    @media screen and (min-width:1500px){
+        .w-contenedor:hover{
+            width: 20%;
+            }
     }
-}
-@media screen and (max-width:570px){
-    .w-contenedor{
+    @media screen and (max-width:1260px){
+        .w-texto p{
+        text-align: center;
+        }
+    }
+    @media screen and (max-width:1070px){
+        .w-contenedor{
+            height: 60px;
+        }
+        .w-texto p{
+            font-size:12px;
+        }
+        .icono-w{
+        width: 50px;
         height: 50px;
-        width: 50px;
-        margin-right: 5px;
+        }
+        .icono-w span{
+           font-size: 40px;
+           width: 45px;
+           height: 45px;
     }
-    .w-contenedor:hover{
-        width: 50px;
     }
-    .icono-w{
-    width: 50px;
-    height: 50px;
+    @media screen and (max-width:970px){
+        .w-contenedor:hover .w-texto{
+            display:none;
+        }
+        .w-contenedor{
+            width: 70px;
+        }
+        .w-contenedor:hover{
+            width: 70px;
+        }
     }
-    .icono-w span{
-       font-size: 40px;
-       width: 45px;
-       height: 45px;
-}
-}
+    @media screen and (max-width:570px){
+        .w-contenedor{
+            height: 60px;
+            width: 60px;
+            margin-right: 5px;
+        }
+        .w-contenedor:hover{
+            width: 60px;
+        }
+    }
 /*fin de las media querys boton whatsapp*/
 
     /*propiedades imagen de fondo y texto servicios*/
