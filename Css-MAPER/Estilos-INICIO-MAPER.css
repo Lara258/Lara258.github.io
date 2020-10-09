@@ -42,6 +42,9 @@ body{
     .contenido-precarga img{
         width: 60%;
     }
+    #precarga{
+        margin: 10% 15%;
+    }
 }
 /*fin de propiedades*/
 #contacto{
