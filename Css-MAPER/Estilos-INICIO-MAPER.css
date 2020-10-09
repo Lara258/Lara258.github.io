@@ -30,12 +30,18 @@ body{
     margin: auto;
     width: 100%;
     height: 33.33%;
+    margin-bottom: 20px;
 }
 .contenido-precarga img{
     width: 25%;
     height: 100%;
     object-fit: fill;
     margin-left: 40%;
+}
+@media screen and (max-width:450px){
+    .contenido-precarga img{
+        width: 60%;
+    }
 }
 /*fin de propiedades*/
 #contacto{

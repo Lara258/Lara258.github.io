@@ -1,3 +1,9 @@
+window.onload=function(){
+    $('#contenedor-precarga').animate({
+        bottom:'100%' 
+     })
+}
+
 $('.menu2').hover(function(){
     $('#as').css({color:'black'});
 },function(){
@@ -133,8 +139,3 @@ $('.carousel4').owlCarousel({
 })
 
 
-window.onload=function(){
-    $('#contenedor-precarga').animate({
-        bottom:'100%' 
-     })
-}
