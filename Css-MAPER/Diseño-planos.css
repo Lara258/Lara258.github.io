@@ -17,14 +17,36 @@ html{
         display:flex;
         font: bold 15px arial;
         background: whitesmoke;
-    
             }
+            .figura-esquinas-izq,.figura-esquinas-der{
+                width: 10%;
+                height: 50px;
+                background: white;
+                position: relative;
+                    }
+                .figura-esquinas-izq::before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                right: 0;
+                border-top: 50px solid #f5f5f5;
+                border-left: 50px solid transparent;
+                    }
+                .figura-esquinas-der::before{
+                content: "";
+                position: absolute;
+                width: 0;
+                height: 0;
+                left: 0;
+                border-top: 50px solid #f5f5f5;
+                border-right: 50px solid transparent;
+                    }
         .centrado-contacto{
         width: 81%;
         height: 50px;
         position: relative;
         margin: 0px auto;
-    
                             }
             .Contenedor-contacto{
             position: relative;
