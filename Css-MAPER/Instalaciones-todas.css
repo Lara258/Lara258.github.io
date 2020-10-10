@@ -866,9 +866,9 @@ border-radius: 5px;
     text-align: left;
 }
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:540px){
     .div-posicion a,p{
-        font-size: 10px;
+        font-size: 12px;
     }
     .div-posicion{
         height: 60px;

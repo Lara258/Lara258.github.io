@@ -869,10 +869,10 @@ border-radius: 5px;
     text-align: left;
 }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:540px){
 
     .div-info-posicion a::after{
-        bottom: 22px;
+        bottom: 20px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
         border-right:6px solid transparent;

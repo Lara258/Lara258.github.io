@@ -867,7 +867,7 @@ color: #999999;
     }
 }
 
-@media screen and (max-width:450px){
+@media screen and (max-width:490px){
 
     .div-info-posicion a::after{
         bottom: 20px;

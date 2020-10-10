@@ -865,7 +865,7 @@ margin-bottom: 30px;
         height: 50%;
 }
 }
-@media screen and (max-width:450px){
+@media screen and (max-width:460px){
     .div-info-posicion a::after{
         bottom: 20px;
         border-top:6px solid transparent ;
