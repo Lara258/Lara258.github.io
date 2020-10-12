@@ -27,27 +27,28 @@ $('.carousels').owlCarousel({
     items:1
 })
 
-var owli = $('.carousels');
-owli.owlCarousel();
+var owlprt = $('.carousels');
+owlprt.owlCarousel();
 // Go to the next item
 $('.NextBtn').click(function() {
-    owli.trigger('next.owl.carousel');
-    owli.trigger('stop.owl.autoplay')
-    owli.trigger('play.owl.autoplay',[6000])
+    owlprt.trigger('next.owl.carousel');
+    owlprt.trigger('stop.owl.autoplay')
+    owlprt.trigger('play.owl.autoplay',[6000])
 })
 // Go to the previous item
 $('.PrevBtn').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owli.trigger('prev.owl.carousel');
-    owli.trigger('stop.owl.autoplay')
-    owli.trigger('play.owl.autoplay',[6000])
+    owlprt.trigger('prev.owl.carousel');
+    owlprt.trigger('stop.owl.autoplay')
+    owlprt.trigger('play.owl.autoplay',[6000])
 })
 
 $('.carousel1').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:false,
     touchDrag:true,
     responsive:{
         0:{
@@ -67,11 +68,25 @@ $('.carousel1').owlCarousel({
         }
     }
 })
+var owlprt = $('.carousel1');
+owlprt.owlCarousel();
+// Go to the next item
+$('#next-prt').click(function() {
+    owlprt.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('#prev-prt').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owlprt.trigger('prev.owl.carousel');
+})
+
 
 $('.carousel2').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:false,
     touchDrag:true,
     responsive:{
         0:{
@@ -91,10 +106,26 @@ $('.carousel2').owlCarousel({
         }
     }
 })
+
+var owlprC = $('.carousel2');
+owlprC.owlCarousel();
+// Go to the next item
+$('#next-prc').click(function() {
+    owlprC.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('#prev-prc').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owlprC.trigger('prev.owl.carousel');
+})
+
+
 $('.carousel3').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:false,
     touchDrag:true,
     responsive:{
         0:{
@@ -114,10 +145,25 @@ $('.carousel3').owlCarousel({
         }
     }
 })
+
+var owlprr = $('.carousel3');
+owlprr.owlCarousel();
+// Go to the next item
+$('#next-prr').click(function() {
+    owlprr.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('#prev-prr').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owlprr.trigger('prev.owl.carousel');
+})
+
 $('.carousel4').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
+    dots:false,
     touchDrag:true,
     responsive:{
         0:{
@@ -136,6 +182,19 @@ $('.carousel4').owlCarousel({
             items:5
         }
     }
+})
+
+var owlpri = $('.carousel4');
+owlpri.owlCarousel();
+// Go to the next item
+$('#next-pri').click(function() {
+    owlpri.trigger('next.owl.carousel');
+})
+// Go to the previous item
+$('#prev-pri').click(function() {
+    // With optional speed parameter
+    // Parameters has to be in square bracket '[]'
+    owlpri.trigger('prev.owl.carousel');
 })
 
 

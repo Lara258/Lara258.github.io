@@ -893,6 +893,9 @@ height: 150px;
     .equipo{
         width: calc(100%);
     }
+    .equipo img{
+        height: 350px;
+    }
 }
 
 /*propiedades de pie de pagina*/
