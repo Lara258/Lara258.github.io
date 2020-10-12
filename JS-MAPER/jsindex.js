@@ -27,21 +27,21 @@ $('.carousels').owlCarousel({
     items:1
 })
 
-var owlprt = $('.carousels');
-owlprt.owlCarousel();
+var owli = $('.carousels');
+owli.owlCarousel();
 // Go to the next item
 $('.NextBtn').click(function() {
-    owlprt.trigger('next.owl.carousel');
-    owlprt.trigger('stop.owl.autoplay')
-    owlprt.trigger('play.owl.autoplay',[6000])
+    owli.trigger('next.owl.carousel');
+    owli.trigger('stop.owl.autoplay')
+    owli.trigger('play.owl.autoplay',[6000])
 })
 // Go to the previous item
 $('.PrevBtn').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owlprt.trigger('prev.owl.carousel');
-    owlprt.trigger('stop.owl.autoplay')
-    owlprt.trigger('play.owl.autoplay',[6000])
+    owli.trigger('prev.owl.carousel');
+    owli.trigger('stop.owl.autoplay')
+    owli.trigger('play.owl.autoplay',[6000])
 })
 
 $('.carousel1').owlCarousel({
