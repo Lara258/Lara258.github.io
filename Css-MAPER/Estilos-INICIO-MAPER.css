@@ -1172,7 +1172,7 @@ margin: 0 auto;
     transform: scale(1);
     opacity: 1;
     visibility: visible;
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
     position: relative;
 }
 .item{
@@ -1193,7 +1193,7 @@ margin: 0 auto;
     position: absolute;
     top: 0px;
     transform: scale(0);
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
 }
 
 .proyectos-cons{
@@ -1204,7 +1204,7 @@ margin: 0 auto;
     position: absolute;
     top: 0px;
     transform: scale(0);
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
 }
 .proyectos-remo{
     width: 100%;
@@ -1214,7 +1214,7 @@ margin: 0 auto;
     position: absolute;
     top: 0px;
     transform: scale(0);
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
 }
 .proyectos-inst{
     width: 100%;
@@ -1224,7 +1224,7 @@ margin: 0 auto;
     position: absolute;
     top: 0px;
     transform: scale(0);
-    transition: all 0.5s linear;
+    transition: all 0.8s linear;
 }
 .navegacion-btn-Pr{
     width: 100%;
