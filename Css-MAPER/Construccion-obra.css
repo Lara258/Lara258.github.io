@@ -761,7 +761,7 @@ line-height: 40px;
     flex-wrap: wrap;
     justify-content: space-between;
 } 
-.contenedor-info-diseño {
+.contenedor-info-cons {
 position: relative;
 width: calc(50% - 15px);
 height: auto;
@@ -769,14 +769,48 @@ background: white;
 border-radius: 5px;
 margin-bottom: 30px;
 }
-.contenedor-info-diseño img{
+.contenedor-info-img{
     width: 100%;
-    height: 400;
+    height: 300px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    background: rgb(95, 93, 93);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contenedor-info-img a{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-info-img img{
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    object-fit: fill;
+    transition: all linear 0.2s;
+    
+}
+.contenedor-info-img img:hover{
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+.contenedor-info-img:hover::before{
+    transform: scale(0.10);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.contenedor-info-img::before{
+    content:url("/Imagenes-MAPER/Lupa-blanca.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.2s;
 }
 
-.contenedor-info-diseño p{
+.contenedor-info-cons p{
     text-align: justify;
     color:#999999;
     margin: 0;
@@ -862,17 +896,14 @@ margin-bottom: 30px;
     }
 
     .div-contenedor-servicios{
-        max-width: 100%;
         width: 100%;
     }
-    .contenedor-info-diseño{
+    .contenedor-info-cons{
         width: calc(100%);
         height: auto;
         margin-bottom: 10px;
     }
-    .contenedor-info-diseño  img{
-        height: 200px;
-    }
+
     .menu-servicios a{
         padding: 10px 20px;
         border-radius: 5px;
@@ -887,7 +918,6 @@ margin-bottom: 30px;
 }
 }
 @media screen and (max-width:540px){
-
     .div-info-posicion a::after{
         bottom: 21px;
         border-top:6px solid transparent ;
@@ -902,7 +932,7 @@ margin-bottom: 30px;
     .txt-servicios h1{
         font-size: 25px;
     }
-    .contenedor-info-diseño p{
+    .contenedor-info-cons p{
         font-size: 14px;
     }
 }

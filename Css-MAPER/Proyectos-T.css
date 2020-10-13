@@ -921,10 +921,36 @@ margin-bottom: 30px;
     position: relative;
     width: 100%;
     height: 350px;
+    background: rgb(95, 93, 93);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-carousel a{
+    width: 100%;
+    height: 100%;
+}
+.item-carousel img:hover{
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+.item-carousel:hover::before{
+    transform: scale(0.10);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.item-carousel::before{
+    content:url("/Imagenes-MAPER/Lupa-blanca.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.2s;
 }
 .item-carousel img{
     height: 100%;
     object-fit: fill;
+    transition: all linear 0.3s;
 }
 .navegacion-btn{
     width: 100%;

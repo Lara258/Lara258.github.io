@@ -701,7 +701,6 @@ position: relative;
     margin: 0px auto;
     position: relative;
     display: flex;
-   
 }
 
 .div-info-posicion a,p{
@@ -718,7 +717,7 @@ position: relative;
     position: absolute;
     width: 0;
     height: 0;
-    left: 110px;
+    left: 120px;
     bottom: 17px;
     border-top:8px solid transparent ;
     border-left:8px solid #999999;
@@ -782,9 +781,8 @@ position: relative;
     width: 75%;
     height: auto;
     display: block;
- 
 }
-.div-servicios{
+.div-mitad-servicios{
     width: 100%;
     height:auto;
     position: relative;
@@ -793,10 +791,10 @@ position: relative;
     justify-content: space-between;
    margin-bottom: 10px;
 } 
-.div-servicios a:hover{
+.div-mitad-servicios a:hover{
     text-decoration: underline;
 }
-.contenedor-img {
+.contenedor-servicio {
 position: relative;
 width: calc(33.333% - 20px);
 height: auto;
@@ -806,13 +804,40 @@ margin-bottom: 5px;
 display: block;
         }
        
-.contenedor-img  img{
+.contenedor-servicio-img {
     width: 100%;
     height: 200px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
+    background: rgb(95, 93, 93);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.informacion-img{
+.contenedor-servicio-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    transition:all linear 0.3s;
+}
+.contenedor-servicio-img img:hover{
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+.contenedor-servicio-img:hover::before{
+    transform: scale(0.20);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.contenedor-servicio-img::before{
+    content:url("/Imagenes-MAPER/Flecha-blanca.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.2s;
+}
+.informacion-servicio{
 position: relative;
 width: 100%;
 height: auto;
@@ -820,15 +845,15 @@ background: white;
 line-height: 25px;
 font-weight: 100;
 }
-.informacion-img h3{
+.informacion-servicio h3{
     font-size: 15px;
     color: black;
 }
-.informacion-img h4{
+.informacion-servicio h4{
     font-weight: 500;
     position: relative;
 }
-.informacion-img h4::after{
+.informacion-servicio h4::after{
     content: "";
     position: absolute;
     width: 0;
@@ -841,10 +866,10 @@ font-weight: 100;
     border-right: 6px solid transparent;
     border-bottom: 6px solid transparent;
 }
-.informacion-img p{
+.informacion-servicio p{
     font-size: 15px;
 }
-.informacion-img a{
+.informacion-servicio a{
     text-decoration: none;
     color:black;
     display: inline-block;
@@ -854,14 +879,12 @@ font-weight: 100;
 
 /*Media querys de servicios*/
 @media screen and (max-width: 1090px){
-    .contenedor-img{
-        width: calc(30% - 10px);
-    }
+
     .menu-servicios a{
         padding: 20px;
         font-size: 14px;
     }
-    .informacion-img p,h3{
+    .informacion-servicio p,h3{
        font-size: 15px;
     }
 
@@ -869,7 +892,7 @@ font-weight: 100;
         font-size: 15px;
     }
     .div-info-posicion a::after{
-        left: 105px;
+        left: 115px;
         bottom: 20px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
@@ -889,12 +912,12 @@ font-weight: 100;
     .div-contenedor-servicios{
         width: 100%;
     }
-    .contenedor-img{
+    .contenedor-servicio{
         width: calc(100%);
         margin-bottom: 10px;
     }
-    .contenedor-img  img{
-        height: 250px;
+    .contenedor-servicio-img {
+        height: 300px;
     }
 
     .menu-servicios a{
@@ -908,12 +931,12 @@ font-weight: 100;
 }
 
 @media screen and (max-width:580px){
-    .contenedor-img img{
-        height: 200px;
+    .contenedor-servicio-img {
+        height: 250px;
     }
 }
 @media screen and (max-width:450px){
-    .informacion-img p,h3{
+    .informacion-servicio p,h3{
         font-size: 14px;
     }
     .div-info-posicion a,p{
@@ -924,7 +947,7 @@ font-weight: 100;
         position: absolute;
         width: 0;
         height: 0;
-        left: 100px;
+        left: 108px;
         bottom: 20px;
         border-top:6px solid transparent ;
         border-left:6px solid #999999;
