@@ -774,7 +774,7 @@ margin-bottom: 30px;
     height: 300px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background: rgb(95, 93, 93);
+    background: rgb(230, 229, 229);
     overflow: hidden;
     position: relative;
     display: flex;
@@ -804,7 +804,7 @@ margin-bottom: 30px;
     opacity: 1;
 }
 .contenedor-info-img::before{
-    content:url("/Imagenes-MAPER/Lupa-blanca.png");
+    content:url("/Imagenes-MAPER/lupa.png");
     position: absolute;
     transform: scale(0);
     transition: all linear 0.2s;

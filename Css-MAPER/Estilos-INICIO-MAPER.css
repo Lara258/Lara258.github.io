@@ -688,7 +688,7 @@ transition: all 2s;
     } 
     .slider-item{
         position: relative;
-        height: 450px;
+        height: 460px;
         width: 100%;
         z-index: 0;
         transition: all linear .5s;
@@ -885,6 +885,16 @@ transition: all 2s;
     height: 250px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    background: rgb(230, 229, 229);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.seccion-servicios-img a{
+    width: 100%;
+    height: 100%;
 }
 .seccion-servicios-img img{
     width:100%;
@@ -892,6 +902,23 @@ transition: all 2s;
     object-fit: fill;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    transition: all linear 0.3s;
+}
+.seccion-servicios-img img:hover,.servicios-pequeños-img img:hover{
+    transform: scale(1.05);
+    opacity: 0.4;
+    transition: all linear 0.3s;
+}
+.seccion-servicios-img:hover::before{
+    transform: scale(0.10);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.seccion-servicios-img::before,.servicios-pequeños-img::before{
+    content:url("/Imagenes-MAPER/lupa.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.3s;
 }
 .seccion-servicios-txt{
     width: 100%;
@@ -936,12 +963,23 @@ transition: all 2s;
 .servicios-pequeños-img{
     width: 150px;
     height: 100px;
+    background: rgb(230, 229, 229);
+    overflow: hidden;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .servicios-pequeños-img img{
     width: 100%;
     height: 100%;
     object-fit: fill;
+    transition: all linear 0.3s;
+}
+.servicios-pequeños-img:hover::before{
+    transform: scale(0.05);
+    transition:all linear 0.3s;
+    opacity: 1;
 }
 .servicios-pequeños-txt{
     width: 100%;
@@ -1360,15 +1398,12 @@ margin: 0 auto;
 /*propiedades de pie de pagina*/
 .pie-pagina{
     position: relative;
-    max-width: 100%;
     width: 100%;
     height: auto;
     background: white;
-
 }
 .div-pie-pagina{
     position: relative;
-    max-width: 100%;
     width: 81%;
     height: auto;
     margin: 0px auto;
@@ -1383,7 +1418,7 @@ margin: 0 auto;
     display: block;
 }
 .acerca-de{
-    max-width: 100%;
+    width: 100%;
     width: auto;
     position: relative;
     border-bottom: 2px solid red;
@@ -1485,7 +1520,6 @@ transition: all 2s;
         transition: all linear .5s;
     }
     .acerca-de{
-        max-width: 500px;
         width: 100%;
         position: relative;
         border-bottom: 2px solid red;
@@ -1503,7 +1537,6 @@ transition: all 2s;
         transition: all linear .5s;
     }
     .acerca-de{
-        max-width: 1000px;
         width: 100%;
         position: relative;
         border-bottom: 2px solid red;

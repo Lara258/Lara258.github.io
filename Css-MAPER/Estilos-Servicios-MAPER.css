@@ -809,7 +809,7 @@ display: block;
     height: 200px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
-    background: rgb(95, 93, 93);
+    background: rgb(230, 229, 229);
     overflow: hidden;
     position: relative;
     display: flex;
@@ -827,12 +827,12 @@ display: block;
     opacity: 0.4;
 }
 .contenedor-servicio-img:hover::before{
-    transform: scale(0.20);
+    transform: scale(0.10);
     transition:all linear 0.3s;
     opacity: 1;
 }
 .contenedor-servicio-img::before{
-    content:url("/Imagenes-MAPER/Flecha-blanca.png");
+    content:url("/Imagenes-MAPER/lupa.png");
     position: absolute;
     transform: scale(0);
     transition: all linear 0.2s;
