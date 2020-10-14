@@ -508,7 +508,6 @@ width: 100%;
         display: flex;
         align-items: center;
         justify-content: left;
-
         }
         .btn {
             font-size: 30px;
@@ -977,7 +976,7 @@ transition: all 2s;
     transition: all linear 0.3s;
 }
 .servicios-pequeños-img:hover::before{
-    transform: scale(0.05);
+    transform: scale(0.04);
     transition:all linear 0.3s;
     opacity: 1;
 }
@@ -1454,8 +1453,7 @@ margin-top: 20px;
     height: 20%;
     display: flex;
     align-items: center;
-    text-align: right;
-    
+    text-align: right;   
 }
 .texto-icono span{
     color:black;

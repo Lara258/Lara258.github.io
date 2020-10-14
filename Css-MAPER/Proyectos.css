@@ -1048,9 +1048,8 @@ text-align: justify;
 margin-top: 20px;
 }
 .div-footer p{
-    line-height: 25px;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 0px;
 }
 .imagen-empresa{
@@ -1106,8 +1105,6 @@ transition: all 2s;
         font-size: 13px;
     }
     .div-footer p{
-        line-height: 20px;
-        margin-top: 20px;
         font-size: 13px;
     }
 }

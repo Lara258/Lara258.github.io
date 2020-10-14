@@ -811,7 +811,7 @@ display: block;
     opacity: 1;
 }
 .contenedor-servicios-instalacion-img::before,.servicios-instalacion-img::before{
-    content:url("/Imagenes-MAPER/Flecha-negra.png");
+    content:url("/Imagenes-MAPER/lupa.png");
     position: absolute;
     transform: scale(0);
     transition: all linear 0.3s;

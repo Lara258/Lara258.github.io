@@ -1,0 +1,22 @@
+.icono-texto a{
+    text-decoration: none;
+}
+.icono-texto a > i:hover{
+    text-decoration: underline;
+
+}
+.texto-icono a{
+    text-decoration: none;
+}
+.texto-icono a > i:hover{
+    text-decoration: underline;
+
+}
+.div-texto-iconos a{
+    text-decoration: none;
+    color: black;
+}
+.div-texto-iconos a > i:hover{
+    text-decoration: underline;
+
+}
