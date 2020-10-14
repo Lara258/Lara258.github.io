@@ -15,6 +15,13 @@ $('#as').hover(function(){
     $(this).css({color:'#999999'});
 })
 
+$(window).scroll(function(){
+    if($(this).scrollTop() > 500 ){
+        $('.ir-arriba').slideDown(500);
+    }else{
+        $('.ir-arriba').slideUp(500); 
+    }
+})
 $('.carousels').owlCarousel({
     loop:true,
     margin:10,
