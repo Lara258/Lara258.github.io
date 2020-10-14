@@ -864,7 +864,7 @@ position: relative;
     transition: all 0.5s linear;
 }
 
-.div-proyectos-totales{
+.div-proyectos-totales,.div-proyectos-construccion,.div-proyectos-remodelacion,.div-proyectos-instalacion{
     width: 100%;
     height: 100%;
     display: block;
@@ -876,42 +876,7 @@ position: relative;
     position: absolute;
     top: 0px;
 }
-.div-proyectos-construccion{
-    width: 100%;
-    height: auto;
-    display: block;
-    transform: scale(0);
-    transition: all 0.5s linear;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-}
-.div-proyectos-remodelacion{
-    width: 100%;
-    height: auto;
-    display: block;
-    transform: scale(0);
-    transition: all 0.5s linear;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-}
-.div-proyectos-instalacion{
-    width: 100%;
-    height: auto;
-    display: block;
-    transform: scale(0);
-    transition: all 0.5s linear;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-}
+
 .contenedor-proyectos{
     width: 100%;
     height: auto;
@@ -929,17 +894,44 @@ position: relative;
     margin-bottom: 20px;
 
 }
-.item-proyecto img{
+.item-proyecto a{
+    width: 100%;
+    height: 100%;
+}
+.item-proyecto-img{
     width: 100%;
     height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(230, 229, 229);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-proyecto-img img{
+    width: 100%;
+    height: 100%;
     object-fit: fill;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    transition: all linear 0.3s;
 }
-.item-proyecto:hover {
-    box-shadow: 2px 5px 5px 5px rgba(196, 187, 187, 0.50);
-    color: #00fdfe;
-
+.item-proyecto:hover .item-proyecto-img img{
+    transform: scale(1.05);
+    opacity: 0.4;
+}
+.item-proyecto:hover .item-proyecto-img::before{
+    transform: scale(0.08);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.item-proyecto-img::before{
+    content:url("/Imagenes-MAPER/lupa.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.3s;
 }
 .item-proyecto:hover .info-proyecto h4{
     color: #00fdfe;
@@ -1046,11 +1038,6 @@ position: relative;
 display: block;
 text-align: justify;
 margin-top: 20px;
-}
-.div-footer p{
-    font-weight: 400;
-    margin-top: 5px;
-    margin-left: 0px;
 }
 .imagen-empresa{
      width: 50%;
