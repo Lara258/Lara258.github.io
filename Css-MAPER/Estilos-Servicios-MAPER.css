@@ -72,44 +72,6 @@ html{
     height: auto;
     display: flex;
 }
-/*propiedades del menu de servicios */
-.menu-servicios{
-    width:25%;
-    height: 50%;
-    position: relative;
-    margin-right: 30px;
-}
-.menu-servicios a{
-    text-decoration: none;
-    color: #999999;
-    font-weight: 600;
-    display: block;
-    padding: 23px 20px;
-}
-.menu-servicios ul{
-    list-style: none;
-    padding: 0px;
-}
-.menu-servicios li{
-    border: 1px solid #999999;
-}
-.menu-servicios li:hover{
-    background: #f2f2f2;
-    border-left: 2px solid #fdc703;
-    transition: all 0.3s ease-in-out;
-}
-.menu-servicios li>a:hover{
-    color: black;
-
-}
-.menu-servicios li#at{
-    border-left:  3px solid #fdc703;
-    background: #f2f2f2;
-}
-.menu-servicios li#at a{
-    color: black;
-}
-/*fin de propiedades de menu servicios */
 
 /*propiedades de contenedor de servicios*/
 .div-contenedor-servicios{
@@ -215,15 +177,9 @@ font-weight: 100;
 
 /*Media querys de servicios*/
 @media screen and (max-width: 1090px){
-
-    .menu-servicios a{
-        padding: 20px;
-        font-size: 14px;
-    }
     .informacion-servicio p,h3{
        font-size: 15px;
     }
-
     .div-posicion a,p{
         font-size: 15px;
     }
@@ -231,10 +187,6 @@ font-weight: 100;
 @media screen and (max-width:970px){
     .div-contenedor{
         display: block;
-    }
-    .menu-servicios{
-        width: calc(100%);
-        margin-bottom: 20px;
     }
     .div-contenedor-servicios{
         width: 100%;
@@ -245,15 +197,6 @@ font-weight: 100;
     }
     .contenedor-servicio-img {
         height: 300px;
-    }
-
-    .menu-servicios a{
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-    .menu-servicios li{
-        border-radius: 5px;
-        margin-bottom: 5px;
     }
 }
 

@@ -35,44 +35,6 @@ html{
     height: auto;
     display: flex;
 }
-/*propiedades del menu de servicios */
-.menu-servicios{
-    width: 25%;
-    height: 50%;
-    position: relative;
-    margin-right: 30px;
-}
-.menu-servicios a{
-    text-decoration: none;
-    color: #999999;
-    font-weight: 900;
-    display: block;
-    padding: 23px 20px;
-}
-.menu-servicios ul{
-    list-style: none;
-    padding: 0px;
-}
-.menu-servicios li{
-    border: 1px solid #999999;
-}
-.menu-servicios li:hover{
-    background: #f2f2f2;
-    border-left: 2px solid #fdc703;
-    transition: all 0.7s ;
-}
-.menu-servicios li>a:hover{
-    color: black;
-
-}
-.menu-servicios li#ai{
-    border-left:  3px solid #fdc703;
-    background: #f2f2f2;
-}
-.menu-servicios li#ai a{
-    color: black;
-}
-/*fin de propiedades de menu servicios */
 
 /*propiedades de contenedor de servicios*/
 .div-contenedor-servicios{
@@ -127,7 +89,6 @@ display: block;
     width: 100%;
     height: 100%;
 }
-
 .contenedor-servicios-instalacion-img img{
     width: 100%;
     height: 100%;
@@ -218,7 +179,6 @@ display: block;
 .texto-servicios-instalacion h4{
     margin-left: 10px;
 }
-
 /*fin de propiedades de servicios*/
 
 /*media querys de servicio*/
@@ -227,12 +187,7 @@ display: block;
         height: 180px;
     }
 }
-
 @media screen and (max-width: 1070px){
-    .menu-servicios a{
-        padding: 20px;
-        font-size: 14px;
-    }
     .div-posicion a,p{
         font-size: 15px;
     }
@@ -242,23 +197,16 @@ display: block;
         border-left:6px solid #999999;
         border-right: 6px solid transparent;
         border-bottom: 6px solid transparent;
-    
     }
 }
 @media screen and (max-width:970px){
     .div-contenedor{
         display: block;
     }
-    .menu-servicios{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
     .div-contenedor-servicios{
         width: 100%;
         height: 100%;
         display: block;
-
     }
     .div-servicios{
         margin-bottom:0;
@@ -276,19 +224,9 @@ display: block;
     .contenedor-servicios-instalacion-img {
         height: 250px;
     }
-
-    .menu-servicios a{
-        padding: 10px 20px;
-        border-radius: 5px;
-    }
-    .menu-servicios li{
-        border-radius: 5px;
-        margin-bottom: 5px;
-    }
 }
 
 @media screen and (max-width:450px){
-
     .div-info-posicion a::after{
         bottom: 20px;
         border-top:6px solid transparent ;
@@ -300,7 +238,6 @@ display: block;
         font-size: 14px;
         margin-right: 25px;
     }
-   
     .txt-servicios h1{
         font-size: 25px;
     }
