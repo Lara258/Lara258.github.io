@@ -46,7 +46,23 @@ html{
     }
 }
 /*fin de propiedades*/
-  
+      
+/*pŕopiedades de info posicion */
+.div-info-posicion a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 10px;
+    left: 100%;
+    bottom: 17px;
+    border-top:8px solid transparent ;
+    border-left:8px solid #999999;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+}
+/*fin de las propiedades info posicion */
+
 /*propiedades de servicios */
 .div-contenedor{
     margin: 20px auto 0px;
@@ -258,6 +274,13 @@ font-weight: 100;
     }
     .txt-servicios h4{
         font-size: 15px;
+    }
+    .div-info-posicion a::after{
+        bottom: 20px;
+        border-top:7px solid transparent ;
+        border-left:7px solid #999999;
+        border-right: 7px solid transparent;
+        border-bottom: 7px solid transparent;
     }
 }
 
