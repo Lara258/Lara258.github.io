@@ -40,7 +40,19 @@ if((galeria.top - 500) < scrollT){
         right:'0'
     }, 'slow')
  }/*if scroll galeria*/
+
     } /*if width */
+    else{
+        $('.centrado-galeria').css({
+            right:'0'
+        })
+        $('.separador-info-medio').css({
+            right:'0'
+        })
+        $('.separador-seccion-servicios').css({
+            right:'0'
+        })
+    } /*else width*/
 }) /*funcion*/
 
 
