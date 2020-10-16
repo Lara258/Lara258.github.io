@@ -16,11 +16,14 @@ $('#as').hover(function(){
 })
 
 $(window).scroll(function(){
-    if($(this).scrollTop() > 80){
-        $('.seccion-servicios').animate({
-            right: '0'
-        }, 'slow');
-    }
+ var scrollT= $(this).scrollTop();
+ var service= $('.seccion-servicios').offset();
+ if((service.top - 500) < scrollT){
+     $('.seccion-servicios'). animate({
+        right:'0' 
+     }, 'slow');
+ }
+
 })
 $(window).scroll(function(){
     if($(this).scrollTop() > 500 ){
@@ -36,6 +39,7 @@ $(window).scroll(function(){
         }, 'slow');
     }
 })
+
 $('.carousels').owlCarousel({
     loop:true,
     margin:10,

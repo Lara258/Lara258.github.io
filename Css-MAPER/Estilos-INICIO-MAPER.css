@@ -91,7 +91,7 @@ body{
         .Contenedor-contacto{
         position: relative;
         height: 100%;
-        max-width: 80%;
+        width: 80%;
         margin:0px auto;
         display: flex;
         flex-wrap: wrap;
