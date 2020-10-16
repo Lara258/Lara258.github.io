@@ -15,16 +15,25 @@ $('#as').hover(function(){
     $(this).css({color:'#999999'});
 })
 
+
 $(window).scroll(function(){
  var scrollT= $(this).scrollTop();
  var service= $('.seccion-servicios').offset();
- if((service.top - 500) < scrollT){
+ var separador= $('.separador-info-medio').offset();
+
+ if((service.top - 600) < scrollT){
      $('.seccion-servicios'). animate({
         right:'0' 
      }, 'slow');
  }
 
-})
+ if((separador.top - 600) < scrollT){
+    $('.separador-info-medio').animate({
+      left:'0'  
+    }, 'slow');
+}
+});
+
 $(window).scroll(function(){
     if($(this).scrollTop() > 500 ){
         $('.ir-arriba').slideDown(500);
@@ -32,13 +41,7 @@ $(window).scroll(function(){
         $('.ir-arriba').slideUp(500); 
     }
 })
-$(window).scroll(function(){
-    if($(this).scrollTop() > 550){
-        $('.separador-info-medio').animate({
-          left:'0'  
-        }, 'slow');
-    }
-})
+
 
 $('.carousels').owlCarousel({
     loop:true,
