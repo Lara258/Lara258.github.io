@@ -17,22 +17,32 @@ $('#as').hover(function(){
 
 
 $(window).scroll(function(){
+    if($(window).width() > 970){
  var scrollT= $(this).scrollTop();
- var service= $('.seccion-servicios').offset();
- var separador= $('.separador-info-medio').offset();
+ var service= $('.separador-seccion-servicios').offset();
+ var info= $('.separador-info-medio').offset();
+ var galeria= $('.centrado-galeria').offset();
 
- if((service.top - 600) < scrollT){
-     $('.seccion-servicios'). animate({
-        right:'0' 
-     }, 'slow');
- }
+ if((service.top - 500) < scrollT){
+    $('.separador-seccion-servicios').animate({
+        right:'0'
+    },'slow')
+ }/*if scroll service*/
 
- if((separador.top - 600) < scrollT){
-    $('.separador-info-medio').animate({
-      left:'0'  
-    }, 'slow');
-}
-});
+ if((info.top - 500) < scrollT){
+   $('.separador-info-medio').animate({
+       left:'0'
+   },'slow')
+}/*if scroll info*/
+
+if((galeria.top - 500) < scrollT){
+    $('.centrado-galeria').animate({
+        right:'0'
+    }, 'slow')
+ }/*if scroll galeria*/
+    } /*if width */
+}) /*funcion*/
+
 
 $(window).scroll(function(){
     if($(this).scrollTop() > 500 ){

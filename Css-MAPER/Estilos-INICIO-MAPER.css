@@ -717,7 +717,7 @@ transition: all 2s;
     height: 50px;
     position: fixed;
     bottom: 80px;
-    right: 1.3%;
+    right: 1.2%;
     z-index: 150;
     display: none;
 }
@@ -958,6 +958,7 @@ transition: all 2s;
 }
 .separador-seccion-servicios{
     position: relative;
+    right:100%;
     height: 100%;
     width: 81%;
     margin:0 auto;
@@ -968,7 +969,6 @@ transition: all 2s;
 }
 .seccion-servicios{
     position: relative;
-    right:100%;
     width: calc(33.333% - 20px);
     height: 100%;
     margin:20px 0px;
@@ -1194,16 +1194,16 @@ margin: 0 auto;
 
 /*propiedades de galeria de proyectos*/
 .seccion-galeria{
-    max-width: 100%;
     width: 100%;
     height: auto;
     position: relative;
     display: block;
     background: whitesmoke;
+    overflow: hidden;
 }
 .centrado-galeria{
     position: relative;
-    max-width: 100%;
+    right: 100%;
     width: 81%;
     height: 100%;
     margin: 0 auto;
