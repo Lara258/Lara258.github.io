@@ -40,9 +40,10 @@ body{
 }
 @media screen and (max-width:450px){
     .contenido-precarga img{
-        width: 60%;
+        width: 70%;
     }
     #precarga{
+        width: calc(50%);
         margin: 10% 15%;
     }
 }

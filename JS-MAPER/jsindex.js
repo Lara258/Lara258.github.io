@@ -47,7 +47,7 @@ if((galeria.top - 500) < scrollT){
             right:'0'
         })
         $('.separador-info-medio').css({
-            right:'0'
+            left:'0'
         })
         $('.separador-seccion-servicios').css({
             right:'0'
