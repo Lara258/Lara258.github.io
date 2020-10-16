@@ -964,13 +964,14 @@ transition: all 2s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    overflow: hidden;
 }
 .seccion-servicios{
     position: relative;
+    right:100%;
     width: calc(33.333% - 20px);
     height: 100%;
     margin:20px 0px;
-    display: block;
     line-height: 25px;
     font-weight: 100;
 }
@@ -1123,6 +1124,7 @@ transition: all 2s;
     height: 100%;
     width: 81%;
     position: relative;
+    left: 100%;
     display: flex;
     margin: 2% auto;
     justify-content: space-between;
@@ -1138,7 +1140,6 @@ transition: all 2s;
 height: 100%;
 width: calc(33.3333% - 20px);
 position: relative;
-display: block;
 text-align: justify;
 line-height: 25px;
 }

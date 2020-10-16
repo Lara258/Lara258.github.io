@@ -16,10 +16,24 @@ $('#as').hover(function(){
 })
 
 $(window).scroll(function(){
+    if($(this).scrollTop() > 80){
+        $('.seccion-servicios').animate({
+            right: '0'
+        }, 'slow');
+    }
+})
+$(window).scroll(function(){
     if($(this).scrollTop() > 500 ){
         $('.ir-arriba').slideDown(500);
     }else{
         $('.ir-arriba').slideUp(500); 
+    }
+})
+$(window).scroll(function(){
+    if($(this).scrollTop() > 550){
+        $('.separador-info-medio').animate({
+          left:'0'  
+        }, 'slow');
     }
 })
 $('.carousels').owlCarousel({
