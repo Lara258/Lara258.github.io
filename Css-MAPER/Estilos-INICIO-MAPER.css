@@ -956,6 +956,7 @@ transition: all 2s;
     height: auto;
     margin: 0 auto;
     position: relative;
+    overflow: hidden;
 }
 .separador-seccion-servicios{
     position: relative;
@@ -966,7 +967,6 @@ transition: all 2s;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    overflow: hidden;
 }
 .seccion-servicios{
     position: relative;
@@ -1120,6 +1120,7 @@ transition: all 2s;
     width: 100%;
     height: auto;
     position: relative;
+    overflow: hidden;
 }
 .separador-info-medio{
     height: 100%;
