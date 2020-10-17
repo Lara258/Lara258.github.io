@@ -95,17 +95,31 @@ body{
         width: 80%;
         margin:0px auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
 
                             }
                             /* propiedades de los iconos*/
-.icono-texto{
+.cont-info-contacto{
     width: calc(33.333 - 10px);
    height: 100%;
    text-align: justify;
    display: inline-flex;
    align-items: center;
+}
+.info-contacto {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.info-contacto a{
+    color: black;
+    text-decoration: none;
+}
+.info-contacto a i:hover{
+    text-decoration: underline;
 }
 
 .Contenedor-contacto span{
@@ -681,10 +695,10 @@ transition: all 2s;
 /*fin de las media querys*/
 
 /*lineado sobre texto de correo*/
-.icono-texto a{
+.cont-info-contacto a{
     text-decoration: none;
 }
-.icono-texto a > i:hover{
+.cont-info-contacto a > i:hover{
     text-decoration: underline;
 
 }
