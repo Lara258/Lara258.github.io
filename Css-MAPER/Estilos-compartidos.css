@@ -37,7 +37,7 @@
     position: relative;
     margin: 0px auto;
                         }
-        .info-contacto{
+        .Contenedor-contacto{
         position: relative;
         height: 100%;
         max-width: 80%;
@@ -52,7 +52,7 @@
     width: calc(33.333 - 10px);
    height: 100%;
    text-align: justify;
-   display: inline-flex;
+   display: flex;
    align-items: center;
 }
 .info-contacto {
@@ -432,7 +432,7 @@ width: 100%;
         height: auto;
         width: 100%; 
      }
-     .info-contacto{
+     .Contenedor-contacto{
          display:none;
      }
      .menu{
@@ -555,6 +555,7 @@ width: 100%;
        .div-cont-contacto-pdps a {
         display: inline-block;
         margin-bottom: 5px;
+        text-decoration: none;
     }
        .div-cont-contacto-pdps h4{
            color: #999999;
