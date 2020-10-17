@@ -37,7 +37,7 @@
     position: relative;
     margin: 0px auto;
                         }
-        .Contenedor-contacto{
+        .info-contacto{
         position: relative;
         height: 100%;
         max-width: 80%;
@@ -48,20 +48,34 @@
         }
                 
  /* propiedades de los iconos*/
-.icono-texto{
+.cont-info-contacto{
     width: calc(33.333 - 10px);
    height: 100%;
    text-align: justify;
    display: inline-flex;
    align-items: center;
 }
-
-.Contenedor-contacto span{
+.info-contacto {
+    height: 100%;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.info-contacto a{
+    color: black;
+    text-decoration: none;
+}
+.info-contacto a i:hover{
+    text-decoration: underline;
+}
+.info-contacto span{
    color:black;
    font-size: 15px;
    
 }
-.Contenedor-contacto i{
+.info-contacto i{
    color: black;
    font-size: 13px;
 
@@ -389,7 +403,7 @@ width: 100%;
     .menu li ul{
         width: 220px;
     }
-    .Contenedor-contacto i{
+    .info-contacto i{
         font-size: 11px;
      }
 }
@@ -418,7 +432,7 @@ width: 100%;
         height: auto;
         width: 100%; 
      }
-     .Contenedor-contacto{
+     .info-contacto{
          display:none;
      }
      .menu{
@@ -530,7 +544,7 @@ width: 100%;
            align-items: center;
            border-bottom: 1px solid rgba(158, 150, 150, .50);
        }
-       .div-texto-iconos{
+       .div-cont-contacto-pdps{
         width: 80%;
         height: 100%;
         text-align: justify;
@@ -538,7 +552,11 @@ width: 100%;
         align-items: center;
         padding: 15px 0;
        }
-       .div-texto-iconos h4{
+       .div-cont-contacto-pdps a {
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+       .div-cont-contacto-pdps h4{
            color: #999999;
            font-weight: 100;
            font-size: 15px;
@@ -572,7 +590,7 @@ width: 100%;
         }
 }
 @media screen and (max-width:570px){
-    .div-texto-iconos i{
+    .div-cont-contacto-pdps i{
         font-size: 13px;
     }
     .iconos-contacto span{
@@ -592,7 +610,7 @@ width: 100%;
 }
 }
 @media screen and (max-width:390px){
-    .div-texto-iconos i{
+    .div-cont-contacto-pdps i{
         font-size: 12px;
     }
 
@@ -841,7 +859,6 @@ margin-right: 25px;
     width: 100%;
     height: auto;
     background: white;
-
 }
 .div-pie-pagina{
     position: relative;
@@ -883,18 +900,18 @@ margin-top: 20px;
         height: 100%;
         object-fit: fill;
     }
-.texto-icono{
+.cont-contacto-pdp{
     width: 100%;
     height: 20%;
     display: flex;
     align-items: center;
 }
-.texto-icono span{
+.cont-contacto-pdp span{
     color:black;
     font-size: 15px;
     
 }
-.texto-icono i{ 
+.cont-contacto-pdp i{ 
     text-align: justify;
     color: black;
     font-size: 15px;
@@ -919,7 +936,7 @@ transition: all 2s;
 
 /*medias querys de pie de pagina*/
 @media screen and (max-width:1250px){
-    .texto-icono i{
+    .cont-contacto-pdp i{
         text-align: justify;
         color: black;
         font-size: 13px;
@@ -960,25 +977,25 @@ transition: all 2s;
 /*fin de las media querys de pie de pagina*/
 
 /*lineado sobre texto de correo*/
-.icono-texto a{
+.cont-info-contacto a{
     text-decoration: none;
 }
-.icono-texto a > i:hover{
+.cont-info-contacto a > i:hover{
     text-decoration: underline;
 
 }
-.texto-icono a{
+.cont-contacto-pdp a{
     text-decoration: none;
 }
-.texto-icono a > i:hover{
+.cont-contacto-pdp a > i:hover{
     text-decoration: underline;
 
 }
-.div-texto-iconos a{
+.div-cont-contacto-pdps a{
     text-decoration: none;
     color: black;
 }
-.div-texto-iconos a > i:hover{
+.div-cont-contacto-pdps a > i:hover{
     text-decoration: underline;
 }
 .texto-pie-pagina{
