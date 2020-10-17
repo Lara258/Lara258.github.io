@@ -17,19 +17,18 @@ $('#as').hover(function(){
 
 
 $(window).scroll(function(){
-    if($(window).width() > 970){
- var scrollT= $(this).scrollTop();
+    var scrollT= $(this).scrollTop();
  var service= $('.separador-seccion-servicios').offset();
  var info= $('.separador-info-medio').offset();
  var galeria= $('.centrado-galeria').offset();
-
- if((service.top - 500) < scrollT){
+ 
+ if((service.top - 550) < scrollT){
     $('.separador-seccion-servicios').animate({
         right:'0'
     },'slow')
  }/*if scroll service*/
 
- if((info.top - 500) < scrollT){
+ if((info.top - 550) < scrollT){
    $('.separador-info-medio').animate({
        left:'0'
    },'slow')
@@ -40,19 +39,6 @@ if((galeria.top - 500) < scrollT){
         right:'0'
     }, 'slow')
  }/*if scroll galeria*/
-
-    } /*if width */
-    else{
-        $('.centrado-galeria').css({
-            right:'0'
-        })
-        $('.separador-info-medio').css({
-            left:'0'
-        })
-        $('.separador-seccion-servicios').css({
-            right:'0'
-        })
-    } /*else width*/
 }) /*funcion*/
 
 

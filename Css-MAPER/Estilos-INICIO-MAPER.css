@@ -1186,11 +1186,6 @@ margin: 0 auto;
         }
 }
 
-@media screen and (max-width:390px){
-    .info-empresa{
-        height: auto;
-        }
-}
 /*fin de las media querys de informacion empresa*/
 
 /*propiedades de galeria de proyectos*/
@@ -1213,7 +1208,7 @@ margin: 0 auto;
 .div-texto{
     position: relative;
     width:100%;
-    height: 110px
+    height: auto;
 }
 .div-texto h1{
     text-align: center;
@@ -1313,13 +1308,44 @@ margin: 0 auto;
     height: 100%;
     z-index: 50;
 }
-.item img{
+.item-img{
     height: 50%;
     width: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background: rgb(230, 229, 229);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.proyectos-total{
+.item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transition: all linear 0.3s;
+}
+
+.item:hover .item-img img{
+    transform: scale(1.05);
+    opacity: 0.4;
+    transition: all linear 0.3s;
+}
+.item:hover .item-img::before{
+    transform: scale(0.06);
+    transition:all linear 0.3s;
+    opacity: 1;
+}
+.item-img::before{
+    content:url("/Imagenes-MAPER/lupa.png");
+    position: absolute;
+    transform: scale(0);
+    transition: all linear 0.3s;
+}
+.proyectos-total,.proyectos-cons,.proyectos-remo,.proyectos-inst{
     width: 100%;
     height:auto;
     opacity: 0;
@@ -1328,38 +1354,9 @@ margin: 0 auto;
     top: 0px;
     transform: scale(0);
     transition: all 0.8s linear;
+    margin-bottom: 20px;
 }
 
-.proyectos-cons{
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-    transform: scale(0);
-    transition: all 0.8s linear;
-}
-.proyectos-remo{
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-    transform: scale(0);
-    transition: all 0.8s linear;
-}
-.proyectos-inst{
-    width: 100%;
-    height: auto;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0px;
-    transform: scale(0);
-    transition: all 0.8s linear;
-}
 .navegacion-btn-Pr{
     width: 100%;
     height: 30%;
@@ -1404,16 +1401,17 @@ margin: 0 auto;
 .NextBtn-Pr:hover, .PrevBtn-Pr:hover{
     background: rgba(238, 229, 229, 0.8);
 }
-.info-proyecto{
+.item-info{
     height: 50%;
-    widows: 100%;
+    width: 100%;
     background: white;
-    border-radius: 10px;
-    border: 1px solid whitesmoke;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     text-align: center;
 }
-.info-proyecto h4{
-    margin-top: 10px;
+.item-info h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 /*fin de propiedades de galeria de proyectos*/
 
