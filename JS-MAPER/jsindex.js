@@ -1,20 +1,3 @@
-window.onload=function(){
-    $('#contenedor-precarga').animate({
-        bottom:'100%' 
-     })
-}
-
-$('.menu2').hover(function(){
-    $('#as').css({color:'black'});
-},function(){
-    $('#as').css({color:'#999999'});})
-
-$('#as').hover(function(){
-    $(this).css({color:'black'});
-},function(){
-    $(this).css({color:'#999999'});
-})
-
 
 $(window).scroll(function(){
     var scrollT= $(this).scrollTop();
@@ -65,16 +48,7 @@ if((galeria.top - 500) < scrollT){
     } /*else if width*/
 }) /*funcion*/
 
-
-$(window).scroll(function(){
-    if($(this).scrollTop() > 500 ){
-        $('.ir-arriba').slideDown(500);
-    }else{
-        $('.ir-arriba').slideUp(500); 
-    }
-})
-
-
+/*carousel principal*/
 $('.carousels').owlCarousel({
     loop:true,
     margin:10,
@@ -87,6 +61,7 @@ $('.carousels').owlCarousel({
     items:1
 })
 
+/*botones carousel principal*/
 var owli = $('.carousels');
 owli.owlCarousel();
 // Go to the next item
@@ -104,6 +79,7 @@ $('.PrevBtn').click(function() {
     owli.trigger('play.owl.autoplay',[6000])
 })
 
+/*carousel proyectos todos*/
 $('.carousel1').owlCarousel({
     loop:true,
     margin:10,
@@ -128,6 +104,7 @@ $('.carousel1').owlCarousel({
         }
     }
 })
+/*botones carousel todos*/
 var owlprt = $('.carousel1');
 owlprt.owlCarousel();
 // Go to the next item
@@ -141,7 +118,7 @@ $('#prev-prt').click(function() {
     owlprt.trigger('prev.owl.carousel');
 })
 
-
+/*carousel proyectos construccion*/
 $('.carousel2').owlCarousel({
     loop:true,
     margin:10,
@@ -167,6 +144,7 @@ $('.carousel2').owlCarousel({
     }
 })
 
+/*botones proyectos construccion*/
 var owlprC = $('.carousel2');
 owlprC.owlCarousel();
 // Go to the next item
@@ -180,7 +158,7 @@ $('#prev-prc').click(function() {
     owlprC.trigger('prev.owl.carousel');
 })
 
-
+/*carousel proyectos remodelacion*/
 $('.carousel3').owlCarousel({
     loop:true,
     margin:10,
@@ -206,6 +184,7 @@ $('.carousel3').owlCarousel({
     }
 })
 
+/*botones proyectos remodelacion*/
 var owlprr = $('.carousel3');
 owlprr.owlCarousel();
 // Go to the next item
@@ -219,6 +198,7 @@ $('#prev-prr').click(function() {
     owlprr.trigger('prev.owl.carousel');
 })
 
+/*carousel proyectos instalcion*/
 $('.carousel4').owlCarousel({
     loop:true,
     margin:10,
@@ -244,6 +224,7 @@ $('.carousel4').owlCarousel({
     }
 })
 
+/*botones proyectos instalacion*/
 var owlpri = $('.carousel4');
 owlpri.owlCarousel();
 // Go to the next item
