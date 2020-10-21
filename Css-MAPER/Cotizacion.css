@@ -73,57 +73,55 @@ border-radius: 5px;
     line-height: 25px;
     font-weight: 400;
 }
-.contenedor-info-diseño label::before{
-content: "+";
-font-size: 20px;
-font-weight: 600;
-margin: 15px 10px;
-color: #999999;
-}
-.lblacordeon{
+
+.btn-acordeon{
+    height: auto;
     border: 1px solid #999999;
     border-left: 4px solid #999999;
-    display: block;
-    padding: 15px 0;
+    display: flex;
     cursor: pointer;
-    
+    transition: all 0.7s;
 }
-.lblacordeon:hover{
-    background: #f2f2f2;
-    border-left: 4px solid #fec701;
-    transition: all 0.7s ;
+.btn-acordeon:hover .icono-acordeon span{
+    transition: all 0.7s;
+    transform: rotate(180deg);
 }
-.contenedor-info-diseño input{
+.icono-acordeon{
+    text-decoration: none;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: #999999;
+    }
+    .icono-acordeon span{
+        font-size: 35px;
+        width: 35px;
+        height: 35px;
+    align-items: center;
+    justify-content: center;
+    }
+
+.txt-btn-acordeon{
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 16px;
+}
+.info-acordeon{
+    height:auto;
     display: none;
-}
-#acordeon1:checked ~ #info1, #acordeon2:checked ~ #info2, #acordeon3:checked ~ #info3{
-    border-left: 4px solid #fec701;
-    height: 150px;
-    padding: 0 30px;
-    transition: all linear 0.6s ;
-}
-#acordeon1:checked ~ #lbla1, #acordeon2:checked ~ #lbla2, #acordeon3:checked ~ #lbla3{
-    border-left: 4px solid #fec701;
-    transition: all linear 0.6s;
-}
-#acordeon1:checked ~ #lbla1::before, #acordeon2:checked ~ #lbla2::before, #acordeon3:checked ~ #lbla3::before{
-    content: "-";
-    margin: 15px 10px;
-    font-size: 20px;
-    font-weight: 1000;
-    color: #999999;  
-}
-.info{
     font-size: small;
     text-align: justify;
     color:black;
-    overflow: hidden;
-    transition: all linear 0.6s;
-    margin: 0;
-    padding: 0px;
-    height: 0px;
     border-left: 4px solid #fec701;
-    background: #f2f2f2;
+}
+.info-acordeon p{
+    margin:10px 15px;
+    padding: 0px;
 }
 /*fin de propiedades de servicios*/
 
