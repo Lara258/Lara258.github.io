@@ -103,6 +103,7 @@ transition: all 2s;
 /*propiedades cabecera*/
 #Cabecera{
 width: 100%; 
+position: relative;
         }
 .centrado-nav-logo{
     width: 81%;
@@ -122,6 +123,66 @@ width: 100%;
         width: 100%;
         height: 100%;
         object-fit: fill;
+    } 
+    
+    /*boton lenguaje*/
+    .btn-lenguaje{
+        position: absolute;
+        width: 9.5%;
+        height: 35px;
+        top: 0px;
+        right: 0px;
+        background: #d8d6d6;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-lenguaje a{
+        text-decoration: none;
+        color: black;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-lenguaje a img{
+        height: 35px;
+        width: 35px;
+        float: left;
+    }
+    .btn-lenguaje p{
+        margin-top: 10px;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .btn-lenguaje:hover{
+        height: auto;
+        overflow: visible;
+    }
+    .btn-lenguaje:hover a{
+        height: 50%;
+        border-bottom: 2px solid white;
+    }
+    .btn-lenguaje a:nth-child(2):hover{
+        background: #999999;
+    }
+    /*fin de propiedades*/
+
+    /*media querys de boton lenguaje*/
+    @media screen and (max-width:1140px){
+        .btn-lenguaje p{
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width:970px){
+        .btn-lenguaje{
+            display:none;
+        }
+    }
+    /*fin de media querys*/
+
+    /*clases utilizadas para dm que no se ven en pantalla grande*/
+    .btn-lenguaje-dm{
+        display: none;
     }
     .contactor{
         display:none;
@@ -435,6 +496,51 @@ width: 100%;
      .Contenedor-contacto{
          display:none;
      }
+
+     /*boton lenguaje para dispositivos pequeños*/
+     .btn-lenguaje-dm{
+        width: 30%;
+        height: 70%;
+        background: #ebaa12;
+        position: absolute;  
+        left: 40%;     
+        display:block;
+        z-index: 100;
+        cursor: pointer; 
+    }
+    .btn-lenguaje-dm ul{
+       list-style: none;
+       width: 100%;
+       height: 100%;
+       background: #ebaa12; 
+       display: none;
+       margin-top: 2px;
+    }
+    .btn-lenguaje-dm li{
+        display: inline;
+    }
+    .btn-lenguaje-dm a{
+       text-decoration: none;
+       color: black;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .btn-lenguaje-dm a img{
+       height: 100%;
+       width: 40%;
+       float: left;
+   }
+   .btn-lenguaje-dm  p{
+       margin-top: 10px;
+       margin-left: 5px;
+       padding: 0;
+       font-size: 17px;
+       font-weight: 500;
+   }
+
+   /*fin de propiedades*/
+
      .menu{
          display: none;
      }
@@ -608,6 +714,9 @@ width: 100%;
 }
 #Imagen-logo{
     width: 50%;
+}
+.btn-lenguaje-dm  p{
+    font-size: 14px;
 }
 }
 @media screen and (max-width:390px){

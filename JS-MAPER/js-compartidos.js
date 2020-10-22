@@ -17,6 +17,14 @@ $('#as').hover(function(){
     $(this).css({color:'#999999'});
 })
 
+/*boton de lenguaje para dm */
+$('.btn-lenguaje-dm').click(function(){
+    $(this).children('ul').slideToggle()
+})
+$('.btn-lenguaje-dm').children('ul').click(function(p){
+    p.stopPropagation()
+})
+
 /*aparecer boton "ir arriba" al hacer scroll*/
 $(window).scroll(function(){
     if($(this).scrollTop() > 500 ){
