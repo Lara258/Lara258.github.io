@@ -1,6 +1,9 @@
 $('.btn-lenguaje-dm').click(function(){
     $(this).children('ul').slideToggle()
 })
+$('.btn-lenguaje-dm').children('ul').click(function(p){
+    p.stopPropagation()
+})
 
 /*aparecer elementos al hacer scroll*/
 $(window).scroll(function(){
