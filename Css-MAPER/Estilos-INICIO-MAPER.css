@@ -474,19 +474,20 @@ transition: all 2s;
          background: #ebaa12;
          position: absolute;  
          left: 40%;     
-         display: block;
+         display:block;
          z-index: 100;
          cursor: pointer; 
      }
      .btn-lenguaje-dm ul{
         list-style: none;
         width: 100%;
-        height: 110%;
+        height: 100%;
         background: #ebaa12; 
-        display: flex;
+        display: none;
+        margin-top: 2px;
      }
      .btn-lenguaje-dm li{
-         border-top: 2px solid white;
+         display: inline;
      }
      .btn-lenguaje-dm a{
         text-decoration: none;

@@ -1,5 +1,5 @@
 $('.btn-lenguaje-dm').click(function(){
-    $(this).children('ul').slideToggle();
+    $(this).children('ul').slideToggle()
 })
 
 /*aparecer elementos al hacer scroll*/
