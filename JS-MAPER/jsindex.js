@@ -1,10 +1,14 @@
+$('.btn-lenguaje-dm').click(function(){
+    $(this).children('ul').slideToggle();
+})
 
+/*aparecer elementos al hacer scroll*/
 $(window).scroll(function(){
     var scrollT= $(this).scrollTop();
  var service= $('.separador-seccion-servicios').offset();
  var info= $('.separador-info-medio').offset();
  var galeria= $('.centrado-galeria').offset();
-
+/*scroll si la pantalla mide mas de 970 px*/
     if($(window).width() > 970){
  
  if((service.top - 550) < scrollT){
@@ -26,6 +30,7 @@ if((galeria.top - 500) < scrollT){
  }/*if scroll galeria*/
 
     } /*if width */
+    /*scroll si la pantalla mide menos de 970px*/
     else if ($(window).width() < 970) {
         if((service.top - 600) < scrollT){
             $('.separador-seccion-servicios').animate({

@@ -152,9 +152,9 @@ transition: all 2s;
 /* fin de las  propiedades de los iconos */
 /*propiedades cabecera*/
 #Cabecera{
-    max-width: 100%;
-width: 100%; 
-
+  width: 100%; 
+  height: auto;
+  position: relative;
         }
 .centrado-nav-logo{
     max-width: 100%;
@@ -175,8 +175,64 @@ width: 100%;
         height: 100%;
         object-fit: fill;
     }
-    
-   
+    /*boton lenguaje*/
+    .btn-lenguaje{
+        position: absolute;
+        width: 9.5%;
+        height: 35px;
+        top: 0px;
+        right: 0px;
+        background: #d8d6d6;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-lenguaje a{
+        text-decoration: none;
+        color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-lenguaje a img{
+        height: 35px;
+        width: 35px;
+        float: left;
+        margin-bottom: 10px;
+    }
+    .btn-lenguaje p{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .btn-lenguaje:hover{
+        height: 75px;
+        overflow: visible;
+    }
+    .btn-lenguaje:hover a{
+        height: 50%;
+        border-bottom: 2px solid white;
+    }
+    .btn-lenguaje a:nth-child(2):hover{
+        background: #999999;
+    }
+    /*fin de propiedades*/
+
+    /*media querys de boton lenguaje*/
+    @media screen and (max-width:1070px){
+        .btn-lenguaje p{
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width:970px){
+        .btn-lenguaje{
+            display:none;
+        }
+    }
+    /*fin de media querys*/
+
+    /*clases utilizadas para dm que no se ven en pantalla grande*/
+    .btn-lenguaje-dm{
+        display: none;
+    }
     .contactor{
         display:none;
     }
@@ -195,13 +251,14 @@ width: 100%;
         height: 0px;
         overflow: hidden;
     }
-    
     .servicios{
         margin: 0;
         padding: 0px;
         height: 0px;
         overflow: hidden;
     }
+    /*fin propiedades*/
+
 /*Propiedades del menu navegador */
 .menu{
     background: white;
@@ -298,6 +355,8 @@ width: 100%;
     overflow: hidden;
     transition: all .7s;
 }
+/*fin de propidades*/
+
 /*media querys de menu navegacion de cabecera */
 @media screen and (min-width:2100px){
 .menu > ul > li{
@@ -408,6 +467,48 @@ width: 100%;
      .Contenedor-contacto{
          display:none;
      }
+     /*boton lenguaje para dispositivos pequeños*/
+     .btn-lenguaje-dm{
+         width: 30%;
+         height: 70%;
+         background: #ebaa12;
+         position: absolute;  
+         left: 40%;     
+         display: block;
+         z-index: 100;
+         cursor: pointer; 
+     }
+     .btn-lenguaje-dm ul{
+        list-style: none;
+        width: 100%;
+        height: 110%;
+        background: #ebaa12; 
+        display: flex;
+     }
+     .btn-lenguaje-dm li{
+         border-top: 2px solid white;
+     }
+     .btn-lenguaje-dm a{
+        text-decoration: none;
+        color: black;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    .btn-lenguaje-dm a img{
+        height: 100%;
+        width: 40%;
+        float: left;
+    }
+    .btn-lenguaje-dm  p{
+        text-align: center;
+        margin-top: 5px;
+        font-size: 17px;
+        font-weight: 500;
+    }
+
+    /*fin de propiedades*/
+
      .menu{
          display: none;
      }
@@ -564,12 +665,16 @@ width: 100%;
     }
     #Imagen-logo{
         width: 50%;
+    } 
+    .btn-lenguaje-dm  p{
+        font-size: 14px;
     }
 }
 @media screen and (max-width:390px){
     .div-cont-contacto-pdps i{
         font-size: 12px;
     }
+   
 }
 /*fin de media querys cabecera*/
 
