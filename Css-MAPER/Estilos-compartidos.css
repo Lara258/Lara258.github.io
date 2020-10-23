@@ -146,13 +146,14 @@ position: relative;
     }
     .btn-lenguaje a img{
         height: 35px;
-        width: 35px;
+        width: 38%;
         float: left;
     }
     .btn-lenguaje p{
         margin-top: 10px;
         margin-left: 5px;
         padding: 0;
+        font-size: 15px;
     }
     .btn-lenguaje:hover{
         height: auto;
