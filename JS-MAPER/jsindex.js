@@ -11,19 +11,20 @@ $(window).scroll(function(){
  if((service.top - 550) < scrollT){
     $('.separador-seccion-servicios').animate({
         right:'0'
-    },'slow')
+    },1300)
  }/*if scroll service*/
 
  if((info.top - 550) < scrollT){
    $('.separador-info-medio').animate({
        left:'0'
-   },'slow')
+   },1300)
 }/*if scroll info*/
 
-if((galeria.top - 500) < scrollT){
-    $('.centrado-galeria').animate({
-        right:'0'
-    }, 'slow')
+if((galeria.top - 700) < scrollT){
+    $('.centrado-galeria').css({
+       transform:'scale(1)',
+       transition:'all linear 0.5s'
+    })
  }/*if scroll galeria*/
 
     } /*if width */
@@ -32,19 +33,20 @@ if((galeria.top - 500) < scrollT){
         if((service.top - 600) < scrollT){
             $('.separador-seccion-servicios').animate({
                 right:'0'
-            },'slow')
+            },1300)
          }/*if scroll service*/
         
          if((info.top - 600) < scrollT){
            $('.separador-info-medio').animate({
                left:'0'
-           },'slow')
+           },1300)
         }/*if scroll info*/
         
         if((galeria.top - 600) < scrollT){
-            $('.centrado-galeria').animate({
-                right:'0'
-            }, 'slow')
+            $('.centrado-galeria').css({
+                transform:'scale(1)',
+                transition:'all linear 0.5s'
+             })
          }/*if scroll galeria*/
         
     } /*else if width*/

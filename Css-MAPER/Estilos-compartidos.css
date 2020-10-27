@@ -856,7 +856,7 @@ transition: all 2s;
 /*propiedades imagen de fondo y texto */
 .img-fondo{
 width: 100%;
-height: 300px;
+height: 400px;
 position: relative;
 }
 .img-fondo img{
@@ -871,9 +871,15 @@ left: 0;
 right: 0;
 bottom: 0;
 width: 81%;
-height: 80px;
-margin: 60px auto 60px;
+height: auto;
 line-height: 40px;
+margin:100px auto 100px;
+}
+.txt-servicios h1{
+    font-size: 50px;
+}
+.txt-servicios h4{
+    font-size: 25px;
 }
 /*fin de las propiedades img fondo y txt servicios */
 
@@ -947,6 +953,7 @@ margin-right: 25px;
         padding: 20px;
         font-size: 14px;
     }
+
 }
 @media screen and (max-width:970px){
     .menu-servicios{
@@ -960,6 +967,12 @@ margin-right: 25px;
     .menu-servicios li{
         border-radius: 5px;
         margin-bottom: 5px;
+    }
+    .txt-servicios h1{
+        font-size: 35px;
+    }
+    .txt-servicios h4{
+        font-size: 20px;
     }
 }
 /*fin de las medias querys*/
@@ -1128,6 +1141,7 @@ transition: all 2s;
     right: 1.2%;
     z-index: 150;
     display: none;
+    cursor: pointer;
 }
 .ir-arriba a{
     text-decoration: none;

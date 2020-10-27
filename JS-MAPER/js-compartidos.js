@@ -34,6 +34,11 @@ $(window).scroll(function(){
     }
 })
 
+$('.ir-arriba').click(function(){
+   $('html, body').animate({
+       scrollTop: 0
+   },1000)
+})
 
 
 /* activar/desactivar acordeon*/

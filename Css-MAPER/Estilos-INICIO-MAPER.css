@@ -845,6 +845,7 @@ transition: all 2s;
     right: 1.2%;
     z-index: 150;
     display: none;
+    cursor: pointer;
 }
 .ir-arriba a{
     text-decoration: none;
@@ -873,6 +874,9 @@ transition: all 2s;
     justify-content: center;
     transition: all 2s;
     }
+    /*fin de propiedades*/
+
+    /*Media querys de boton ir arriba*/
     @media screen and (max-width:1070px){
         .ir-arriba{
             bottom: 70px;
@@ -896,6 +900,7 @@ transition: all 2s;
         }
            
     }
+    /*fin de media querys*/
 
 /* propiedades del slider */
 .Contenedor-slider{
@@ -977,13 +982,15 @@ transition: all 2s;
 
 .texto-fondo{
     position: absolute;
-    color: rgb(255, 255, 255);
-    height: 30%;
+    background: rgba(160, 159, 159, 0.5);
+    height: 100%;
     width: 50%;
     text-align: justify;
     margin-left: 10%;
-    margin-top: 80px;
     transition: all linear .5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .texto-fondo h1{
     font-size: 45px;
@@ -1009,10 +1016,7 @@ transition: all 2s;
         .slider-item{
             height: 350px;
         }
-        .texto-fondo{
-            height: 50%;
-            width: 50%;
-        }
+        
         .texto-fondo h1{
             font-size: 35px;
             font-weight: 800;
@@ -1022,27 +1026,37 @@ transition: all 2s;
         }
 }
 @media screen and (max-width:720px){
-    .Contenedor-slider{
-        background: #eee8e8;
-    }
+    
     .slider-item{
         height: 500px;
     }
     .slider-item2{
-        width: 100%;
         height: 300px;
         background-size: 100% 300px;
+    }
+    .slider-item2::before{
+        content: "";
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        width: 100%;
+        height: 60%;
     }
     .slider-item1{
         background-size: 100% 300px;
-        width: 100%;
         height: 300px;
+    }
+    .slider-item1::before{
+        content: "";
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        width: 100%;
+        height: 60%;
     }
     .texto-fondo{
         height: 200px;
-        width: 80%;
-        left: 0px;
-        top: 220px;
+        width: 100%;
+        margin: 0;
+        bottom: 0px;
         color: black;
     }
     .navegacion-btn{
@@ -1324,10 +1338,10 @@ margin: 0 auto;
 }
 .centrado-galeria{
     position: relative;
-    right: 100%;
     width: 81%;
     height: 100%;
     margin: 0 auto;
+    transform: scale(0);
 }
 /* texto sobre la galeria*/
 .div-texto{
