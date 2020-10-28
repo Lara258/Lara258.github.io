@@ -40,7 +40,12 @@ $('.PBtn').click(function() {
 owl1.on('click', '.item-carousel', function () {
     var nid=this.id;
     owls.trigger('to.owl.carousel',nid);
+    $('.lightbox').slideDown()
 });
+
+$('.a-cerrar').click(function(){
+    $('.lightbox').slideUp()
+})
 
 $('.carousel-lightbox').owlCarousel({
     loop:true,

@@ -246,6 +246,7 @@ margin-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 .item-carousel a{
     width: 100%;
@@ -318,15 +319,13 @@ margin-bottom: 30px;
 /*fin de las propiedades*/
 
 /*Propiedades del lightbox de galeria de imagenes del proyecto*/
+
 .lightbox{
-    position: fixed;   
+    position: fixed; 
     display: none;
-}
-.lightbox:target{
-    display: block;
+    left: 0;
+    top: 0;
     background: rgba(0, 0, 0, 0.8);
-    top: 0px;
-    left: 0px;
     width: 100%;
     height: 100%;
     z-index: 200;
@@ -388,6 +387,7 @@ margin-bottom: 30px;
     align-items: center;
     justify-content: center;
     background: black;
+    cursor: pointer;
 }
 .a-cerrar span{
     font-size: 30px;
