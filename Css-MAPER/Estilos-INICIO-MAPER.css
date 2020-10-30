@@ -48,7 +48,9 @@ body{
     }
 }
 /*fin de propiedades*/
-#contacto{
+
+/*Propiedades de franga superior de contacto*/
+.contacto{
     width: 100%;
     height: auto;
     position:relative;
@@ -81,14 +83,61 @@ body{
             border-right: 50px solid transparent;
         }
 
+        /*Fin de las propiedades*/
+
+        /*Propiedades de franja inferior*/
+        .derechos{
+            width:100%;
+            height: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .figura-pdp-izq,.figura-pdp-der{
+            width: 11.5%;
+            height: 50px;
+            background: white;
+            position: relative;
+        }
+        .figura-pdp-der::before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            left: 0;
+            border-top: 50px solid transparent;   
+            border-left: 50px solid #f5f5f5;     
+        }
+        .figura-pdp-izq::before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            right:0;
+            border-top: 50px solid transparent;   
+            border-right: 50px solid #f5f5f5;     
+        }
+        /*Fin de propiedades*/
+
+/*Media querys de franja inferior*/
+@media screen and (max-width:970px){
+    .derechos h2{
+        font-size: 20px;
+    }
+    .derechos h3{
+        font-size: 15px;
+    }
+}
+
+    /*Propiedades de contacto superior*/
     .centrado-contacto{
     max-width: 100%;
     width: 81%;
     height: 50px;
     position: relative;
     margin: 0px auto;
-
-                        }
+    }
         .Contenedor-contacto{
         position: relative;
         height: 100%;
@@ -96,9 +145,10 @@ body{
         margin:0px auto;
         display: flex;
         justify-content: space-between;
+        }
+/*Fin de propiedades*/
 
-                            }
-                            /* propiedades de los iconos*/
+ /* propiedades de los iconos*/
 .cont-info-contacto{
     width: calc(33.333 - 10px);
    height: 100%;
@@ -306,7 +356,6 @@ transition: all 2s;
     display: block;
     padding:50px 15px;
     border-bottom: 1px solid transparent;
-
 }
 .menu  > ul > li{
     float: left;
@@ -314,6 +363,9 @@ transition: all 2s;
 .menu a:hover{
     color: black;   
     transition: all 0.8s;
+}
+.ir-abajo{
+    cursor: pointer;
 }
 /* Menu de segundo nivel */
 .menu2 a{

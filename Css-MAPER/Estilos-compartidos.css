@@ -302,6 +302,9 @@ position: relative;
     color: black;   
     transition: all 0.8s;
 }
+.ir-abajo{
+    cursor: pointer;
+}
 /* Menu de segundo nivel */
 .menu2 a{
     padding:20px 10px;
