@@ -90,8 +90,7 @@ html{
     font-size: 30px;
 }
 .cip-navegacion{
-    background: #f2f2f2;
-    text-align: center; 
+    background: #f2f2f2;;
 }
 .cip-navegacion p{
     color:grey;
@@ -100,12 +99,13 @@ html{
     color:black;
     transition: all 0.3s linear;
 }
-
-
 .cip-navegacion a{
 text-decoration: none;
 height: 100%;
 width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .contenedor-info-proyecto {
@@ -198,20 +198,12 @@ margin-bottom: 30px;
 /*fin de propiedades de proyecto*/
 
 /*media querys de proyecto*/
-@media screen and (max-width:1200px){
-    .cip-navegacion{
-        text-align: right; 
-    }
-}
+
 @media screen and (max-width:970px){
     .cip{
         width: 100%;
         margin-bottom: 10px;
     }
-    .cip-navegacion{
-        text-align: center;
-    }
-
     .contenedor-info-proyecto{
         width: 100%;
         display: block;
