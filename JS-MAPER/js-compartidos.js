@@ -25,21 +25,20 @@ $('.btn-lenguaje-dm').children('ul').click(function(p){
     p.stopPropagation()
 })
 
+var pdp=$('#pdp').offset()
 /*Boton contacto "ir hacia abajo" */
 $('.ir-abajo').click(function () {
     $('html, body').animate({
         scrollTop: $(document).height()
-    },1000)
-    if(scrollTop=$(document).height()){
-        
-    }
+    },1000);
 })
 
 /*aparecer boton "ir arriba" al hacer scroll*/
 $(window).scroll(function(){
     if($(this).scrollTop() > 500 ){
         $('.ir-arriba').slideDown(500);
-    }else{
+    }
+    else{
         $('.ir-arriba').slideUp(500); 
     }
 })

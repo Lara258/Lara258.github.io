@@ -85,51 +85,7 @@ body{
 
         /*Fin de las propiedades*/
 
-        /*Propiedades de franja inferior*/
-        .derechos{
-            width:100%;
-            height: 50px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        .figura-pdp-izq,.figura-pdp-der{
-            width: 11.5%;
-            height: 50px;
-            background: white;
-            position: relative;
-        }
-        .figura-pdp-der::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            left: 0;
-            border-top: 50px solid transparent;   
-            border-left: 50px solid #f5f5f5;     
-        }
-        .figura-pdp-izq::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            right:0;
-            border-top: 50px solid transparent;   
-            border-right: 50px solid #f5f5f5;     
-        }
-        /*Fin de propiedades*/
-
-/*Media querys de franja inferior*/
-@media screen and (max-width:970px){
-    .derechos h2{
-        font-size: 20px;
-    }
-    .derechos h3{
-        font-size: 15px;
-    }
-}
-
+        
     /*Propiedades de contacto superior*/
     .centrado-contacto{
     max-width: 100%;
@@ -1790,5 +1746,50 @@ transition: all 2s;
     .divicion-column{
         width: calc(100%);
     }
-  
 }
+
+/*Propiedades de franja inferior*/
+.derechos{
+    width:100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.figura-pdp-izq,.figura-pdp-der{
+    width: 11.5%;
+    height: 50px;
+    background: white;
+    position: relative;
+}
+.figura-pdp-der::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0;
+    border-top: 50px solid transparent;   
+    border-left: 50px solid #f5f5f5;     
+}
+.figura-pdp-izq::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    right:0;
+    border-top: 50px solid transparent;   
+    border-right: 50px solid #f5f5f5;     
+}
+/*Fin de propiedades*/
+
+/*Media querys de franja inferior*/
+@media screen and (max-width:970px){
+.derechos h2{
+font-size: 20px;
+}
+.derechos h3{
+font-size: 15px;
+}
+}
+
