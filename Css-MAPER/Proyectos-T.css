@@ -334,6 +334,7 @@ margin-bottom: 30px;
     color: white;
 }
 #c-lightbox{
+    position: relative;
     width: 85vw;
     height: 75vh;
     margin-top: 20px;
@@ -412,10 +413,18 @@ margin-bottom: 30px;
     .titulo-lightbox-proyecto h1{
         font-size: 40px;
     }
-    .Contendor-carousel-lightbox, .titulo-lightbox-proyecto{
-        width: 80%;
+    #c-lightbox, .titulo-lightbox-proyecto{
+        width: 90vw;
     }
-    
+    .contenedor-navegacion-btn{
+        width: 90vw;
+    }
+    .item-lightbox{
+        width: 90vw;
+    }
+    .item-lightbox img{
+        width: 100%;
+    }
 }
 @media screen and (max-width:800px){
     .titulo-lightbox-proyecto h1{
@@ -427,26 +436,21 @@ margin-bottom: 30px;
         font-size: 25px;
     }
     
-    .Contendor-carousel-lightbox, .titulo-lightbox-proyecto{
-        max-width: 90%;
+    #c-lightbox, .titulo-lightbox-proyecto{
         width: 90%;
     }
-    .Contendor-carousel-lightbox{
-     margin: 10% auto;
-    }
+    
     .item-lightbox{
-        height: 450px;
-        width: 100%;
+        width:100%;
     }
     .contenedor-navegacion-btn{
         width: 40%;
-        height: 10%;
+        height: 8%;
         position: absolute;
-        bottom: 30px;
+        bottom:0;
         left: 30%;
     }
     .SigBtn, .AntBtn{
-        height: 100%;
         width: calc(50% - 10px);
     }
 }
