@@ -38,9 +38,9 @@ $('.PBtn').click(function() {
 })
 
 owl1.on('click', '.item-carousel', function () {
-    $('.lightbox').slideDown()
     var nid=this.id;
     owls.trigger('to.owl.carousel',nid);
+    $('.lightbox').slideDown()
 });
 
 $('.a-cerrar').click(function(){
@@ -54,6 +54,7 @@ $('.carousel-lightbox').owlCarousel({
     touchDrag: false,
     mouseDrag:false,
     smartSpeed:2000,
+    autoWidth:false,
     items:1
 })
 
