@@ -1443,7 +1443,7 @@ margin: 0 auto;
     z-index: 50;
 }
 .item-img{
-    height: 50%;
+    height: 25vh;
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -1620,6 +1620,11 @@ margin: 0 auto;
     .navegacion-btn-Pr{
         bottom: 35%;
     }
+}
+@media screen and (max-width:610px){
+.item-img{
+    height: 35vh;
+}
 }
 /*fin de media querys de galeria proyectos*/
 
