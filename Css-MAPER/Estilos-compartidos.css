@@ -312,7 +312,7 @@ position: relative;
 }
 .menu li ul{
     position: absolute;
-    width: 300px;
+    width: 22vw;
 }
 .menu  li:hover li{
    max-height: 500px;
@@ -323,7 +323,7 @@ position: relative;
   
 }
 .menu li li{ 
-    width: 300px;
+    width: 22vw;
     max-height: 0;
     height: 0;
     overflow: hidden;
@@ -352,21 +352,25 @@ position: relative;
 @media screen and (min-width:2100px){
     .menu > ul > li{
         margin-left: 50px;
+        font-size: 3.5em;
     }
     }
     @media screen and (min-width:1900px){
         .menu > ul > li{
             margin-left: 40px;
+            font-size: 3em;
         }
     }
     @media screen and (min-width:1650px){
         .menu  > ul > li{
             margin-left: 30px;
+            font-size: 2.5em;
         }
     }
 @media screen and (min-width:1500px){
     .menu  > ul > li{
         margin-right: 20px;
+        font-size: 2em;
     }
 }
 @media screen and (max-width:1270px){
@@ -377,9 +381,7 @@ position: relative;
         padding:20px 10px;
         color: white;
     }
-    .menu  li>ul>li{ 
-        width: 250px;
-    }
+
     /*underline servicios*/
     #aser::before{
         content: "";
@@ -410,9 +412,7 @@ position: relative;
         background: #00fdfe;
     }
 
-    .menu li ul{
-        width: 250px;
-    }
+ 
 }
 @media screen and (max-width:1150px){
     .menu a{
@@ -457,17 +457,12 @@ position: relative;
     .menu a{
         font-size: 15px;
     }
-    .menu li>ul>li{ 
-        width: 220px;
-        font-size: 15px;
-    }
+
     .menu2 a{
         padding:20px 10px;
         color: white;
     }
-    .menu li ul{
-        width: 220px;
-    }
+
     .info-contacto i{
         font-size: 11px;
      }
@@ -476,17 +471,12 @@ position: relative;
     .menu  a{
         font-size: 14px;
     }
-    .menu li>ul>li{ 
-        width: 210px;
-        font-size: 15px;
-    }
+
     .menu2 a{
         padding:20px 10px;
         color: white;
     }
-    .menu li ul{
-        width: 210px;
-    }
+
 }
 /* fin de las media querys del menu navegador */
 

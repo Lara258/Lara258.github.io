@@ -257,6 +257,8 @@ html{
 .info-proyecto{
     width: 100%;
     height: auto;
+    display: flex;
+    flex-direction: column;
   
 }
 .info-proyecto h4,p{
