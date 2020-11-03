@@ -320,37 +320,25 @@ margin-bottom: 30px;
     background: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
-    z-index: 200;
+    z-index: 500;
 }
 
-.titulo-lightbox-proyecto{
-    text-align: center;
-    width: 85%;
-    height: auto;
-    margin: auto;
-}
-.titulo-lightbox-proyecto h1{
-    font-size: 50px;
-    color: white;
-}
 #c-lightbox{
     position: relative;
-    width: 85vw;
-    height: 75vh;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 95vw;
+    height: 100vh;
+    margin:auto;
 }
 .item-lightbox{
-    width: 85vw;
-    height: 75vh;     
+    width: 95vw;
+    height: 100vh;     
 }
 .item-lightbox img{
     height: 100%;
     width: 100%;
 }
 .contenedor-navegacion-btn{
-    width: 85vw;
+    width: 95vw;
     height: 15%;
     position: absolute;
     bottom: 40%;
@@ -369,20 +357,29 @@ margin-bottom: 30px;
     height: 30px;
 }
 .a-cerrar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 8vh;
+    z-index: 200;
+
+    text-align: center;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: black;
+
     cursor: pointer;
+    transition: all linear 0.5s;
+}
+.a-cerrar:hover{
+    background:rgba(0, 0, 0, 0.5);
+    transition: all linear 0.5s;
 }
 .a-cerrar span{
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
+    font-size: 3em;
+    width: 4vw;
+    height: 2vh;
     color: red;
+    padding: 0;
+    margin: 0;
 }
 .SigBtn{
     position: absolute;
@@ -410,10 +407,7 @@ margin-bottom: 30px;
 
 /*media querys de lightbox*/
 @media screen and (max-width:950px){
-    .titulo-lightbox-proyecto h1{
-        font-size: 40px;
-    }
-    #c-lightbox, .titulo-lightbox-proyecto{
+    #c-lightbox{
         width: 90vw;
     }
     .contenedor-navegacion-btn{
@@ -421,42 +415,27 @@ margin-bottom: 30px;
     }
     .item-lightbox{
         width: 90vw;
-    }
-    .item-lightbox img{
-        width: 100%;
-    }
-}
-@media screen and (max-width:800px){
-    .titulo-lightbox-proyecto h1{
-        font-size: 30px;
     }
 }
 @media screen and (max-width:650px){
-    .titulo-lightbox-proyecto h1{
-        font-size: 25px;
-    }
-    
-    #c-lightbox, .titulo-lightbox-proyecto{
-        width: 90%;
-    }
-    
-    .item-lightbox{
-        width:100%;
-    }
     .contenedor-navegacion-btn{
-        width: 40%;
-        height: 8%;
+        width: 30%;
+        height: 6%;
         position: absolute;
         bottom:0;
-        left: 30%;
+        left: 35%;
     }
     .SigBtn, .AntBtn{
         width: calc(50% - 10px);
     }
-}
-@media screen and (max-width:450px){
-    .titulo-lightbox-proyecto h1{
-        margin-top: 50px;
+    .a-cerrar{
+        height: 6.5vh;
+    }
+    .a-cerrar:hover{
+        background: none;
+    }
+    .a-cerrar span{
+        font-size: 2.5em;
     }
 }
 /*fin de media querys*/
