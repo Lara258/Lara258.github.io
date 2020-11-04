@@ -1,7 +1,7 @@
 /*propiedades de parte superior contacto*/
 .contacto{
     width: 100%;
-    height: auto;
+    height: 10vh;
     position:relative;
     display:flex;
     font: bold 15px arial;
@@ -9,7 +9,7 @@
         }
         .figura-esquinas-izq,.figura-esquinas-der{
             width: 10%;
-            height: 50px;
+            height: 10vh;
             background: white;
             position: relative;
                 }
@@ -19,8 +19,8 @@
             width: 0;
             height: 0;
             right: 0;
-            border-top: 50px solid #f5f5f5;
-            border-left: 50px solid transparent;
+            border-top: 10vh solid #f5f5f5;
+            border-left: 10vh solid transparent;
                 }
             .figura-esquinas-der::before{
             content: "";
@@ -28,12 +28,12 @@
             width: 0;
             height: 0;
             left: 0;
-            border-top: 50px solid #f5f5f5;
-            border-right: 50px solid transparent;
+            border-top: 10vh solid #f5f5f5;
+            border-right: 10vh solid transparent;
                 }
     .centrado-contacto{
     width: 81%;
-    height: 50px;
+    height: 10vh;
     position: relative;
     margin: 0px auto;
                         }
@@ -103,20 +103,20 @@ transition: all 2s;
 /*propiedades cabecera*/
 #Cabecera{
 width: 100%; 
+height: 20vh;
 position: relative;
         }
 .centrado-nav-logo{
     width: 81%;
-    height: 100px;
+    height: 100%;
     position: relative;
-    margin: 0 auto 20px auto;
+    margin-left: auto;
+    margin-right: auto;
     display:flex;
 }
  #Imagen-logo{
     height: 100%;
-    width: 20%;
-    position: relative;
-    margin:10px auto;
+    width: 20vw;
 
     }
     #Imagen-logo img{
@@ -124,7 +124,6 @@ position: relative;
         height: 100%;
         object-fit: fill;
     } 
-    
     /*boton lenguaje*/
     .btn-lenguaje{
         position: absolute;
@@ -213,11 +212,10 @@ position: relative;
 
 /*Propiedades del menu navegador */
 .menu{
-    background: white;
     position: relative;
     width: 100%;
     height: 100%;
-    margin-left: 30px;
+    display: flex;
     align-items: center;
 }
 .menu  ul{
@@ -230,13 +228,12 @@ position: relative;
 #aser{
     color: black;
 }
-#aser::after{
+#aser::before{
     content: "";
     position: absolute;
-    bottom: 40px;
-    width: calc(100% - 1.75rem);
+    width: calc(100%);
     height: 2px;
-    left: 15px;
+    bottom: -0.5rem;
     background: #fec800;
 }
 /*           */
@@ -245,13 +242,12 @@ position: relative;
 #aan{
     color: black;
 }
-#aan::after{
+#aan::before{
     content: "";
     position: absolute;
-    bottom: 40px;
-    width: calc(100% - 1.75rem);
+    width: calc(100%);
     height: 2px;
-    left: 15px;
+    bottom: -0.5rem;
     background: #80fe00;
 }
 /*           */
@@ -260,13 +256,12 @@ position: relative;
 #apr{
     color: black;
 }
-#apr::after{
+#apr::before{
     content: "";
     position: absolute;
-    bottom: 40px;
-    width: calc(100% - 1.75rem);
+    width: calc(100%);
     height: 2px;
-    left: 15px;
+    bottom: -0.5rem;
     background: #00fdfe;
 }
 /*           */
@@ -277,8 +272,8 @@ position: relative;
     position: absolute;
     width: 0;
     height: 0;
-    left: 40%;
-    bottom: 30px;
+    left: 45%;
+    top: 65%;
     border-top: 8px solid #999999;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
@@ -291,9 +286,11 @@ position: relative;
     color: #999999;
     font-weight: 800;
     display: block;
-    padding:50px 15px;
-    border: 1px solid transparent;
-
+    padding:3.3rem 1rem;
+}
+.menu a p{
+    margin: 0;
+    padding: 0;
 }
 .menu  > ul > li{
     float: left;
@@ -330,7 +327,7 @@ position: relative;
     transition: all .7s;
 }
 .menu2{
-    top: 120px;
+    top: 100%;
     z-index: 200;
     visibility: hidden;
 }
@@ -349,113 +346,74 @@ position: relative;
 /*fin de propiedades*/
 
 /*media querys de menu navegacion de cabecera */
-@media screen and (min-width:2100px){
-    .menu > ul > li{
-        margin-left: 50px;
-        font-size: 3.5em;
+@media screen and (max-width:2000px){
+    .menu  a{
+    padding:6.08rem 3rem;
+}
+.menu2 a{
+    padding:20px 10px;
+    color: white;
+}.menu li ul{
+    width: 20vw;
+}
+.menu li li{
+    width: 20vw;
+}
     }
+@media screen and (max-width:1700px){
+.menu  a{
+    padding:6.08rem 2rem;
+}
+.menu2 a{
+    padding:20px 10px;
+    color: white;
+}
     }
-    @media screen and (min-width:1900px){
-        .menu > ul > li{
-            margin-left: 40px;
-            font-size: 3em;
-        }
+@media screen and (max-width:1500px){
+    .menu  a{
+        padding:4.5rem 1.5rem;
     }
-    @media screen and (min-width:1650px){
-        .menu  > ul > li{
-            margin-left: 30px;
-            font-size: 2.5em;
-        }
+    .menu2 a{
+        padding:20px 10px;
+        color: white;
     }
-@media screen and (min-width:1500px){
-    .menu  > ul > li{
-        margin-right: 20px;
-        font-size: 2em;
+}
+@media screen and (max-width:1370px){
+    .menu  a{
+    padding:3.3rem 1rem;
+    }
+    .menu2 a{
+        padding:20px 10px;
+        color: white;
     }
 }
 @media screen and (max-width:1270px){
     .menu  a{
-        padding:50px 10px;
+        padding:3.45rem 0.8rem;
     }
     .menu2 a{
         padding:20px 10px;
         color: white;
     }
-
-    /*underline servicios*/
-    #aser::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - 1.25rem);
-        height: 2px;
-        background: #fec800;
-    }
-
-    /*underline acerca de nosotros*/
-    #aan::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - 1.25rem);
-        height: 2px;
-        background: #80fe00;
-    }
-
-    /*underline proyectos*/
-    #apr::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - 1.25rem);
-        height: 2px;
-        background: #00fdfe;
-    }
-
- 
 }
 @media screen and (max-width:1150px){
     .menu a{
-        padding:50px 5px;
+        font-size: 15px;
+        padding:3.45rem 0.5rem;
     }
     .menu2 a{
         padding:20px 10px;
         color: white;
     }
-
-    /*underline servicios*/
-    #aser::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - .65rem);
-        height: 2px;
-        background: #fec800;
+    #as::before{
+        top: 65%;
     }
-
-    /*underline acerca de nosotros*/
-    #aan::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - .65rem);
-        height: 2px;
-        background: #80fe00;
-    }
-
-    /*underline proyectos*/
-    #apr::before{
-        content: "";
-        position: absolute;
-        bottom: 40px;
-        width: calc(100% - .65rem);
-        height: 2px;
-        background: #00fdfe;
-    }
+   
 }
 @media screen and (max-width:1070px){
     .menu a{
-        font-size: 15px;
+        font-size: 13px;
+        padding:3.45rem 0.6rem;
     }
 
     .menu2 a{
@@ -468,10 +426,6 @@ position: relative;
      }
 }
 @media screen and (max-width:1020px){
-    .menu  a{
-        font-size: 14px;
-    }
-
     .menu2 a{
         padding:20px 10px;
         color: white;
@@ -849,7 +803,7 @@ transition: all 2s;
 /*propiedades imagen de fondo y texto */
 .img-fondo{
 width: 100%;
-height: 400px;
+height: 68vh;
 position: relative;
 }
 .img-fondo img{
@@ -1131,7 +1085,7 @@ transition: all 2s;
     height: 50px;
     position: fixed;
     bottom: 80px;
-    right: 1.2%;
+    right: 15px;
     z-index: 150;
     display: none;
     cursor: pointer;
@@ -1189,7 +1143,7 @@ transition: all 2s;
     /*Propiedades de franja inferior*/
     .derechos{
         width:100%;
-        height: 50px;
+        height: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1197,7 +1151,7 @@ transition: all 2s;
     }
     .figura-pdp-izq,.figura-pdp-der{
         width: 11.5%;
-        height: 50px;
+        height: 10vh;
         background: white;
         position: relative;
     }
@@ -1207,8 +1161,8 @@ transition: all 2s;
         width: 0;
         height: 0;
         left: 0;
-        border-top: 50px solid transparent;   
-        border-left: 50px solid #f5f5f5;     
+        border-top: 10vh solid transparent;   
+        border-left: 10vh solid #f5f5f5;     
     }
     .figura-pdp-izq::before{
         content: "";
@@ -1216,8 +1170,8 @@ transition: all 2s;
         width: 0;
         height: 0;
         right:0;
-        border-top: 50px solid transparent;   
-        border-right: 50px solid #f5f5f5;     
+        border-top: 10vh solid transparent;   
+        border-right: 10vh solid #f5f5f5;     
     }
     /*Fin de propiedades*/
 
