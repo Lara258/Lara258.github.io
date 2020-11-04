@@ -309,7 +309,7 @@ position: relative;
 }
 .menu li ul{
     position: absolute;
-    width: 22vw;
+    width: 20vw;
 }
 .menu  li:hover li{
    max-height: 500px;
@@ -320,7 +320,7 @@ position: relative;
   
 }
 .menu li li{ 
-    width: 22vw;
+    width: 20vw;
     max-height: 0;
     height: 0;
     overflow: hidden;
@@ -353,7 +353,8 @@ position: relative;
 .menu2 a{
     padding:20px 10px;
     color: white;
-}.menu li ul{
+}
+.menu li ul{
     width: 20vw;
 }
 .menu li li{
@@ -385,6 +386,12 @@ position: relative;
     .menu2 a{
         padding:20px 10px;
         color: white;
+    }
+    .menu li ul{
+    width: 22vw;
+    }
+    .menu li li{
+    width: 22vw;
     }
 }
 @media screen and (max-width:1270px){
