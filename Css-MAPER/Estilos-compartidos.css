@@ -1,4 +1,9 @@
 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
 body{
     overflow-y: scroll;
     overflow-x: hidden;
@@ -152,14 +157,13 @@ position: relative;
     }
     .btn-lenguaje a img{
         height: 35px;
-        width: 38%;
+        width: 40px;
         float: left;
     }
     .btn-lenguaje p{
         margin-top: 10px;
-        margin-left: 5px;
         padding: 0;
-        font-size: 15px;
+        margin-left: 5px;
     }
     .btn-lenguaje:hover{
         height: auto;
@@ -828,9 +832,12 @@ transition: all 2s;
 
 /*propiedades imagen de fondo y texto */
 .img-fondo{
+position: relative;
 width: 100%;
 height: 68vh;
-position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 .img-fondo img{
 width: 100%;
@@ -839,14 +846,10 @@ object-fit: fill;
 }
 .txt-servicios{
 position: absolute;
-top:0;
-left: 0;
-right: 0;
-bottom: 0;
 width: 81%;
 height: auto;
 line-height: 40px;
-margin:100px auto 100px;
+margin:auto;
 }
 .txt-servicios h1{
     font-size: 50px;
@@ -989,7 +992,7 @@ margin-top: 20px;
 }
 .imagen-empresa{
      width: 50%;
-     height: 100px;
+     height: 20vh;
     border-radius: 5px;
     }
     .imagen-empresa img{
