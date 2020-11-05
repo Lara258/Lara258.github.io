@@ -1,3 +1,7 @@
+body{
+    overflow-y: scroll;
+   }
+
 /*propiedades de parte superior contacto*/
 .contacto{
     width: 100%;
