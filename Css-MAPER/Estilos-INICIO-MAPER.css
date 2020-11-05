@@ -57,6 +57,7 @@ body{
     display:flex;
     font: bold 15px arial;
     background: whitesmoke;
+    overflow:hidden;
         }
         .figura-esquinas-izq,.figura-esquinas-der{
             width: 10%;
@@ -1752,6 +1753,7 @@ transition: all 2s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .figura-pdp-izq,.figura-pdp-der{
     width: 11.5%;
