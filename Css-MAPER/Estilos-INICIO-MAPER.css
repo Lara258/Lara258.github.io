@@ -1760,7 +1760,7 @@ transition: all 2s;
     align-items: center;
 }
 .figura-pdp-izq,.figura-pdp-der{
-    width: 10%;
+    width: 5%;
     height: 10vh;
     background: white;
     position: relative;
