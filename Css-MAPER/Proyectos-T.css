@@ -428,13 +428,14 @@ margin-bottom: 30px;
         width: calc(50% - 10px);
     }
     .a-cerrar{
-        height: 6.5vh;
+        height: 35px;
+        width: 35px;
     }
     .a-cerrar:hover{
         background: none;
     }
     .a-cerrar span{
-        font-size: 2.5em;
+        font-size: 35px;
     }
 }
 /*fin de media querys*/
