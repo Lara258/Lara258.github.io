@@ -1,8 +1,6 @@
 /*Pantalla de precarga*/
 window.onload=function(){
-    $('#contenedor-precarga').animate({
-        bottom:'100%' 
-     })
+    $('#contenedor-precarga').slideUp(500);
 }
 
 /*hover en opcion servicios*/
