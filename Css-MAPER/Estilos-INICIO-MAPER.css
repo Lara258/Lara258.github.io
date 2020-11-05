@@ -1760,9 +1760,9 @@ transition: all 2s;
     align-items: center;
 }
 .figura-pdp-izq,.figura-pdp-der{
-    width: 5%;
+    width: 10%;
     height: 10vh;
-    background: white;
+    background: red;
     position: relative;
 }
 .figura-pdp-der::before{
