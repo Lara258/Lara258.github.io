@@ -12,6 +12,7 @@ body{
     display:flex;
     font: bold 15px arial;
     background: whitesmoke;
+    overflow: hidden;
         }
         .figura-esquinas-izq,.figura-esquinas-der{
             width: 10%;
