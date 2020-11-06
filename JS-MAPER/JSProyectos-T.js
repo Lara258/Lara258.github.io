@@ -54,7 +54,7 @@ $('.carousel-lightbox').owlCarousel({
     touchDrag: false,
     mouseDrag:false,
     smartSpeed:2000,
-    autoWidth:false,
+    autoHeight:true,
     items:1
 })
 
