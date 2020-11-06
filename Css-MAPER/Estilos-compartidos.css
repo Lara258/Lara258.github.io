@@ -298,6 +298,7 @@ position: relative;
     font-weight: 800;
     display: block;
     padding:3.3rem 1rem;
+    border: 1px solid transparent;
 }
 .menu a p{
     margin: 0;
