@@ -210,7 +210,7 @@ html{
 }
 .item-proyecto-img{
     width: 100%;
-    height: 20vh;
+    height: 200px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background: rgb(230, 229, 229);
@@ -273,6 +273,11 @@ html{
 /*fin de las propiedades de galeria proyecto*/
 
 /*media quetys de galeria proyecto*/
+@media screen and (min-width:1650px){
+    .item-proyecto-img{
+        height: 280px;
+    }
+}
 @media screen and (max-width:970px){
     .nav-galeria{
       border-bottom: none;
@@ -298,10 +303,17 @@ html{
     display: block;
     margin-left: 20px;
 }
+.item-proyecto-img{
+    height: 250px;
+}
 }
 @media screen and (max-width:690px){
     .item-proyecto{
         width: calc(100%);
+    }
+
+    .item-proyecto-img{
+        height: 300px;
     }
     .nav-galeria{
         display: block;
@@ -312,4 +324,10 @@ html{
           height: 30px;
           margin-bottom: 10px;
       }
+}
+@media screen and (max-width:560px){
+    .item-proyecto{
+        width: calc(100%);
+    }
+
 }

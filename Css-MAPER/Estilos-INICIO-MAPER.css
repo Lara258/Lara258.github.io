@@ -366,7 +366,7 @@ transition: all 2s;
 
 /*media querys de menu navegacion de cabecera */
 @media screen and (max-width:2000px){
-    .menu  a{
+.menu  a{
     padding:6.08rem 3rem;
 }
 .menu2 a{
@@ -379,6 +379,22 @@ transition: all 2s;
 .menu li li{
     width: 20vw;
 }
+.info-contacto span{
+    font-size: 18px;
+ }
+ .info-contacto i{
+    color: black;
+    font-size: 16px;
+ }
+ .iconos-social{
+ width: 55px;
+ height: 55px;
+ }
+ .iconos-social span{
+    font-size: 35px;
+    width: 45px;
+    height: 45px;
+ }
     }
 @media screen and (max-width:1700px){
 .menu  a{
@@ -388,24 +404,56 @@ transition: all 2s;
     padding:20px 10px;
     color: white;
 }
+.info-contacto span{
+    font-size: 16px;
+ }
+ .info-contacto i{
+    color: black;
+    font-size: 14px;
+ }
+ .iconos-social{
+ width: 45px;
+ height: 45px;
+ }
+ .iconos-social span{
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+ }
     }
 @media screen and (max-width:1500px){
-    .menu  a{
-        padding:4.5rem 1.5rem;
-    }
-    .menu2 a{
-        padding:20px 10px;
-        color: white;
-    }
+.menu  a{
+    padding:4.5rem 1.5rem;
+}
+.menu2 a{
+    padding:20px 10px;
+    color: white;
+}
 }
 @media screen and (max-width:1370px){
-    .menu  a{
-    padding:3.3rem 1rem;
-    }
-    .menu2 a{
-        padding:20px 10px;
-        color: white;
-    }
+.menu  a{
+padding:3.3rem 1rem;
+}
+.menu2 a{
+    padding:20px 10px;
+    color: white;
+}
+.info-contacto span{
+    font-size: 15px;
+ }
+ .info-contacto i{
+    color: black;
+    font-size: 13px;
+ }
+ .iconos-social{
+ width: 35px;
+ height: 35px;
+ }
+ .iconos-social span{
+    font-size: 25px;
+    width: 35px;
+    height: 35px;
+ }    
 }
 @media screen and (max-width:1270px){
     .menu  a{
@@ -678,7 +726,8 @@ transition: all 2s;
         font-size: 12px;
     }
    
-}@media screen and (max-height:400px){
+}
+@media screen and (max-height:450px){
     .btn-lenguaje-dm  p{
         font-size: 13px;
         margin-top: 0;
@@ -1711,6 +1760,20 @@ justify-content: center;
 transition: all 2s;
 }
 /*medias querys de pie de pagina*/
+@media screen and (min-width:1700px){
+    .icono-social{
+        width: 55px;
+        height: 55px;
+        }
+        .icono-social span{
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+        }
+        .cont-contacto-pdp i{
+            font-size: 16px;
+        }
+}
 @media screen and (max-width:1250px){
     .cont-contacto-pdp i{
         text-align: justify;
