@@ -1,4 +1,12 @@
 
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -16,48 +24,48 @@ body{
     position:relative;
     display:flex;
     font: bold 15px arial;
-    background: whitesmoke;
+    background:var(--fondo-oscuro);
     overflow: hidden;
         }
-        .figura-esquinas-izq,.figura-esquinas-der{
-            width: 10%;
-            height: 10vh;
-            background: white;
-            position: relative;
-                }
-            .figura-esquinas-izq::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            right: 0;
-            border-top: 10vh solid #f5f5f5;
-            border-left: 10vh solid transparent;
-                }
-            .figura-esquinas-der::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            left: 0;
-            border-top: 10vh solid #f5f5f5;
-            border-right: 10vh solid transparent;
-                }
-    .centrado-contacto{
-    width: 81%;
+.figura-esquinas-izq,.figura-esquinas-der{
+    width: 10%;
     height: 10vh;
+    background: var(--fondo-claro);
     position: relative;
-    margin: 0px auto;
-                        }
-        .Contenedor-contacto{
-        position: relative;
-        height: 100%;
-        max-width: 80%;
-        margin:0px auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
         }
+.figura-esquinas-izq::before{
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+right: 0;
+border-top: 10vh solid var(--fondo-oscuro);
+border-left: 10vh solid transparent;
+    }
+.figura-esquinas-der::before{
+content: "";
+position: absolute;
+width: 0;
+height: 0;
+left: 0;
+border-top: 10vh solid var(--fondo-oscuro);
+border-right: 10vh solid transparent;
+    }
+.centrado-contacto{
+width: var(--espacio-pantalla);
+height: 10vh;
+position: relative;
+margin: 0px auto;
+                    }
+.Contenedor-contacto{
+position: relative;
+height: 100%;
+max-width: 80%;
+margin:0px auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
                 
  /* propiedades de los iconos*/
 .cont-info-contacto{
@@ -119,7 +127,7 @@ height: 20vh;
 position: relative;
         }
 .centrado-nav-logo{
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: 100%;
     position: relative;
     margin-left: auto;
@@ -294,7 +302,7 @@ position: relative;
 .menu a{
     text-decoration: none;
     position: relative;
-    color: #999999;
+    color: var(--texto-gris);
     font-weight: 800;
     display: block;
     padding:3.3rem 1rem;
@@ -680,7 +688,7 @@ position: relative;
         text-decoration: none;
     }
        .div-cont-contacto-pdps h4{
-           color: #999999;
+           color: var(--texto-gris);
            font-weight: 100;
            font-size: 15px;
        }
@@ -792,7 +800,7 @@ height: 60%;
 width: 0px;
 overflow:hidden;
 display: flex;
-background: #f5f5f5;
+background: var(--fondo-oscuro);
 transition: all linear 0.6s;
 visibility: hidden;
 justify-content: center;
@@ -895,7 +903,7 @@ object-fit: fill;
 }
 .txt-servicios{
 position: absolute;
-width: 81%;
+width: var(--espacio-pantalla);
 height: auto;
 line-height: 40px;
 margin:auto;
@@ -916,7 +924,7 @@ height: 50px;
 position: relative;
 }
 .div-info-posicion{
-width: 81%;
+width: var(--espacio-pantalla);
 height: 100%;
 margin: 0px auto;
 position: relative;
@@ -942,7 +950,7 @@ margin-right: 25px;
 }
 .menu-servicios a{
     text-decoration: none;
-    color: #999999;
+    color:var(--texto-gris);
     font-weight: 900;
     display: block;
     padding: 23px 20px;
@@ -952,10 +960,10 @@ margin-right: 25px;
     padding: 0px;
 }
 .menu-servicios li{
-    border: 1px solid #999999;
+    border: 1px solid var(--texto-gris);
 }
 .menu-servicios li:hover{
-    background: #f2f2f2;
+    background: var(--fondo-oscuro);
     border-left: 2px solid #fdc703;
     transition: all 0.7s ;
 }
@@ -965,7 +973,7 @@ margin-right: 25px;
 }
 .menu-servicios #opcionmenu{
     border-left:  3px solid #fdc703;
-    background: #f2f2f2;
+    background:var(--fondo-oscuro);
 }
 .menu-servicios #opcionmenu a{
     color:black;
@@ -1011,7 +1019,7 @@ margin-right: 25px;
 }
 .div-pie-pagina{
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: auto;
     margin: 0px auto;
     display: flex;

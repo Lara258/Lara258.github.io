@@ -7,12 +7,12 @@ window.onload=function(){
 $('.menu2').hover(function(){
     $('#as').css({color:'black'});
 },function(){
-    $('#as').css({color:'#999999'});})
+    $('#as').css({color:'#6d6c6c'})})
 
 $('#as').hover(function(){
     $(this).css({color:'black'});
 },function(){
-    $(this).css({color:'#999999'});
+    $(this).css({color:'#6d6c6c'});
 })
 
 /*boton de lenguaje para dm */
@@ -55,11 +55,11 @@ $('.btn-acordeon').click(function(){
     $(this).find('span').removeClass('icon-minus').addClass('icon-plus')
     
     $(this).css({
-        'border-left': '4px solid #999999',
+        'border-left': '4px solid #6d6c6c',
         'background':'white'
            })
     $(this).find('span').css({
-        'color':'#999999'
+        'color':'#6d6c6c'
     })
    }
    else{
@@ -67,11 +67,11 @@ $('.btn-acordeon').click(function(){
        $('.info-acordeon').removeClass('activo').slideUp('slow')
        $('.btn-acordeon').find('span').removeClass('icon-minus').addClass('icon-plus') 
     $('.btn-acordeon').css({
-        'border-left': '4px solid #999999',
+        'border-left': '4px solid #6d6c6c',
         'background':'white'
            })
     $('.btn-acordeon').find('span').css({
-        'color':'#999999'
+        'color':'#6d6c6c'
     })
 
     /*agregar la clase 'activo' y cambiar el tipo de icono, mostrar el 'info acordeon' que este activo*/
