@@ -28,8 +28,7 @@ $('.carousel-proyectos-eleccion').owlCarousel({
     dots:false,
     touchDrag: true,
     mouseDrag:true,
-    autoplay:true,
-    autoplayTimeout:5000,
+    autoplay:false,
     smartSpeed:500,
     items:8
 });
@@ -38,38 +37,32 @@ var owlthumb = $('.carousel-proyectos-eleccion');
 owlthumb.owlCarousel();
 
 $('.item-carousel-eleccion').hover(function() {
-    owlthumb.trigger('stop.owl.autoplay');
     owl1.trigger('stop.owl.autoplay');
 },function(){
-    owlthumb.trigger('play.owl.autoplay',[5000]);
     owl1.trigger('play.owl.autoplay',[5000]);
 });
 
-owl1.on('translated.owl.carousel', function (e) {
-    if (e.item) {
-    var index = e.item.index - 1;
-    var count = e.item.count;
-    if (index > count) {
-        index -= count;
-    }
-    if (index <= 0) {
-        index += count;
-    }
-    return index;
-            }
-  
-owlthumb.trigger('to.owl.carousel',index);  
-    });
-        
+owl1.on('changed.owl.carousel', function (e) {
+    var c=e.item.index;
+    var id= $(e.target).find('.item-carousel').eq(c).attr('id');
+    owlthumb.trigger('to.owl.carousel',(id-1));
+    console.log(id);
     
+    $('.item-carousel-eleccion').removeClass('current');
+    $('.carousel-proyectos-eleccion').find('.item-carousel-eleccion').eq(c).addClass('current');
+        
+});
+
 
 owlthumb.on('click', '.item-carousel-eleccion', function() {
 var n1id=this.id;
-owl1.trigger('to.owl.carousel',n1id);
+
+$('.item-carousel-eleccion').removeClass('current');
+$(this).addClass('current')
+
 owl1.trigger('stop.owl.autoplay');
-owlthumb.trigger('stop.owl.autoplay');
-owl1.trigger('play.owl.autoplay',[10000]);
-owlthumb.trigger('play.owl.autoplay',[10000]);
+owl1.trigger('to.owl.carousel',n1id);
+owl1.trigger('play.owl.autoplay',[7000]);
 });
 
 

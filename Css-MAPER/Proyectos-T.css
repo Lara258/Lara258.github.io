@@ -280,6 +280,11 @@ margin-bottom: 30px;
     height: 50px;
     width: 100%;
 }
+
+/*.current{
+    transition:all linear 0.5s;
+    border: 2px solid cyan;
+}*/
 .item-carousel-eleccion{
     position: relative;
     width: 100%;

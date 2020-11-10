@@ -23,7 +23,8 @@ body{
     height: 10vh;
     position:relative;
     display:flex;
-    font: bold 15px arial;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
     background:var(--fondo-oscuro);
     overflow: hidden;
         }
@@ -155,6 +156,7 @@ position: relative;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        font-family: 'Roboto', sans-serif;
     }
     .btn-lenguaje a{
         text-decoration: none;
@@ -236,6 +238,7 @@ position: relative;
     height: 100%;
     display: flex;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 .menu  ul{
     list-style: none;
@@ -303,7 +306,7 @@ position: relative;
     text-decoration: none;
     position: relative;
     color: var(--texto-gris);
-    font-weight: 800;
+    font-weight: 600;
     display: block;
     padding:3.3rem 1rem;
     border: 1px solid transparent;
@@ -530,6 +533,7 @@ position: relative;
         display:block;
         z-index: 100;
         cursor: pointer; 
+        font-family: 'Roboto', sans-serif;
     }
     .btn-lenguaje-dm ul{
        list-style: none;
@@ -586,6 +590,8 @@ position: relative;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
         }
         #mn{
             display:none;
@@ -603,6 +609,7 @@ position: relative;
             margin:10px auto 10px auto;
             padding: 0px;
             height: 0px;
+            font-family: 'Roboto', sans-serif;
         }
         #mn:checked ~ #mna{
         overflow: visible;
@@ -665,6 +672,7 @@ position: relative;
             margin: 10px auto;
             display:block;
             background: white;
+            font-family: 'Roboto', sans-serif;
         }
         .div-contacto{
             width: 100%;
@@ -689,7 +697,7 @@ position: relative;
     }
        .div-cont-contacto-pdps h4{
            color: var(--texto-gris);
-           font-weight: 100;
+           font-weight: 300;
            font-size: 15px;
        }
        .iconos-contacto{
@@ -775,6 +783,7 @@ justify-content: right;
 transition: all linear 0.6s;
 justify-content: center;
 align-items: center;
+font-family: 'Roboto', sans-serif;
 }
 .w-contenedor a#ref{
 visibility: hidden;
@@ -811,7 +820,7 @@ border-top-right-radius: 20px;
 border-bottom-right-radius: 20px;
 }
 .w-texto p{
-font-size:13px;
+font-size:15px;
 font-weight: 700;
 }
 
@@ -905,11 +914,12 @@ object-fit: fill;
 position: absolute;
 width: var(--espacio-pantalla);
 height: auto;
-line-height: 40px;
+font-family: 'Roboto', sans-serif;
 margin:auto;
 }
 .txt-servicios h1{
-    font-size: 50px;
+    font-size: 60px;
+    font-weight: 500;
 }
 .txt-servicios h4{
     font-size: 25px;
@@ -929,6 +939,7 @@ height: 100%;
 margin: 0px auto;
 position: relative;
 display: flex;
+font-family: 'Roboto', sans-serif;
 }
 
 .div-info-posicion a,p{
@@ -947,6 +958,7 @@ margin-right: 25px;
     height: 50%;
     position: relative;
     margin-right: 30px;
+    font-family: 'Roboto', sans-serif;
 }
 .menu-servicios a{
     text-decoration: none;
@@ -1016,6 +1028,7 @@ margin-right: 25px;
     width: 100%;
     height: auto;
     background: white;
+    font-family: 'Roboto', sans-serif;
 }
 .div-pie-pagina{
     position: relative;
@@ -1248,6 +1261,7 @@ transition: all 2s;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-family: 'Roboto', sans-serif;
     }
     .figura-pdp-izq,.figura-pdp-der{
         width: 11.5%;
