@@ -332,7 +332,7 @@ position: relative;
 }
 .menu li ul{
     position: absolute;
-    width: 20vw;
+    width: 300px;
 }
 .menu  li:hover li{
    max-height: 500px;
@@ -343,7 +343,7 @@ position: relative;
   
 }
 .menu li li{ 
-    width: 20vw;
+    width: 300px;
     max-height: 0;
     height: 0;
     overflow: hidden;
@@ -372,6 +372,7 @@ position: relative;
 @media screen and (max-width:2000px){
 .menu  a{
     padding:6.08rem 3rem;
+    font-size: 20px;
 }
 .menu2 a{
     padding:20px 10px;
@@ -403,6 +404,7 @@ position: relative;
 @media screen and (max-width:1700px){
 .menu  a{
     padding:6.08rem 2rem;
+    font-size: 18px;
 }
 .menu2 a{
     padding:20px 10px;
@@ -428,6 +430,7 @@ position: relative;
 @media screen and (max-width:1500px){
     .menu  a{
         padding:4.5rem 1.5rem;
+        font-size: 17px;
     }
     .menu2 a{
         padding:20px 10px;
@@ -1084,7 +1087,7 @@ margin-top: 20px;
 .cont-contacto-pdp i{ 
     text-align: justify;
     color: black;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 10px;
 }
 .icono-social{
@@ -1116,14 +1119,14 @@ transition: all 2s;
             height: 40px;
         }
         .cont-contacto-pdp i{
-            font-size: 16px;
+            font-size: 20px;
         }
 }
 @media screen and (max-width:1250px){
     .cont-contacto-pdp i{
         text-align: justify;
         color: black;
-        font-size: 13px;
+        font-size: 15px;
     }
     .div-footer p{
         font-size: 15px;

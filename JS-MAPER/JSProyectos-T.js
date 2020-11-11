@@ -1,3 +1,4 @@
+/*Opciones de Galeria de imagenes grande, de un solo item*/ 
 $('.carousel-proyectos').owlCarousel({
     loop:true,
     margin:10,
@@ -12,16 +13,18 @@ $('.carousel-proyectos').owlCarousel({
     items:1
 })
 
+/*Variables de la galeria de imagenes grande*/
 var owl1 = $('.carousel-proyectos');
 owl1.owlCarousel();
 
+/*Funcion click sobre la galeria grande, para abrir la galeria lightbox*/
 owl1.on('click', '.item-carousel', function() {
     var nid=this.id;
     owls.trigger('to.owl.carousel',nid);
     $('.lightbox').slideDown()
 });
 
-
+/*Opciones de galeria pequeña con funcion de eleccion */
 $('.carousel-proyectos-eleccion').owlCarousel({
     loop:true,
     margin:10,
@@ -30,35 +33,69 @@ $('.carousel-proyectos-eleccion').owlCarousel({
     mouseDrag:true,
     autoplay:false,
     smartSpeed:500,
-    items:8
+    responsive:{
+        0:{
+            items:5,
+        },
+        500:{
+            items:6
+        },
+        700:{
+            items:7
+        },
+        800:{
+            items:8
+        },
+        900:{
+            items:6
+        },
+        1100:{
+            items:7
+        },
+        1200:{
+            items:8
+        },
+        1700:{
+            items:10
+        }
+    }
 });
 
+/*Variables de la galeria pequeña*/
 var owlthumb = $('.carousel-proyectos-eleccion');
 owlthumb.owlCarousel();
 
+/*Funcion hover para detener el autoplay la galeria de imagenes*/
 $('.item-carousel-eleccion').hover(function() {
     owl1.trigger('stop.owl.autoplay');
 },function(){
     owl1.trigger('play.owl.autoplay',[5000]);
 });
 
+/*Funcion sobre el cambio de imagen de la galeria grande,
+ provocando que la galeria pequeña se sincronice con la grande*/
+ //Ademas manda a llamar la funcion "setclass"
 owl1.on('changed.owl.carousel', function (e) {
-    var c=e.item.index;
-    var id= $(e.target).find('.item-carousel').eq(c).attr('id');
-    owlthumb.trigger('to.owl.carousel',(id-1));
-    console.log(id);
-    
-    $('.item-carousel-eleccion').removeClass('current');
-    $('.carousel-proyectos-eleccion').find('.item-carousel-eleccion').eq(c).addClass('current');
+    var c=e.relatedTarget.relative(e.relatedTarget.current()) + 1;
+
+    owlthumb.trigger('to.owl.carousel',(c-1));
+
+    var activeI = $('.carousel-proyectos-eleccion').find('#'+(c-1));
+    setclass(activeI);
         
 });
 
+/*Funcion para cambiar la clase "current" de los items de la galeria pequeña,
+dando un elemnto visual para identificar la imagen que esta activa*/
+function setclass(i) {
+    $(".item-carousel-eleccion").removeClass("current");
+    i.addClass("current");
+}
 
+/*Funcion onclick para los elementos de la galeria pequeña, esta muestra la imagen
+a la cual se le hizo click, en la galeria grande*/
 owlthumb.on('click', '.item-carousel-eleccion', function() {
 var n1id=this.id;
-
-$('.item-carousel-eleccion').removeClass('current');
-$(this).addClass('current')
 
 owl1.trigger('stop.owl.autoplay');
 owl1.trigger('to.owl.carousel',n1id);
@@ -66,6 +103,7 @@ owl1.trigger('play.owl.autoplay',[7000]);
 });
 
 
+/*Opciones de la galeria lightbox*/
 $('.carousel-lightbox').owlCarousel({
     loop:true,
     margin:10,
@@ -77,19 +115,20 @@ $('.carousel-lightbox').owlCarousel({
     items:1
 })
 
+/*Variable de la galeria lightbox*/
 var owls = $('.carousel-lightbox');
 owls.owlCarousel();
-// Go to the next item
+
+//Funcion click para ir a la siguiente imagen
 $('.SigBtn').click(function() {
     owls.trigger('next.owl.carousel');
 })
-// Go to the previous item
+// Funcion click para ir a la imagen anterior
 $('.AntBtn').click(function() {
-    // With optional speed parameter
-    // Parameters has to be in square bracket '[]'
     owls.trigger('prev.owl.carousel');
 })
 
+//Funcion click para cerrar la galeria lightbox
 $('.a-cerrar').click(function(){
     $('.lightbox').slideUp()
 })

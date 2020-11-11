@@ -5,7 +5,7 @@
     --texto-color:#6d6c6c;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -67,6 +67,7 @@ body{
     position: relative;
     width: var(--espacio-pantalla);
     height: auto;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 /*propiedades de contenedor de proyecto*/
@@ -281,10 +282,9 @@ margin-bottom: 30px;
     width: 100%;
 }
 
-/*.current{
-    transition:all linear 0.5s;
-    border: 2px solid cyan;
-}*/
+.current{
+    border: 1px solid cyan;
+}
 .item-carousel-eleccion{
     position: relative;
     width: 100%;
@@ -300,25 +300,8 @@ margin-bottom: 30px;
     height: 100%;
     object-fit: fill;
 }
-/*
-.item-carousel img:hover{
-    transform: scale(1.05);
-    opacity: 0.4;
-}
-.item-carousel:hover::before{
-    transform: scale(0.10);
-    transition:all linear 0.3s;
-    opacity: 1;
-}
-.item-carousel::before{
-    content:url("/Imagenes-MAPER/lupa.png");
-    position: absolute;
-    transform: scale(0);
-    transition: all linear 0.2s;
-}
-*/
-/*Propiedades del lightbox de galeria de imagenes del proyecto*/
 
+/*Propiedades del lightbox de galeria de imagenes del proyecto*/
 .lightbox{
     position: fixed; 
     display:none;
@@ -329,7 +312,6 @@ margin-bottom: 30px;
     height: 100%;
     z-index: 500;
 }
-
 #c-lightbox{
     position: relative;
     width: 95vw;

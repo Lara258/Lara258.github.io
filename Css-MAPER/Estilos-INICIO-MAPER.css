@@ -1,4 +1,12 @@
 
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
 margin: 0px;
 padding: 0px;
@@ -53,8 +61,9 @@ body{
     height: 10vh;
     position:relative;
     display:flex;
-    font: bold 15px arial;
-    background: whitesmoke;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: var(--fondo-oscuro);
     overflow: hidden;
         }
         .figura-esquinas-izq,.figura-esquinas-der{
@@ -87,7 +96,7 @@ body{
         
     /*Propiedades de contacto superior*/
     .centrado-contacto{
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: 10vh;
     position: relative;
     margin: 0px auto;
@@ -162,12 +171,13 @@ transition: all 2s;
     position: relative;
             }
     .centrado-nav-logo{
-        width: 81%;
+        width: var(--espacio-pantalla);
         height: 100%;
         position: relative;
         margin-left: auto;
         margin-right: auto;
         display:flex;
+        font-family: 'Roboto', sans-serif;
     }
      #Imagen-logo{
         height: 100%;
@@ -189,6 +199,7 @@ transition: all 2s;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        font-family: 'Roboto', sans-serif;
     }
     .btn-lenguaje a{
         text-decoration: none;
@@ -301,8 +312,8 @@ transition: all 2s;
 .menu a{
     text-decoration: none;
     position: relative;
-    color: #999999;
-    font-weight: 800;
+    color: var(--texto-gris);
+    font-weight: 600;
     display: block;
     padding:3.3rem 1rem;
 }
@@ -328,7 +339,6 @@ transition: all 2s;
 }
 .menu li ul{
     position: absolute;
-    width: 300px;
 }
 .menu  li:hover li{
    max-height: 500px;
@@ -339,7 +349,6 @@ transition: all 2s;
   
 }
 .menu li li{ 
-    width: 300px;
     max-height: 0;
     height: 0;
     overflow: hidden;
@@ -438,6 +447,12 @@ padding:3.3rem 1rem;
     padding:20px 10px;
     color: white;
 }
+.menu li ul{
+    width: 22vw;
+}
+.menu li li{
+    width: 22vw;
+}
 .info-contacto span{
     font-size: 15px;
  }
@@ -523,6 +538,7 @@ padding:3.3rem 1rem;
          display:block;
          z-index: 100;
          cursor: pointer; 
+         font-family: 'Roboto', sans-serif;
      }
      .btn-lenguaje-dm ul{
         list-style: none;
@@ -577,6 +593,9 @@ padding:3.3rem 1rem;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
+            font-size: 18px;
         }
         #mn{
             display:none;
@@ -593,6 +612,7 @@ padding:3.3rem 1rem;
             padding: 0px;
             height: 0px;
             transition: all linear 0.6s;
+            font-family: 'Roboto', sans-serif;
         }
         #mn:checked ~ #mna{
             height: 560px;
@@ -642,6 +662,8 @@ padding:3.3rem 1rem;
             margin: 10px auto;
             display:block;
             background: white;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 500;
         }
         .div-contacto{
             width: 100%;
@@ -663,8 +685,8 @@ padding:3.3rem 1rem;
            margin-bottom: 5px;
        }
        .div-cont-contacto-pdps h4{
-           color: #999999;
-           font-weight: 100;
+           color: var(--texto-gris);
+           font-weight: 400;
            font-size: 15px;
        }
        .iconos-contacto{
@@ -696,7 +718,7 @@ padding:3.3rem 1rem;
 }
 @media screen and (max-width:570px){
     .div-cont-contacto-pdps i{
-        font-size: 13px;
+        font-size: 14px;
     }
     .iconos-contacto span{
         font-size: 25px;
@@ -704,10 +726,11 @@ padding:3.3rem 1rem;
         height: 30px;
 
     }
-        .btn-menu{
-            width: 100px;
-            height: 50%;
-            transition: all linear .5s;
+    .btn-menu{
+        width: 100px;
+        height: 50%;
+        transition: all linear .5s;
+    
     }
     #Imagen-logo{
         width: 50%;
@@ -748,6 +771,7 @@ padding:3.3rem 1rem;
     transition: all linear 0.6s;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 .w-contenedor a#ref{
    visibility: hidden;
@@ -783,7 +807,7 @@ transition: all linear 0.6s;
     border-bottom-right-radius: 20px;
 }
 .w-texto p{
-    font-size:13px;
+    font-size:15px;
     font-weight: 700;
 }
 
@@ -1046,6 +1070,7 @@ transition: all 2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 .texto-fondo h1{
     font-size: 45px;
@@ -1130,7 +1155,7 @@ transition: all 2s;
 
 /* propiedades de Seccion de servicios */
 .contenido-seccion-servicios{
-    background: #f5f5f5;
+    background:var(--fondo-oscuro);
     width: 100%;
     height: auto;
     margin: 0 auto;
@@ -1141,11 +1166,12 @@ transition: all 2s;
     position: relative;
     right:100%;
     height: 100%;
-    width: 81%;
+    width: var(--espacio-pantalla);
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 .seccion-servicios{
     position: relative;
@@ -1202,6 +1228,7 @@ transition: all 2s;
 .seccion-servicios-txt p{
     margin-top:10px;
     padding: 0;
+    font-size: 18px;
 }
 .seccion-servicios-txt a{
     display: inline-block;
@@ -1212,6 +1239,7 @@ transition: all 2s;
     color: blue;
     position: relative;
     margin-top:10px;
+    font-size: 15px;
 }
 .seccion-servicios-txt h5::after{
     content: "";
@@ -1285,7 +1313,7 @@ transition: all 2s;
         margin-bottom: 10px;
     }
     .seccion-servicios p{
-        font-size: 13px;
+        font-size: 16px;
     }
     .seccion-servicios h4{
         font-size: 15px;
@@ -1304,19 +1332,22 @@ transition: all 2s;
 }
 .separador-info-medio{
     height: 100%;
-    width: 81%;
+    width: var(--espacio-pantalla);
     position: relative;
     left: 100%;
     display: flex;
     margin: 2% auto;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 .separador-info-medio h3{
     text-align: center;
     font-weight: 400;
 }
 .separador-info-medio p{
-    font-weight: 100;
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--texto-gris);
 }
 .info-empresa{
 height: 100%;
@@ -1347,7 +1378,7 @@ margin: 0 auto;
         font-size: 15px;
     }
     .separador-info-medio p{
-        font-weight: 100;
+        font-weight: 400;
         font-size: 14px;
     }
 }
@@ -1380,10 +1411,11 @@ margin: 0 auto;
 }
 .centrado-galeria{
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: 100%;
     margin: 0 auto;
     transform: scale(0);
+    font-family: 'Roboto', sans-serif;
 }
 /* texto sobre la galeria*/
 .div-texto{
@@ -1684,12 +1716,13 @@ margin: 0 auto;
 }
 .div-pie-pagina{
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: auto;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 .divicion-column{
     position: relative;
@@ -1740,7 +1773,7 @@ margin-top: 20px;
 .cont-contacto-pdp i{ 
     text-align: justify;
     color: black;
-    font-size: 15px;
+    font-size: 17px;
     margin-left: 10px;
 }
 .icono-social{
@@ -1771,14 +1804,14 @@ transition: all 2s;
             height: 40px;
         }
         .cont-contacto-pdp i{
-            font-size: 16px;
+            font-size: 20px;
         }
 }
 @media screen and (max-width:1250px){
     .cont-contacto-pdp i{
         text-align: justify;
         color: black;
-        font-size: 13px;
+        font-size: 16px;
     }
     .div-footer p{
         font-size: 15px;
@@ -1822,6 +1855,7 @@ transition: all 2s;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 .figura-pdp-izq,.figura-pdp-der{
     width: 10%;
