@@ -439,31 +439,9 @@ margin-bottom: 30px;
 
    } 
 }
-@media screen and (max-width:860px){
-.btns span{
-    font-size: 25px;
-    width: 25px;
-    height: 25px;
-}
-}
-@media screen and (max-width:710px){
-    .navegacion-btn{
-        width: 150px;
-        height: 10%;
-        bottom: 5px;
-        left: 35%;
-    }   
-    .NexBtn, .PreBtn{
-        width: calc(50% - 5px);
+@media screen and (max-width:970px){
+    .carousel-proyectos{
+        margin-top: 20px;
     }
 }
-@media screen and (max-width:500px){
-    .navegacion-btn{
-        height: 10%;
-        bottom: 5px;
-        left: 30%;
-    }   
-    .NexBtn, .PreBtn{
-        width: calc(50% - 5px);
-    }
-}
+
