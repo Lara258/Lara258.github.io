@@ -1629,6 +1629,22 @@ margin: 0 auto;
 /*fin de propiedades de galeria de proyectos*/
 
 /*media querys de galeria proyectos*/
+@media screen and (min-width:1700px){
+    .div-texto h1{
+        font-size: 55px;
+    }
+    .div-texto p{
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:1500px){
+    .div-texto h1{
+        font-size: 50px;
+    }
+    .div-texto p{
+        font-size: 25px;
+    }
+}
 @media screen and (max-width:970px){
     /*texto titulo*/
     .div-texto{

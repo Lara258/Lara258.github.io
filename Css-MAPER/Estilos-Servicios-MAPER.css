@@ -1,6 +1,11 @@
-html{
-    scroll-behavior: smooth;
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -68,7 +73,7 @@ html{
     margin: 20px auto 0px;
     box-sizing: border-box;
     position: relative;
-    width:81%;
+    width:var(--espacio-pantalla);
     height: auto;
     display: flex;
 }
@@ -79,6 +84,7 @@ html{
     width: 75%;
     height: auto;
     display: block;
+    font-family: 'Roboto', sans-serif;
 }
 .div-mitad-servicios{
     width: 100%;
@@ -143,12 +149,13 @@ line-height: 25px;
 font-weight: 100;
 }
 .informacion-servicio h3{
-    font-size: 15px;
+    font-size: 16px;
     color: black;
 }
 .informacion-servicio h4{
     font-weight: 500;
     position: relative;
+
 }
 .informacion-servicio h4::after{
     content: "";
@@ -164,7 +171,9 @@ font-weight: 100;
     border-bottom: 6px solid transparent;
 }
 .informacion-servicio p{
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--texto-gris);
 }
 .informacion-servicio a{
     text-decoration: none;

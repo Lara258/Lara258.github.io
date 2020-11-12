@@ -1,6 +1,11 @@
-html{
-    scroll-behavior: smooth;
+
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0px;
@@ -58,7 +63,7 @@ html{
         left: 100%;
         bottom: 17px;
         border-top:8px solid transparent ;
-        border-left:8px solid #999999;
+        border-left:8px solid var(--texto-gris);
         border-right: 8px solid transparent;
         border-bottom: 8px solid transparent;
     }
@@ -78,7 +83,7 @@ html{
     .div-info-posicion a::after{
         bottom: 20px;
         border-top:6px solid transparent ;
-        border-left:6px solid #999999;
+        border-left:6px solid var(--texto-gris);
         border-right:6px solid transparent;
         border-bottom:6px solid transparent;
     }
@@ -91,12 +96,13 @@ html{
     margin: 20px auto 0px;
     box-sizing: border-box;
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: auto;
     display: block;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-galeria{
-    border-bottom: 2px solid #999999;
+    border-bottom: 2px solid var(--texto-gris);
     position: relative;
     width: 100%;
     height: 50px;

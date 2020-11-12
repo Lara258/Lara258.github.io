@@ -1,6 +1,11 @@
-html{
-    scroll-behavior: smooth;
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -19,7 +24,7 @@ html{
     left: 100%;
     bottom: 17px;
     border-top:8px solid transparent ;
-    border-left:8px solid #999999;
+    border-left:8px solid var(--texto-gris);
     border-right: 8px solid transparent;
     border-bottom: 8px solid transparent;
 }
@@ -30,7 +35,7 @@ html{
     margin: 20px auto 0px;
     box-sizing: border-box;
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: auto;
     display: flex;
 }
@@ -51,6 +56,7 @@ html{
     flex-wrap: wrap;
     justify-content: space-between;
    margin-bottom: 30px;
+   font-family: 'Roboto', sans-serif;
 } 
 .contenedor-info-diseño {
 position: relative;
@@ -68,7 +74,7 @@ border-radius: 5px;
 
 .contenedor-info-diseño p{
     text-align: justify;
-    color:#999999;
+    color:var(--texto-gris);
     margin: 0;
     line-height: 25px;
     font-weight: 400;
@@ -83,12 +89,12 @@ border-radius: 5px;
     width: 100%;
     height: 100%;
     display: flex;
-    border: 1px solid #999999;
-    border-left: 4px solid #999999; 
+    border: 1px solid var(--texto-gris);
+    border-left: 4px solid var(--texto-gris); 
     align-items: center;
 }
 .texto-descarga:hover{
-    background: #f2f2f2;
+    background:var(--fondo-oscuro);
     border-left: 4px solid #fdc703;
     transition: all 0.7s ease;
 }
@@ -103,7 +109,7 @@ border-radius: 5px;
 }
 .texto-descarga i{
     text-align: justify;
-    color: #999999;
+    color: var(--texto-gris);
     font-size: 15px;
     margin-left: 20px;
 
@@ -133,9 +139,9 @@ border-radius: 5px;
         font-size: 15px;
     }
     .div-info-posicion a::after{
-        bottom:20px;
+        bottom:19px;
         border-top:6px solid transparent ;
-        border-left:6px solid #999999;
+        border-left:6px solid var(--texto-gris);
         border-right: 6px solid transparent;
         border-bottom: 6px solid transparent;
     }
@@ -170,9 +176,9 @@ border-radius: 5px;
 @media screen and (max-width:540px){
 
     .div-info-posicion a::after{
-        bottom: 21px;
+        bottom: 20px;
         border-top:6px solid transparent ;
-        border-left:6px solid #999999;
+        border-left:6px solid var(--texto-gris);
         border-right:6px solid transparent;
         border-bottom:6px solid transparent;
     }

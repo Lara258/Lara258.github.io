@@ -1,6 +1,11 @@
-html{
-    scroll-behavior: smooth;
+:root{
+    --fondo-claro:white;
+    --fondo-oscuro:whitesmoke;
+    --espacio-pantalla:81%;
+    --texto-gris:#6d6c6c;
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -14,9 +19,10 @@ html{
     margin: 20px auto 0px;
     box-sizing: border-box;
     position: relative;
-    width: 81%;
+    width: var(--espacio-pantalla);
     height: auto;
     display: flex;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*propiedades info-posicion*/
@@ -29,7 +35,7 @@ html{
     margin-left: 10px;
     bottom: 17px;
     border-top:8px solid transparent ;
-    border-left:8px solid #999999;
+    border-left:8px solid var(--texto-gris);
     border-right: 8px solid transparent;
     border-bottom: 8px solid transparent;
     }
@@ -68,7 +74,7 @@ border-radius: 5px;
 
 .contenedor-info-diseño p{
     text-align: justify;
-    color:#999999;
+    color:var(--texto-gris);
     margin: 0;
     line-height: 25px;
     font-weight: 400;
@@ -76,8 +82,8 @@ border-radius: 5px;
 
 .btn-acordeon{
     height: auto;
-    border: 1px solid #999999;
-    border-left: 4px solid #999999;
+    border: 1px solid var(--texto-gris);
+    border-left: 4px solid var(--texto-gris);
     display: flex;
     cursor: pointer;
     transition: all 0.7s;
@@ -93,7 +99,7 @@ border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: left;
-    color: #999999;
+    color: var(--texto-gris);
     }
     .icono-acordeon span{
         font-size: 35px;
@@ -114,13 +120,14 @@ border-radius: 5px;
 .info-acordeon{
     height:auto;
     display: none;
-    font-size: small;
     text-align: justify;
     border-left: 4px solid #fec701;
 }
 .info-acordeon p{
     margin:10px 15px;
     padding: 0px;
+    color: var(--texto-gris);
+    font-size: medium;
 }
 /*fin de propiedades de servicios*/
 
@@ -132,7 +139,7 @@ border-radius: 5px;
     .div-info-posicion a::after{
         bottom:20px;
         border-top:6px solid transparent ;
-        border-left:6px solid #999999;
+        border-left:6px solid var(--texto-gris);
         border-right: 6px solid transparent;
         border-bottom: 6px solid transparent;
     }
@@ -160,7 +167,7 @@ border-radius: 5px;
 @media screen and (max-width:490px){
     .div-info-posicion a::after{
         border-top:6px solid transparent ;
-        border-left:6px solid #999999;
+        border-left:6px solid var(--texto-gris);
         border-right:6px solid transparent;
         border-bottom:6px solid transparent;
     }
