@@ -3,19 +3,25 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
-    --texto-gris:#6d6c6c;
+    --color-texto:#6d6c6c;
+    --triangulos-indicador-color:#6d6c6c;
+    --fuente-texto:'Roboto', sans-serif;
+    --ancho-letra-parrafo:400;
+    --interlineado-parrafo:30px;
+    --color-btns-cabecera:#ebaa12;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
 margin: 0px;
 padding: 0px;
-box-sizing: border-box;
 }
 
 body{
  overflow-y: scroll;
  overflow-x: hidden;
+ font-family: var(--fuente-texto);
+ box-sizing: border-box;
 }
 /*propiedades precarga*/
 #contenedor-precarga{
@@ -61,7 +67,6 @@ body{
     height: 10vh;
     position:relative;
     display:flex;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: var(--fondo-oscuro);
     overflow: hidden;
@@ -177,7 +182,6 @@ transition: all 2s;
         margin-left: auto;
         margin-right: auto;
         display:flex;
-        font-family: 'Roboto', sans-serif;
     }
      #Imagen-logo{
         height: 100%;
@@ -199,7 +203,6 @@ transition: all 2s;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        font-family: 'Roboto', sans-serif;
     }
     .btn-lenguaje a{
         text-decoration: none;
@@ -305,14 +308,14 @@ transition: all 2s;
     height: 0;
     left: 45%;
     top: 65%;
-    border-top: 8px solid #999999;
+    border-top: 8px solid var(--triangulos-indicador-color);
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
 }
 .menu a{
     text-decoration: none;
     position: relative;
-    color: var(--texto-gris);
+    color: var(--color-texto);
     font-weight: 600;
     display: block;
     padding:3.3rem 1rem;
@@ -532,19 +535,18 @@ padding:3.3rem 1rem;
      .btn-lenguaje-dm{
          width: 30%;
          height: 50%;
-         background: #ebaa12;
+         background: var(--color-btns-cabecera);
          position: absolute;  
          left: 35%;     
          display:block;
          z-index: 100;
          cursor: pointer; 
-         font-family: 'Roboto', sans-serif;
      }
      .btn-lenguaje-dm ul{
         list-style: none;
         width: 100%;
         height: 100%;
-        background: #ebaa12; 
+        background: var(--color-btns-cabecera); 
         display: none;
         margin-top: 2px;
      }
@@ -582,18 +584,17 @@ padding:3.3rem 1rem;
         }
         .btn-menu{
             width: 120px;
-            height: 130px;
+            height: 110px;
             position: absolute;
             display: flex;
             right: 0;
             margin-top: 10px;
-            background: #ebaa12;
+            background: var(--color-btns-cabecera);
             align-items: center;
             padding: 10px;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
-            font-family: 'Roboto', sans-serif;
             font-weight: 500;
             font-size: 18px;
         }
@@ -612,7 +613,7 @@ padding:3.3rem 1rem;
             padding: 0px;
             height: 0px;
             transition: all linear 0.6s;
-            font-family: 'Roboto', sans-serif;
+
         }
         #mn:checked ~ #mna{
             height: 560px;
@@ -643,7 +644,7 @@ padding:3.3rem 1rem;
         }
         
         .navega li ul a{
-            color: #999999;
+            color: var(--color-texto);
             padding-left: 40px;
             font-weight: 400;
             font-size: 14px;
@@ -661,8 +662,8 @@ padding:3.3rem 1rem;
             position: relative;
             margin: 10px auto;
             display:block;
-            background: white;
-            font-family: 'Roboto', sans-serif;
+            background: var(--fondo-claro);
+
             font-weight: 500;
         }
         .div-contacto{
@@ -685,7 +686,7 @@ padding:3.3rem 1rem;
            margin-bottom: 5px;
        }
        .div-cont-contacto-pdps h4{
-           color: var(--texto-gris);
+           color: var(--color-texto);
            font-weight: 400;
            font-size: 15px;
        }
@@ -770,8 +771,7 @@ padding:3.3rem 1rem;
     justify-content: right;
     transition: all linear 0.6s;
     justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
+    align-items: center
 }
 .w-contenedor a#ref{
    visibility: hidden;
@@ -796,7 +796,7 @@ transition: all linear 0.6s;
     width: 0px;
     display: flex;
     overflow:hidden;
-    background: #f5f5f5;
+    background: var(--fondo-oscuro);
     transition: all linear 0.6s;
     visibility: hidden;
     justify-content: center;
@@ -1069,8 +1069,7 @@ transition: all 2s;
     transition: all linear .5s;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    justify-content: center
 }
 .texto-fondo h1{
     font-size: 45px;
@@ -1078,7 +1077,8 @@ transition: all 2s;
     transition: all linear .5s;
 }
 .texto-fondo p{
-    font-size: 20px;
+    font-weight: var(--ancho-letra-parrafo);
+    line-height: var(--interlineado-parrafo);
     margin-top: 10px;
     transition: all linear .5s;
 }
@@ -1086,17 +1086,14 @@ transition: all 2s;
 /* fin de las  propiedades del slider */    
 /*medias querys del slider*/
 @media screen and (min-width:1650px){
-
     .slider-item{
         height: 600px;
     }
 }
 @media screen and (max-width:970px){
-
         .slider-item{
             height: 350px;
         }
-        
         .texto-fondo h1{
             font-size: 35px;
             font-weight: 800;
@@ -1106,7 +1103,6 @@ transition: all 2s;
         }
 }
 @media screen and (max-width:720px){
-    
     .slider-item{
         height: 500px;
     }
@@ -1123,7 +1119,6 @@ transition: all 2s;
         width: 100%;
         margin: 0;
         bottom: 0px;
-        color: black;
     }
     .navegacion-btn{
         width: 100%;
@@ -1170,8 +1165,7 @@ transition: all 2s;
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    justify-content: space-between
 }
 .seccion-servicios{
     position: relative;
@@ -1228,7 +1222,10 @@ transition: all 2s;
 .seccion-servicios-txt p{
     margin-top:10px;
     padding: 0;
-    font-size: 18px;
+    color: var(--color-texto);
+    font-weight: var(--ancho-letra-parrafo);
+    line-height: var(--interlineado-parrafo);
+    
 }
 .seccion-servicios-txt a{
     display: inline-block;
@@ -1289,6 +1286,11 @@ transition: all 2s;
     width: 100%;
     height: 100%;
 }
+.servicios-pequeños-txt p{
+    color: var(--color-texto);
+    font-weight: var(--ancho-letra-parrafo);
+    line-height: var(--interlineado-parrafo);
+}
 .servicios-pequeños-txt h4,.servicios-pequeños-txt p {
     margin-left: 10px;
 }
@@ -1337,17 +1339,16 @@ transition: all 2s;
     left: 100%;
     display: flex;
     margin: 2% auto;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    justify-content: space-between
 }
 .separador-info-medio h3{
     text-align: center;
     font-weight: 400;
 }
 .separador-info-medio p{
-    font-weight: 500;
-    font-size: 15px;
-    color: var(--texto-gris);
+    color: var(--color-texto);
+    font-weight: var(--ancho-letra-parrafo);
+    line-height: var(--interlineado-parrafo);
 }
 .info-empresa{
 height: 100%;
@@ -1378,7 +1379,6 @@ margin: 0 auto;
         font-size: 15px;
     }
     .separador-info-medio p{
-        font-weight: 400;
         font-size: 14px;
     }
 }
@@ -1406,7 +1406,7 @@ margin: 0 auto;
     height: auto;
     position: relative;
     display: block;
-    background: whitesmoke;
+    background: var(--fondo-oscuro);
     overflow: hidden;
 }
 .centrado-galeria{
@@ -1414,8 +1414,7 @@ margin: 0 auto;
     width: var(--espacio-pantalla);
     height: 100%;
     margin: 0 auto;
-    transform: scale(0);
-    font-family: 'Roboto', sans-serif;
+    transform: scale(0)
 }
 /* texto sobre la galeria*/
 .div-texto{
@@ -1728,7 +1727,7 @@ margin: 0 auto;
     position: relative;
     width: 100%;
     height: auto;
-    background: white;
+    background: var(--fondo-claro);
 }
 .div-pie-pagina{
     position: relative;
@@ -1737,8 +1736,7 @@ margin: 0 auto;
     margin: 0px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
+    justify-content: space-between
 }
 .divicion-column{
     position: relative;
@@ -1762,6 +1760,10 @@ display: block;
 text-align: justify;
 margin-top: 20px;
 }
+.div-footer p{
+    font-weight: var(--ancho-letra-parrafo);
+    line-height: var(--interlineado-parrafo);
+}
 
 .imagen-empresa{
     width: 50%;
@@ -1780,6 +1782,7 @@ margin-top: 20px;
     display: flex;
     align-items: center;
     text-align: right;  
+    margin-bottom: 20px;
 }
 .cont-contacto-pdp span{
     color:black;
@@ -1870,8 +1873,7 @@ transition: all 2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-family: 'Roboto', sans-serif;
+    align-items: center
 }
 .figura-pdp-izq,.figura-pdp-der{
     width: 10%;

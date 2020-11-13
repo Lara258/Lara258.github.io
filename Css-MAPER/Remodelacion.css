@@ -2,7 +2,11 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
-    --texto-gris:#6d6c6c;
+    --color-texto:#6d6c6c;
+    --triangulos-indicador-color:#6d6c6c;
+    --fuente-texto:'Roboto', sans-serif;
+    --ancho-letra-parrafo:400;
+    --interlineado-parrafo:30px;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
@@ -13,6 +17,8 @@
     body{
      overflow: scroll;
      overflow-x: hidden;
+     font-family: var(--fuente-texto);
+     box-sizing: border-box;
     }
     
 /*pŕopiedades de info posicion */
@@ -25,7 +31,7 @@
     left: 100%;
     bottom: 17px;
     border-top:8px solid transparent ;
-    border-left:8px solid var(--texto-gris);
+    border-left:8px solid var(--triangulos-indicador-color);
     border-right: 8px solid transparent;
     border-bottom: 8px solid transparent;
 }
@@ -48,8 +54,6 @@
     width: 75%;
     height: auto;
     display: block;
-    font-family: 'Roboto', sans-serif;
- 
 }
 .div-servicios{
     width: 100%;
@@ -76,18 +80,18 @@ margin-bottom: 30px;
 
 .contenedor-info-diseño p{
     text-align: justify;
-    color:var(--texto-gris);
+    color:var(--color-texto);
     margin: 0;
-    line-height: 25px;
-    font-weight: 400;
+    line-height: var(--interlineado-parrafo);
+    font-weight: var(--ancho-letra-parrafo);
 }
 
 .texto-descarga{
     width: 100%;
     height: 20%;
     display: flex;
-    border: 1px solid var(--texto-gris);
-    border-left: 4px solid var(--texto-gris); 
+    border: 1px solid var(--color-texto);
+    border-left: 4px solid var(--color-texto); 
     align-items: center;
 }
 .texto-descarga:hover{
@@ -106,7 +110,7 @@ margin-bottom: 30px;
 }
 .texto-descarga i{
     text-align: justify;
-    color: var(--texto-gris);
+    color: var(--color-texto);
     font-size: 15px;
     margin-left: 20px;
 
@@ -139,7 +143,7 @@ margin-bottom: 30px;
     .div-info-posicion a::after{
         bottom:19px;
         border-top:6px solid transparent ;
-        border-left:6px solid var(--texto-gris);
+        border-left:6px solid var(--triangulos-indicador-color);
         border-right: 6px solid transparent;
         border-bottom: 6px solid transparent;
     }
@@ -172,7 +176,7 @@ margin-bottom: 30px;
     .div-info-posicion a::after{
         bottom: 20px;
         border-top:6px solid transparent ;
-        border-left:6px solid var(--texto-gris);
+        border-left:6px solid var(--triangulos-indicador-color);
         border-right:6px solid transparent;
         border-bottom:6px solid transparent;
     }

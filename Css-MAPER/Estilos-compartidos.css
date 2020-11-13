@@ -3,18 +3,26 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
-    --texto-gris:#6d6c6c;
+    --color-texto:#6d6c6c;
+    --triangulos-indicador-color:#6d6c6c;
+    --fuente-texto:'Roboto', sans-serif;
+    --ancho-letra-parrafo:400;
+    --interlineado-parrafo:30px;
+    --color-btns-cabecera:#ebaa12;
+    --color-left-ms:#fdc703;
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *{
     margin: 0px;
     padding: 0px;
-    box-sizing: border-box;
     }
+    
 body{
     overflow-y: scroll;
     overflow-x: hidden;
+    font-family: var(--fuente-texto);
+    box-sizing: border-box;
    }
 
 /*propiedades de parte superior contacto*/
@@ -23,7 +31,6 @@ body{
     height: 10vh;
     position:relative;
     display:flex;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background:var(--fondo-oscuro);
     overflow: hidden;
@@ -156,7 +163,6 @@ position: relative;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        font-family: 'Roboto', sans-serif;
     }
     .btn-lenguaje a{
         text-decoration: none;
@@ -238,7 +244,6 @@ position: relative;
     height: 100%;
     display: flex;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
 }
 .menu  ul{
     list-style: none;
@@ -296,7 +301,7 @@ position: relative;
     height: 0;
     left: 45%;
     top: 65%;
-    border-top: 8px solid #999999;
+    border-top: 8px solid var(--triangulos-indicador-color);
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
 }
@@ -305,7 +310,7 @@ position: relative;
 .menu a{
     text-decoration: none;
     position: relative;
-    color: var(--texto-gris);
+    color: var(--color-texto);
     font-weight: 600;
     display: block;
     padding:3.3rem 1rem;
@@ -337,7 +342,7 @@ position: relative;
 .menu  li:hover li{
    max-height: 500px;
    height: 50px;
-   border: 1px solid  #ebaa12;
+   border: 1px solid  var(--color-btns-cabecera);
    background: #fec800;
    overflow: visible; 
   
@@ -358,7 +363,7 @@ position: relative;
     visibility: visible;
 }
 .menu ul ul :hover{
-    background: #ebaa12;
+    background: var(--color-btns-cabecera);
 }
 .menu  li>ul>li>{ 
     max-height: 0;
@@ -530,19 +535,19 @@ position: relative;
      .btn-lenguaje-dm{
         width: 30%;
         height: 50%;
-        background: #ebaa12;
+        background: var(--color-btns-cabecera);
         position: absolute;  
         left: 35%;     
         display:block;
         z-index: 100;
         cursor: pointer; 
-        font-family: 'Roboto', sans-serif;
+        
     }
     .btn-lenguaje-dm ul{
        list-style: none;
        width: 100%;
        height: 100%;
-       background: #ebaa12; 
+       background: var(--color-btns-cabecera); 
        display: none;
        margin-top: 2px;
     }
@@ -582,18 +587,17 @@ position: relative;
         }
         .btn-menu{
             width: 120px;
-            height: 130px;
+            height: 110px;
             position: absolute;
             display: flex;
             right: 0;
             margin-top:10px;
-            background: #ebaa12;
+            background: var(--color-btns-cabecera);
             align-items: center;
             padding: 10px;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
-            font-family: 'Roboto', sans-serif;
             font-size: 20px;
         }
         #mn{
@@ -612,7 +616,7 @@ position: relative;
             margin:10px auto 10px auto;
             padding: 0px;
             height: 0px;
-            font-family: 'Roboto', sans-serif;
+            
         }
         #mn:checked ~ #mna{
         overflow: visible;
@@ -639,7 +643,7 @@ position: relative;
 
         /*color de texto opcion servicios*/
         .navega a#ser{
-            color: #ebaa12;
+            color: var(--color-btns-cabecera);
         }
 
         /*color de texto opcion acerca de nosotros*/
@@ -655,7 +659,7 @@ position: relative;
         .navega li ul a{
             color: #525151;
             padding-left: 40px;
-            font-weight: 400;
+            font-weight: var(--ancho-letra-parrafo);
             font-size: 14px;
         }
         .navega li ul a:hover{
@@ -674,8 +678,8 @@ position: relative;
             position: relative;
             margin: 10px auto;
             display:block;
-            background: white;
-            font-family: 'Roboto', sans-serif;
+            background: var(--fondo-claro);
+            
         }
         .div-contacto{
             width: 100%;
@@ -699,7 +703,7 @@ position: relative;
         text-decoration: none;
     }
        .div-cont-contacto-pdps h4{
-           color: var(--texto-gris);
+           color: var(--color-texto);
            font-weight: 300;
            font-size: 15px;
        }
@@ -786,7 +790,7 @@ justify-content: right;
 transition: all linear 0.6s;
 justify-content: center;
 align-items: center;
-font-family: 'Roboto', sans-serif;
+
 }
 .w-contenedor a#ref{
 visibility: hidden;
@@ -917,7 +921,7 @@ object-fit: fill;
 position: absolute;
 width: var(--espacio-pantalla);
 height: auto;
-font-family: 'Roboto', sans-serif;
+
 margin:auto;
 }
 .txt-servicios h1{
@@ -942,7 +946,7 @@ height: 100%;
 margin: 0px auto;
 position: relative;
 display: flex;
-font-family: 'Roboto', sans-serif;
+
 }
 
 .div-info-posicion a,p{
@@ -961,11 +965,11 @@ margin-right: 25px;
     height: 50%;
     position: relative;
     margin-right: 30px;
-    font-family: 'Roboto', sans-serif;
+    
 }
 .menu-servicios a{
     text-decoration: none;
-    color:var(--texto-gris);
+    color:var(--color-texto);
     font-weight: 900;
     display: block;
     padding: 23px 20px;
@@ -975,11 +979,11 @@ margin-right: 25px;
     padding: 0px;
 }
 .menu-servicios li{
-    border: 1px solid var(--texto-gris);
+    border: 1px solid var(--color-texto);
 }
 .menu-servicios li:hover{
     background: var(--fondo-oscuro);
-    border-left: 2px solid #fdc703;
+    border-left: 2px solid var(--color-left-ms);
     transition: all 0.7s ;
 }
 .menu-servicios li>a:hover{
@@ -987,7 +991,7 @@ margin-right: 25px;
 
 }
 .menu-servicios #opcionmenu{
-    border-left:  3px solid #fdc703;
+    border-left:  3px solid var(--color-left-ms);
     background:var(--fondo-oscuro);
 }
 .menu-servicios #opcionmenu a{
@@ -1030,8 +1034,8 @@ margin-right: 25px;
     position: relative;
     width: 100%;
     height: auto;
-    background: white;
-    font-family: 'Roboto', sans-serif;
+    background:var(--fondo-claro);
+    
 }
 .div-pie-pagina{
     position: relative;
@@ -1264,7 +1268,7 @@ transition: all 2s;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-family: 'Roboto', sans-serif;
+        
     }
     .figura-pdp-izq,.figura-pdp-der{
         width: 11.5%;
@@ -1279,7 +1283,7 @@ transition: all 2s;
         height: 0;
         left: 0;
         border-top: 10vh solid transparent;   
-        border-left: 10vh solid #f5f5f5;     
+        border-left: 10vh solid var(--fondo-oscuro);     
     }
     .figura-pdp-izq::before{
         content: "";
@@ -1288,7 +1292,7 @@ transition: all 2s;
         height: 0;
         right:0;
         border-top: 10vh solid transparent;   
-        border-right: 10vh solid #f5f5f5;     
+        border-right: 10vh solid var(--fondo-oscuro);     
     }
     /*Fin de propiedades*/
 
