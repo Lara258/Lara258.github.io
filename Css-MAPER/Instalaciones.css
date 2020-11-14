@@ -2,6 +2,7 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
+    --maximo-espacio-pantalla:1100px;
     --color-texto:#6d6c6c;
     --triangulos-indicador-color:#6d6c6c;
     --fuente-texto:'Roboto', sans-serif;
@@ -43,6 +44,7 @@
     box-sizing: border-box;
     position: relative;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: auto;
     display: flex;
 }
@@ -86,7 +88,8 @@ display: block;
 .contenedor-servicios-instalacion-img{
     position: relative;
     width: 100%;
-    height: 300px;
+    height: 45vh;
+    max-height: 350px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background: rgb(230, 229, 229);
@@ -146,7 +149,8 @@ display: block;
 }
 .servicios-instalacion-img{
     width: 150px;
-    height: 160px;
+    height: 25vh;
+    max-height: 200px;
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background: rgb(230, 229, 229);
@@ -193,11 +197,6 @@ display: block;
 /*fin de propiedades de servicios*/
 
 /*media querys de servicio*/
-@media screen and (min-width:1650px){
-    .servicios-instalacion-img{
-        height: 180px;
-    }
-}
 @media screen and (max-width: 1070px){
     .div-posicion a,p{
         font-size: 15px;

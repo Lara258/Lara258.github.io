@@ -3,6 +3,7 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
+    --maximo-espacio-pantalla:1100px;
     --color-texto:#6d6c6c;
     --triangulos-indicador-color:#6d6c6c;
     --fuente-texto:'Roboto', sans-serif;
@@ -65,44 +66,48 @@ body{
 .contacto{
     width: 100%;
     height: 10vh;
+    max-height: 100px;
     position:relative;
     display:flex;
     font-weight: 500;
     background: var(--fondo-oscuro);
     overflow: hidden;
         }
-        .figura-esquinas-izq,.figura-esquinas-der{
-            width: 10%;
-            height: 10vh;
-            background:white;
-            position: relative;
-        }
-        .figura-esquinas-izq::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            right: 0;
-            border-top: 10vh solid whitesmoke;
-            border-left: 10vh solid transparent;
-        }
-        .figura-esquinas-der::before{
-            content: "";
-            position: absolute;
-            width: 0;
-            height: 0;
-            left: 0;
-            border-top:10vh solid whitesmoke;
-            border-right:10vh solid transparent;
-        }
+    .figura-esquinas-izq,.figura-esquinas-der{
+        width: calc((100% - var(--maximo-espacio-pantalla))/2);
+        height: 10vh;
+        max-height: 100px;
+        background:white;
+        position: relative;
+    }
+    .figura-esquinas-izq::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        right: 0;
+        border-top: 10vh solid whitesmoke;
+        border-left: 10vh solid transparent;
+    }
+    .figura-esquinas-der::before{
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        border-top:10vh solid whitesmoke;
+        border-right:10vh solid transparent;
+    }
 
-        /*Fin de las propiedades*/
+    /*Fin de las propiedades*/
 
-        
+    
     /*Propiedades de contacto superior*/
     .centrado-contacto{
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: 10vh;
+    max-height: 100px;
     position: relative;
     margin: 0px auto;
     }
@@ -173,10 +178,12 @@ transition: all 2s;
 #Cabecera{
     width: 100%; 
     height: 20vh;
+    max-height: 150px;
     position: relative;
             }
     .centrado-nav-logo{
         width: var(--espacio-pantalla);
+        max-width: var(--maximo-espacio-pantalla);
         height: 100%;
         position: relative;
         margin-left: auto;
@@ -195,9 +202,9 @@ transition: all 2s;
     /*boton lenguaje*/
     .btn-lenguaje{
         position: absolute;
-        width: 9.5%;
+        width: 12%;
         height: 35px;
-        top: 0px;
+        top: 0;
         right: 0px;
         background: #d8d6d6;
         overflow: hidden;
@@ -207,26 +214,29 @@ transition: all 2s;
     .btn-lenguaje a{
         text-decoration: none;
         color: black;
+        display: flex;
         width: 100%;
         height: 100%;
     }
     .btn-lenguaje a img{
         height: 35px;
-        width: 35px;
+        width: 40px;
         float: left;
-        margin-bottom: 10px;
     }
     .btn-lenguaje p{
-        text-align: center;
+        padding: 0;
         margin-top: 10px;
+        margin-left: 5px;
     }
     .btn-lenguaje:hover{
-        height: 75px;
+        height: auto;
         overflow: visible;
     }
     .btn-lenguaje:hover a{
         height: 50%;
-        border-bottom: 2px solid white;
+    }
+    .btn-lenguaje a:nth-child(2){
+        border-top: 2px solid white;
     }
     .btn-lenguaje a:nth-child(2):hover{
         background: #999999;
@@ -319,6 +329,7 @@ transition: all 2s;
     font-weight: 600;
     display: block;
     padding:3.3rem 1rem;
+    font-size: 16px;
 }
 .menu a p{
     position: relative;
@@ -379,63 +390,32 @@ transition: all 2s;
 /*media querys de menu navegacion de cabecera */
 @media screen and (max-width:2000px){
 .menu  a{
-    padding:6.08rem 3rem;
+    padding:6.08rem 1rem;
 }
 .menu2 a{
     padding:20px 10px;
     color: white;
 }
 .menu li ul{
-    width: 20vw;
+    width: 15vw;
 }
 .menu li li{
-    width: 20vw;
+    width: 15vw;
 }
-.info-contacto span{
-    font-size: 18px;
- }
- .info-contacto i{
-    color: black;
-    font-size: 16px;
- }
- .iconos-social{
- width: 55px;
- height: 55px;
- }
- .iconos-social span{
-    font-size: 35px;
-    width: 45px;
-    height: 45px;
- }
+
     }
 @media screen and (max-width:1700px){
 .menu  a{
-    padding:6.08rem 2rem;
+    padding:6.08rem 1rem;
 }
 .menu2 a{
     padding:20px 10px;
     color: white;
 }
-.info-contacto span{
-    font-size: 16px;
- }
- .info-contacto i{
-    color: black;
-    font-size: 14px;
- }
- .iconos-social{
- width: 45px;
- height: 45px;
- }
- .iconos-social span{
-    font-size: 25px;
-    width: 35px;
-    height: 35px;
- }
     }
 @media screen and (max-width:1500px){
 .menu  a{
-    padding:4.5rem 1.5rem;
+    padding:4.5rem 1rem;
 }
 .menu2 a{
     padding:20px 10px;
@@ -443,35 +423,13 @@ transition: all 2s;
 }
 }
 @media screen and (max-width:1370px){
-.menu  a{
-padding:3.3rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
+
 .menu li ul{
     width: 22vw;
 }
 .menu li li{
     width: 22vw;
-}
-.info-contacto span{
-    font-size: 15px;
- }
- .info-contacto i{
-    color: black;
-    font-size: 13px;
- }
- .iconos-social{
- width: 35px;
- height: 35px;
- }
- .iconos-social span{
-    font-size: 25px;
-    width: 35px;
-    height: 35px;
- }    
+}   
 }
 @media screen and (max-width:1270px){
     .menu  a{
@@ -663,8 +621,6 @@ padding:3.3rem 1rem;
             margin: 10px auto;
             display:block;
             background: var(--fondo-claro);
-
-            font-weight: 500;
         }
         .div-contacto{
             width: 100%;
@@ -687,7 +643,7 @@ padding:3.3rem 1rem;
        }
        .div-cont-contacto-pdps h4{
            color: var(--color-texto);
-           font-weight: 400;
+           font-weight: 500;
            font-size: 15px;
        }
        .iconos-contacto{
@@ -991,7 +947,8 @@ transition: all 2s;
     } 
     .slider-item{
         position: relative;
-        height: 72vh;
+        height: 70vh;
+        max-height: 600px;
         width: 100%;
         z-index: 0;
         transition: all linear .5s;
@@ -1019,7 +976,7 @@ transition: all 2s;
         height: 10%;
         position: absolute;
         bottom: 5%;
-        left: 10%;
+        left: calc((100% - var(--maximo-espacio-pantalla))/2);
         text-align: center;
         justify-content: center;
     }   
@@ -1065,7 +1022,7 @@ transition: all 2s;
     height: 100%;
     width: 50%;
     text-align: justify;
-    margin-left: 10%;
+    margin-left: calc((100% - var(--maximo-espacio-pantalla))/2);
     transition: all linear .5s;
     display: flex;
     flex-direction: column;
@@ -1085,11 +1042,6 @@ transition: all 2s;
 
 /* fin de las  propiedades del slider */    
 /*medias querys del slider*/
-@media screen and (min-width:1650px){
-    .slider-item{
-        height: 600px;
-    }
-}
 @media screen and (max-width:970px){
         .slider-item{
             height: 350px;
@@ -1162,6 +1114,7 @@ transition: all 2s;
     right:100%;
     height: 100%;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     margin:0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -1177,7 +1130,8 @@ transition: all 2s;
 }
 .seccion-servicios-img{
     width: 100%;
-    height: 250px;
+    height: 45vh;
+    max-height: 350px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     background: rgb(230, 229, 229);
@@ -1262,8 +1216,10 @@ transition: all 2s;
     display: flex;
 }
 .servicios-pequeños-img{
-    width: 150px;
-    height: 100px;
+    width: 15vw;
+    max-width: 110px;
+    height:15vh ;
+    max-height: 110px;
     background: rgb(230, 229, 229);
     overflow: hidden;
     position: relative;
@@ -1335,6 +1291,7 @@ transition: all 2s;
 .separador-info-medio{
     height: 100%;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     position: relative;
     left: 100%;
     display: flex;
@@ -1358,7 +1315,8 @@ text-align: justify;
 line-height: 25px;
 }
 .img-info-empresa{
-height: 120px;
+height: 30vh;
+max-height: 200px;
 width: 40%;
 position: relative;
 vertical-align: text-bottom;
@@ -1412,6 +1370,7 @@ margin: 0 auto;
 .centrado-galeria{
     position: relative;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: 100%;
     margin: 0 auto;
     transform: scale(0)
@@ -1521,7 +1480,8 @@ margin: 0 auto;
     z-index: 50;
 }
 .item-img{
-    height: 25vh;
+    height: 45vh;
+    max-height: 200px;
     width: 100%;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -1628,14 +1588,6 @@ margin: 0 auto;
 /*fin de propiedades de galeria de proyectos*/
 
 /*media querys de galeria proyectos*/
-@media screen and (min-width:1700px){
-    .div-texto h1{
-        font-size: 55px;
-    }
-    .div-texto p{
-        font-size: 30px;
-    }
-}
 @media screen and (min-width:1500px){
     .div-texto h1{
         font-size: 50px;
@@ -1732,6 +1684,7 @@ margin: 0 auto;
 .div-pie-pagina{
     position: relative;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: auto;
     margin: 0px auto;
     display: flex;
@@ -1767,7 +1720,8 @@ margin-top: 20px;
 
 .imagen-empresa{
     width: 50%;
-    height: 100px;
+    height: 20vh;
+    max-height: 150px;
    border-radius: 5px;
    }
    .imagen-empresa img{
@@ -1812,20 +1766,6 @@ justify-content: center;
 transition: all 2s;
 }
 /*medias querys de pie de pagina*/
-@media screen and (min-width:1700px){
-    .icono-social{
-        width: 55px;
-        height: 55px;
-        }
-        .icono-social span{
-            font-size: 40px;
-            width: 40px;
-            height: 40px;
-        }
-        .cont-contacto-pdp i{
-            font-size: 20px;
-        }
-}
 @media screen and (max-width:1250px){
     .cont-contacto-pdp i{
         text-align: justify;
@@ -1870,15 +1810,17 @@ transition: all 2s;
 .derechos{
     width:100%;
     height: 10vh;
+    max-height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center
 }
 .figura-pdp-izq,.figura-pdp-der{
-    width: 10%;
+    width: calc((100% - var(--maximo-espacio-pantalla))/1.15);
     height: 10vh;
-    background: white;
+    max-height: 100px;
+    background: var(--fondo-claro);
     position: relative;
 }
 .figura-pdp-der::before{
@@ -1888,7 +1830,7 @@ transition: all 2s;
     height: 0;
     left: 0;
     border-top: 10vh solid transparent;   
-    border-left: 10vh solid whitesmoke;     
+    border-left: 10vh solid var(--fondo-oscuro);     
 }
 .figura-pdp-izq::before{
     content: "";
@@ -1897,7 +1839,7 @@ transition: all 2s;
     height: 0;
     right:0;
     border-top: 10vh solid transparent;   
-    border-right: 10vh solid whitesmoke;     
+    border-right: 10vh solid var(--fondo-oscuro);     
 }
 /*Fin de propiedades*/
 

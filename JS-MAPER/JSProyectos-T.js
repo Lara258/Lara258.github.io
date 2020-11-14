@@ -54,9 +54,6 @@ $('.carousel-proyectos-eleccion').owlCarousel({
         },
         1200:{
             items:8
-        },
-        1700:{
-            items:10
         }
     }
 });

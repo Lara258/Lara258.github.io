@@ -3,6 +3,7 @@
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
     --espacio-pantalla:81%;
+    --maximo-espacio-pantalla:1100px;
     --color-texto:#6d6c6c;
     --triangulos-indicador-color:#6d6c6c;
     --fuente-texto:'Roboto', sans-serif;
@@ -29,6 +30,7 @@ body{
 .contacto{
     width: 100%;
     height: 10vh;
+    max-height: 100px;
     position:relative;
     display:flex;
     font-weight: 500;
@@ -36,8 +38,9 @@ body{
     overflow: hidden;
         }
 .figura-esquinas-izq,.figura-esquinas-der{
-    width: 10%;
+    width: calc((100% - var(--maximo-espacio-pantalla))/2);
     height: 10vh;
+    max-height: 100px;
     background: var(--fondo-claro);
     position: relative;
         }
@@ -61,7 +64,9 @@ border-right: 10vh solid transparent;
     }
 .centrado-contacto{
 width: var(--espacio-pantalla);
+max-width: var(--maximo-espacio-pantalla);
 height: 10vh;
+max-height: 100px;
 position: relative;
 margin: 0px auto;
                     }
@@ -132,10 +137,12 @@ transition: all 2s;
 #Cabecera{
 width: 100%; 
 height: 20vh;
+max-height: 150px;
 position: relative;
         }
 .centrado-nav-logo{
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: 100%;
     position: relative;
     margin-left: auto;
@@ -155,7 +162,7 @@ position: relative;
     /*boton lenguaje*/
     .btn-lenguaje{
         position: absolute;
-        width: 9.5%;
+        width: 12%;
         height: 35px;
         top: 0px;
         right: 0px;
@@ -175,6 +182,7 @@ position: relative;
         height: 35px;
         width: 40px;
         float: left;
+        transition: all linear 0.6s;
     }
     .btn-lenguaje p{
         margin-top: 10px;
@@ -187,7 +195,9 @@ position: relative;
     }
     .btn-lenguaje:hover a{
         height: 50%;
-        border-bottom: 2px solid white;
+    }
+    .btn-lenguaje a:nth-child(2){
+        border-top: 2px solid white;
     }
     .btn-lenguaje a:nth-child(2):hover{
         background: #999999;
@@ -312,11 +322,12 @@ position: relative;
     position: relative;
     color: var(--color-texto);
     font-weight: 600;
-    display: block;
     padding:3.3rem 1rem;
-    border: 1px solid transparent;
+    font-size: 16px;
+    display: block;
 }
 .menu a p{
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -376,102 +387,48 @@ position: relative;
 /*media querys de menu navegacion de cabecera */
 @media screen and (max-width:2000px){
 .menu  a{
-    padding:6.08rem 3rem;
-    font-size: 20px;
+    padding:6.08rem 1rem;
 }
 .menu2 a{
     padding:20px 10px;
     color: white;
 }
 .menu li ul{
-    width: 20vw;
+    width: 15vw;
 }
 .menu li li{
-    width: 20vw;
+    width: 15vw;
 }
-.info-contacto span{
-    font-size: 18px;
- }
- .info-contacto i{
-    color: black;
-    font-size: 16px;
- }
- .iconos-social{
- width: 55px;
- height: 55px;
- }
- .iconos-social span{
-    font-size: 35px;
-    width: 45px;
-    height: 45px;
- }
+
     }
 @media screen and (max-width:1700px){
 .menu  a{
-    padding:6.08rem 2rem;
-    font-size: 18px;
+    padding:6.08rem 1rem;
 }
 .menu2 a{
     padding:20px 10px;
     color: white;
 }
-.info-contacto span{
-    font-size: 16px;
- }
- .info-contacto i{
-    color: black;
-    font-size: 14px;
- }
- .iconos-social{
- width: 45px;
- height: 45px;
- }
- .iconos-social span{
-    font-size: 25px;
-    width: 35px;
-    height: 35px;
- }
+
     }
 @media screen and (max-width:1500px){
     .menu  a{
-        padding:4.5rem 1.5rem;
-        font-size: 17px;
+        padding:4.5rem 1rem;
     }
     .menu2 a{
         padding:20px 10px;
         color: white;
     }
 }
+
 @media screen and (max-width:1370px){
-    .menu  a{
-    padding:3.3rem 1rem;
-    }
-    .menu2 a{
-        padding:20px 10px;
-        color: white;
-    }
     .menu li ul{
     width: 22vw;
     }
     .menu li li{
     width: 22vw;
     }
-    .info-contacto span{
-        font-size: 15px;
-     }
-     .info-contacto i{
-        color: black;
-        font-size: 13px;
-     }
-     .iconos-social{
-     width: 35px;
-     height: 35px;
-     }
-     .iconos-social span{
-        font-size: 25px;
-        width: 35px;
-        height: 35px;
-     }
+    
 }
 @media screen and (max-width:1270px){
     .menu  a{
@@ -482,7 +439,7 @@ position: relative;
         color: white;
     }
 }
-@media screen and (max-width:1150px){
+@media screen and (max-width:1185px){
     .menu a{
         font-size: 15px;
         padding:3.45rem 0.5rem;
@@ -516,7 +473,9 @@ position: relative;
         padding:20px 10px;
         color: white;
     }
-
+    .btn-lenguaje{
+        width: 12%;
+    }
 }
 /* fin de las media querys del menu navegador */
 
@@ -704,7 +663,7 @@ position: relative;
     }
        .div-cont-contacto-pdps h4{
            color: var(--color-texto);
-           font-weight: 300;
+           font-weight: 500;
            font-size: 15px;
        }
        .iconos-contacto{
@@ -920,6 +879,7 @@ object-fit: fill;
 .txt-servicios{
 position: absolute;
 width: var(--espacio-pantalla);
+max-width: var(--maximo-espacio-pantalla);
 height: auto;
 
 margin:auto;
@@ -942,6 +902,7 @@ position: relative;
 }
 .div-info-posicion{
 width: var(--espacio-pantalla);
+max-width: var(--maximo-espacio-pantalla);
 height: 100%;
 margin: 0px auto;
 position: relative;
@@ -1040,6 +1001,7 @@ margin-right: 25px;
 .div-pie-pagina{
     position: relative;
     width: var(--espacio-pantalla);
+    max-width: var(--maximo-espacio-pantalla);
     height: auto;
     margin: 0px auto;
     display: flex;
@@ -1070,6 +1032,7 @@ margin-top: 20px;
 .imagen-empresa{
      width: 50%;
      height: 20vh;
+     max-height: 150px;
     border-radius: 5px;
     }
     .imagen-empresa img{
@@ -1112,20 +1075,7 @@ transition: all 2s;
 }
 
 /*medias querys de pie de pagina*/
-@media screen and (min-width:1700px){
-    .icono-social{
-        width: 55px;
-        height: 55px;
-        }
-        .icono-social span{
-            font-size: 40px;
-            width: 40px;
-            height: 40px;
-        }
-        .cont-contacto-pdp i{
-            font-size: 20px;
-        }
-}
+
 @media screen and (max-width:1250px){
     .cont-contacto-pdp i{
         text-align: justify;
@@ -1264,6 +1214,7 @@ transition: all 2s;
     .derechos{
         width:100%;
         height: 10vh;
+        max-height: 100px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1271,9 +1222,9 @@ transition: all 2s;
         
     }
     .figura-pdp-izq,.figura-pdp-der{
-        width: 11.5%;
+        width: calc((100% - var(--maximo-espacio-pantalla))/1.15);
         height: 10vh;
-        background: white;
+        background: var(--fondo-claro);
         position: relative;
     }
     .figura-pdp-der::before{
