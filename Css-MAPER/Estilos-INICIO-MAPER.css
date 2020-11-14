@@ -1817,7 +1817,7 @@ transition: all 2s;
     align-items: center
 }
 .figura-pdp-izq,.figura-pdp-der{
-    width: calc((100% - var(--maximo-espacio-pantalla))/1.15);
+    width: calc((100% - var(--maximo-espacio-pantalla))/2);
     height: 10vh;
     max-height: 100px;
     background: var(--fondo-claro);
