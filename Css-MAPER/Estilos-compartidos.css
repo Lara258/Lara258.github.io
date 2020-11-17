@@ -2,7 +2,7 @@
 :root{
     --fondo-claro:white;
     --fondo-oscuro:whitesmoke;
-    --espacio-pantalla:81%;
+    --espacio-pantalla:82%;
     --maximo-espacio-pantalla:1100px;
     --color-texto:#6d6c6c;
     --triangulos-indicador-color:#6d6c6c;
@@ -38,7 +38,7 @@ body{
     overflow: hidden;
         }
 .figura-esquinas-izq,.figura-esquinas-der{
-    width: calc((100% - var(--maximo-espacio-pantalla))/2);
+    width: 9%;
     height: 10vh;
     max-height: 100px;
     background: var(--fondo-claro);
@@ -484,6 +484,7 @@ position: relative;
     /*cabecera*/
     #Cabecera{
         height: auto;
+        max-height: 1000px;
         width: 100%; 
      }
      .Contenedor-contacto{
@@ -1222,7 +1223,7 @@ transition: all 2s;
         
     }
     .figura-pdp-izq,.figura-pdp-der{
-        width: calc((100% - var(--maximo-espacio-pantalla))/2);
+        width: 9%;
         height: 10vh;
         background: var(--fondo-claro);
         position: relative;
