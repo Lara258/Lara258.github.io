@@ -311,20 +311,32 @@ margin-bottom: 30px;
     display:none;
     left: 0;
     top: 0;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     width: 100%;
     height: 100%;
     z-index: 500;
 }
 #c-lightbox{
     position: relative;
-    width: 95vw;
-    height: 100vh;
+    width: 80vw;
+    height: 99vh;
     margin:auto;
 }
+.carousel-lightbox{
+    width: 80vw;
+    height: 100vh;
+}
 .item-lightbox{
-    width: 95vw;
-    height: 100vh;     
+    margin:auto;  
+}
+.item-ancho{
+    width: 80vw;
+    height: 70vh; 
+    margin-top: 15vh;
+}
+.item-largo{
+    width: 30vw; 
+    height: 99vh;
 }
 .item-lightbox img{
     height: 100%;
