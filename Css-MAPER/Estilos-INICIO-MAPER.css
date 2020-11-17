@@ -1033,7 +1033,7 @@ transition: all 2s;
     position: absolute;
     background: rgba(160, 159, 159, 0.5);
     height: 100%;
-    width: 50%;
+    width: 60%;
     text-align: justify;
     transition: all linear .5s;
     display: flex;
@@ -1078,10 +1078,26 @@ transition: all 2s;
         background-size: 100% 300px;
         height: 300px;
     }
+    .centrado-btns{
+        width: 100%;
+    }
+    .NextBtn{
+    position: absolute;
+    right: 0;
+        }
+    .PrevBtn{
+    position: absolute;
+    left: 0;
+
+        }
+    .elementos-on-carousel{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+    }
     .texto-fondo{
         height: 200px;
         width: 100%;
-        margin: 0;
         bottom: 0px;
     }
     .navegacion-btn{
@@ -1089,12 +1105,6 @@ transition: all 2s;
         height: 10%;
         bottom: 70%;
         left: 0;
-    }   
-    .NextBtn{
-       width: calc(8%);
-    }
-    .PrevBtn{
-        width: calc(8%);
     }
     @media screen and (max-width:400px){
         .texto-fondo h1{
