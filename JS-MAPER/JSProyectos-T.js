@@ -69,6 +69,12 @@ $('.item-carousel-eleccion').hover(function() {
     owl1.trigger('play.owl.autoplay',[5000]);
 });
 
+$('.carousel-proyectos').hover(function() {
+    owl1.trigger('stop.owl.autoplay');
+},function(){
+    owl1.trigger('play.owl.autoplay',[5000]);
+});
+
 /*Funcion sobre el cambio de imagen de la galeria grande,
  provocando que la galeria pequeña se sincronice con la grande*/
  //Ademas manda a llamar la funcion "setclass"
