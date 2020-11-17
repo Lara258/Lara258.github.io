@@ -357,8 +357,8 @@ transition: all 2s;
 .menu  li:hover li{
    max-height: 500px;
    height: 50px;
-   border: 1px solid  #ebaa12;
-   background: #fec800;
+   border: 1px solid  var(--fondo-oscuro);
+   background: var(--color-texto);
    overflow: visible; 
   
 }
@@ -377,7 +377,7 @@ transition: all 2s;
     visibility: visible;
 }
 .menu ul ul :hover{
-    background: #ebaa12;
+    background: var(--fondo-oscuro);
 }
 .menu  li>ul>li>{ 
     max-height: 0;
