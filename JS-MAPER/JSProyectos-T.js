@@ -21,7 +21,7 @@ owl1.owlCarousel();
 owl1.on('click', '.item-carousel', function() {
     var nid=this.id;
     owls.trigger('to.owl.carousel',nid);
-    $('.lightbox').slideDown()
+    $('.lightbox').slideDown(1000)
 });
 
 /*Opciones de galeria pequeña con funcion de eleccion */
@@ -108,9 +108,13 @@ $('.carousel-lightbox').owlCarousel({
     touchDrag: false,
     mouseDrag:false,
     smartSpeed:2000,
-    autoHeight:true,
-    items:1
-})
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+}
+)
 
 /*Variable de la galeria lightbox*/
 var owls = $('.carousel-lightbox');
