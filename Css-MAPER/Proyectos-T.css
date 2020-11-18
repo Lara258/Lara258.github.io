@@ -135,20 +135,6 @@ margin-bottom: 30px;
     border-bottom: 1px solid rgb(224, 221, 221);
     border-right: 1px solid rgb(224, 221, 221);
 }
-.contenedor-info-proyecto img{
-    width: 100%;
-    height: auto;
-    max-height: 600px;
-
-    margin-bottom: 20px; 
-    margin-left: auto;
-    margin-right: auto;
-
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
-
-    object-fit: fill;
-}
 .contenedor-info-proyecto p{
     text-align: justify;
     color:var(--color-texto);
