@@ -174,6 +174,18 @@ transition: all 2s;
 }
 /* fin de las  propiedades de los iconos */
 
+/*media querys de contacto*/
+
+@media screen and (min-width:1700px){
+    .info-contacto i{
+        font-size: 15px;
+     }
+     .iconos-social span{
+        font-size: 30px;
+     }
+    }
+    /* fin de media querys*/
+    
 /*propiedades cabecera*/
 #Cabecera{
     width: 100%; 
@@ -190,15 +202,20 @@ transition: all 2s;
         margin-right: auto;
         display:flex;
     }
-     #Imagen-logo{
+    #Imagen-logo{
         height: 100%;
         width: 20vw;
-     }    
-    #Imagen-logo img{
-        width: 100%;
-        height: 100%;
-        object-fit: fill;
-    }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+        #Imagen-logo img{
+            width: 100%;
+            height: 95%;
+            max-height: 150px;
+            min-height: 110px;
+            object-fit: fill;
+        } 
     /*boton lenguaje*/
     .btn-lenguaje{
         position: absolute;
@@ -206,14 +223,14 @@ transition: all 2s;
         height: 35px;
         top: 0;
         right: 0px;
-        background: #d8d6d6;
+        background: var(--color-texto);
         overflow: hidden;
         display: flex;
         flex-direction: column;
     }
     .btn-lenguaje a{
         text-decoration: none;
-        color: black;
+        color: white;
         display: flex;
         width: 100%;
         height: 100%;
@@ -239,7 +256,7 @@ transition: all 2s;
         border-top: 2px solid white;
     }
     .btn-lenguaje a:nth-child(2):hover{
-        background: #999999;
+        background: #a8a8a8;
     }
     /*fin de propiedades*/
 
@@ -328,7 +345,7 @@ transition: all 2s;
     color: var(--color-texto);
     font-weight: 600;
     display: block;
-    padding:3.3rem 1rem;
+    padding:65px 1rem;
     font-size: 16px;
 }
 .menu a p{
@@ -389,48 +406,30 @@ transition: all 2s;
 
 /*media querys de menu navegacion de cabecera */
 @media screen and (max-width:2000px){
-.menu  a{
-    padding:6.08rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
-.menu li ul{
-    width: 15vw;
-}
-.menu li li{
-    width: 15vw;
-}
 
+    .menu li ul{
+        width: 15vw;
     }
-@media screen and (max-width:1700px){
-.menu  a{
-    padding:6.08rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
+    .menu li li{
+        width: 15vw;
     }
-@media screen and (max-width:1500px){
-.menu  a{
-    padding:4.5rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
-}
-@media screen and (max-width:1370px){
-
-.menu li ul{
-    width: 22vw;
-}
-.menu li li{
-    width: 22vw;
-}   
-}
+        }
+    
+    @media screen and (max-width:1370px){
+        .menu li ul{
+        width: 22vw;
+        }
+        .menu li li{
+        width: 22vw;
+        }
+        .menu  a{
+            padding:3.45rem 0.8rem;
+        }
+        .menu2 a{
+            padding:20px 10px;
+            color: white;
+        }
+    }
 @media screen and (max-width:1270px){
     .menu  a{
         padding:3.45rem 0.8rem;
@@ -492,46 +491,49 @@ transition: all 2s;
      }
      /*boton lenguaje para dispositivos pequeños*/
      .btn-lenguaje-dm{
-         width: 30%;
-         height: 50%;
-         background: var(--color-btns-cabecera);
-         position: absolute;  
-         left: 35%;     
-         display:block;
-         z-index: 100;
-         cursor: pointer; 
-     }
-     .btn-lenguaje-dm ul{
-        list-style: none;
-        width: 100%;
-        height: 100%;
-        background: var(--color-btns-cabecera); 
-        display: none;
-        margin-top: 2px;
-     }
-     .btn-lenguaje-dm li{
-         display: inline;
-     }
-     .btn-lenguaje-dm a{
-        text-decoration: none;
-        color: black;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
+        width: 140px;
+        height: 50%;
+        background: var(--color-texto);
+        position: absolute;  
+        right: 0;     
+        display:block;
+        z-index: 100;
+        cursor: pointer; 
+        
     }
-    .btn-lenguaje-dm a img{
-        height: 100%;
-        width: 40%;
-        float: left;
+    .btn-lenguaje-dm ul{
+       list-style: none;
+       width: 100%;
+       height: 100%;
+       background: var(--color-texto); 
+       display: none;
+       margin-top: 2px;
     }
-    .btn-lenguaje-dm  p{
-        text-align: center;
-        font-size: 17px;
-        margin-top: 8px;
-        font-weight: 500;
+    .btn-lenguaje-dm li{
+        display: inline;
     }
+    .btn-lenguaje-dm a{
+       text-decoration: none;
+       display: flex;
+       width: 100%;
+       height: 100%;
+   }
+   .btn-lenguaje-dm a img{
+       height: 100%;
+       width: 40%;
+       float: left;
+   }
+   .btn-lenguaje-dm  p{
+       margin-top: 8px;
+       padding: 0;
+       font-size: 17px;
+       font-weight: 500;
+       margin-left: auto;
+       margin-right: auto;
+       color: white;
+   }
 
-    /*fin de propiedades*/
+   /*fin de propiedades*/
 
      .menu{
          display: none;
@@ -539,23 +541,34 @@ transition: all 2s;
      #Imagen-logo{
         width: 40%;
         height: 130px;
-        margin:10px 0;
+        }
+        #Imagen-logo a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Imagen-logo img{
+            width: 90%;
+            height: 90%;
+            object-fit: fill;
         }
         .btn-menu{
             width: 120px;
-            height: 110px;
+            height: 60px;
             position: absolute;
             display: flex;
             right: 0;
-            margin-top: 10px;
-            background: var(--color-btns-cabecera);
+            margin-top:10px;
+            background: var(--color-texto);
             align-items: center;
             padding: 10px;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
-            font-weight: 500;
-            font-size: 18px;
+            font-size: 20px;
+            color: white;
         }
         #mn{
             display:none;
@@ -568,14 +581,14 @@ transition: all 2s;
             text-align: justify;
             color:black;
             overflow: hidden;
-            margin:10px auto 10px auto;
+            margin:0 auto ;
             padding: 0px;
             height: 0px;
             transition: all linear 0.6s;
         }
 
         #mn:checked ~ #mna{
-            height: 560px;
+            height: 510px;
             overflow: visible;
             transition: all linear 0.6s;
         }
@@ -674,6 +687,11 @@ transition: all 2s;
         transition: all 2s;
         }
 }
+@media screen and (max-width:650px){
+    #Imagen-logo{
+        width: 50%;
+    }
+}
 @media screen and (max-width:570px){
     .div-cont-contacto-pdps i{
         font-size: 14px;
@@ -684,22 +702,18 @@ transition: all 2s;
         height: 30px;
 
     }
-    .btn-menu{
-        width: 100px;
-        height: 50%;
-        transition: all linear .5s;
-    
-    }
-    #Imagen-logo{
-        width: 50%;
-    } 
-    .btn-lenguaje-dm{
-        width: 50%;
-        left: 25%;
-    }
-    .btn-lenguaje-dm  p{
-        font-size: 16px;
-        margin-top: 10px;
+.btn-menu{
+    width: 90px;
+    height: 50px;
+    transition: all linear .5s;
+}
+.btn-lenguaje-dm{
+    width: 110px;
+    text-align: center;
+}
+.btn-lenguaje-dm  p{
+    font-size: 16px;
+    margin-top: 10px;
     }
 }
 @media screen and (max-width:390px){

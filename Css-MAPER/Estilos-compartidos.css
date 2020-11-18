@@ -133,6 +133,17 @@ transition: all 2s;
 /* fin de las  propiedades de los iconos */
 /*fin de propiedades de contacto*/
 
+/*media querys de contacto*/
+@media screen and (min-width:1700px){
+.info-contacto i{
+    font-size: 15px;
+ }
+ .iconos-social span{
+    font-size: 30px;
+ }
+}
+/* fin de media querys*/
+
 /*propiedades cabecera*/
 #Cabecera{
 width: 100%; 
@@ -152,11 +163,15 @@ position: relative;
  #Imagen-logo{
     height: 100%;
     width: 20vw;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
     }
     #Imagen-logo img{
         width: 100%;
-        height: 100%;
+        height: 95%;
+        max-height: 150px;
+        min-height: 110px;
         object-fit: fill;
     } 
     /*boton lenguaje*/
@@ -166,14 +181,13 @@ position: relative;
         height: 35px;
         top: 0px;
         right: 0px;
-        background: #d8d6d6;
+        background: var(--color-texto);
         overflow: hidden;
         display: flex;
         flex-direction: column;
     }
     .btn-lenguaje a{
         text-decoration: none;
-        color: black;
         display: flex;
         width: 100%;
         height: 100%;
@@ -188,6 +202,7 @@ position: relative;
         margin-top: 10px;
         padding: 0;
         margin-left: 5px;
+        color: white;
     }
     .btn-lenguaje:hover{
         height: auto;
@@ -200,7 +215,7 @@ position: relative;
         border-top: 2px solid white;
     }
     .btn-lenguaje a:nth-child(2):hover{
-        background: #999999;
+        background: #a8a8a8;
     }
     /*fin de propiedades*/
 
@@ -322,7 +337,7 @@ position: relative;
     position: relative;
     color: var(--color-texto);
     font-weight: 600;
-    padding:3.3rem 1rem;
+    padding:65px 1rem;
     font-size: 16px;
     display: block;
 }
@@ -386,41 +401,14 @@ position: relative;
 
 /*media querys de menu navegacion de cabecera */
 @media screen and (max-width:2000px){
-.menu  a{
-    padding:6.08rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
+
 .menu li ul{
     width: 15vw;
 }
 .menu li li{
     width: 15vw;
 }
-
     }
-@media screen and (max-width:1700px){
-.menu  a{
-    padding:6.08rem 1rem;
-}
-.menu2 a{
-    padding:20px 10px;
-    color: white;
-}
-
-    }
-@media screen and (max-width:1500px){
-    .menu  a{
-        padding:4.5rem 1rem;
-    }
-    .menu2 a{
-        padding:20px 10px;
-        color: white;
-    }
-}
-
 @media screen and (max-width:1370px){
     .menu li ul{
     width: 22vw;
@@ -428,7 +416,13 @@ position: relative;
     .menu li li{
     width: 22vw;
     }
-    
+    .menu  a{
+        padding:3.45rem 0.8rem;
+    }
+    .menu2 a{
+        padding:20px 10px;
+        color: white;
+    }
 }
 @media screen and (max-width:1270px){
     .menu  a{
@@ -493,11 +487,11 @@ position: relative;
 
      /*boton lenguaje para dispositivos pequeños*/
      .btn-lenguaje-dm{
-        width: 30%;
+        width: 140px;
         height: 50%;
-        background: var(--color-btns-cabecera);
+        background: var(--color-texto);
         position: absolute;  
-        left: 35%;     
+        right: 0;     
         display:block;
         z-index: 100;
         cursor: pointer; 
@@ -507,7 +501,7 @@ position: relative;
        list-style: none;
        width: 100%;
        height: 100%;
-       background: var(--color-btns-cabecera); 
+       background: var(--color-texto); 
        display: none;
        margin-top: 2px;
     }
@@ -516,7 +510,6 @@ position: relative;
     }
     .btn-lenguaje-dm a{
        text-decoration: none;
-       color: black;
        display: flex;
        width: 100%;
        height: 100%;
@@ -533,6 +526,7 @@ position: relative;
        font-weight: 500;
        margin-left: auto;
        margin-right: auto;
+       color: white;
    }
 
    /*fin de propiedades*/
@@ -543,22 +537,34 @@ position: relative;
      #Imagen-logo{
         width: 40%;
         height: 130px;
-        margin:10px 0;
+        }
+        #Imagen-logo a{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Imagen-logo img{
+            width: 90%;
+            height: 90%;
+            object-fit: fill;
         }
         .btn-menu{
             width: 120px;
-            height: 110px;
+            height: 60px;
             position: absolute;
             display: flex;
             right: 0;
             margin-top:10px;
-            background: var(--color-btns-cabecera);
+            background: var(--color-texto);
             align-items: center;
             padding: 10px;
             z-index: 10;
             cursor: pointer;
             transition: all linear .5s;
             font-size: 20px;
+            color: white;
         }
         #mn{
             display:none;
@@ -573,7 +579,7 @@ position: relative;
             color:black;
             overflow: hidden;
             transition: all linear 0.6s;
-            margin:10px auto 0 auto;
+            margin:0 auto ;
             padding: 0px;
             height: 0px;
             
@@ -695,27 +701,27 @@ position: relative;
         transition: all 2s;
         }
 }
-@media screen and (max-width:570px){
-    .div-cont-contacto-pdps i{
-        font-size: 13px;
-    }
-    .iconos-contacto span{
-        font-size: 25px;
-        width: 30px;
-        height: 30px;
-
-    }
-    .btn-menu{
-        width: 100px;
-        height: 75px;
-        transition: all linear .5s;
-}
+@media screen and (max-width:650px){
 #Imagen-logo{
     width: 50%;
 }
+}
+@media screen and (max-width:570px){
+.div-cont-contacto-pdps i{
+    font-size: 13px;
+}
+.iconos-contacto span{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    }
+.btn-menu{
+    width: 90px;
+    height: 50px;
+    transition: all linear .5s;
+}
 .btn-lenguaje-dm{
-    width: 50%;
-    left: 25%;
+    width: 110px;
     text-align: center;
 }
 .btn-lenguaje-dm  p{
