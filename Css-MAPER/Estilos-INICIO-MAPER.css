@@ -1756,17 +1756,18 @@ margin-top: 20px;
     line-height: var(--interlineado-parrafo);
 }
 
+
 .imagen-empresa{
-    width: 70%;
+    width: 16vw;
+    max-width: 285px;
     height: 20vh;
     max-height: 160px;
-   border-radius: 5px;
-   }
-   .imagen-empresa img{
-       width: 100%;
-       height: 100%;
-       object-fit: fill;
-   }
+    }
+.imagen-empresa img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
 
 .cont-contacto-pdp{
     width: 100%;
@@ -1837,11 +1838,17 @@ transition: all 2s;
         height: calc(20% - 10px);
         transition: all linear .5s;
     }
+    .imagen-empresa{
+        width: 25vw;
+        }
 }
 @media screen and (max-width:710px){
     .divicion-column{
         width: calc(100%);
     }
+    .imagen-empresa{
+        width: 50vw;
+        }
 }
 
 /*Propiedades de franja inferior*/
