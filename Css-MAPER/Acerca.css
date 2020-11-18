@@ -144,27 +144,24 @@
 }
 .contenedor-info-cualidades {
 position: relative;
-width: calc(50% - 20px);
+width: 100%;
 height: auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-border-radius: 5px;
+display: block;
 }
 .contenedor-info-cualidades h2 {
     margin: 0 auto;
     margin-top: 10px;
 }
 .contenedor-info-cualidades h4{
-    text-align: left;
+    text-align: center;
     color:black;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 10px;
 }
 
 .div-contenedor-cualidades{
     position: relative;
-    width: calc(50% - 20px);
+    width: 100%;
     height: auto;
 }
 .div-contenedor-cualidades img{
