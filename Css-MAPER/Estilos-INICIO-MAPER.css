@@ -970,7 +970,7 @@ transition: all 2s;
         transition: all linear .5s;
     }
     .slider-item2{
-        background-image: url("../Imagenes-MAPER/construccion.jpeg");
+        background-image: url("/Imagenes-proyectos-MAPER/Casa-Lago-Tanganica-175/IMG-28.jpg");
         background-size: 100% 100%;
         object-fit: fill;
         border-radius: 10px;
@@ -979,7 +979,7 @@ transition: all 2s;
         transition: all linear .5s;
     }
     .slider-item1{
-        background-image: url("../Imagenes-MAPER/Construccion2.jpeg");
+        background-image: url("/Imagenes-MAPER/Navidad.jpg");
         background-size: 100% 100%;
         object-fit: fill;
         border-radius: 10px;
@@ -1053,6 +1053,13 @@ transition: all 2s;
     display: flex;
     flex-direction: column;
     justify-content: center
+}
+.texto-fondo a{
+    text-decoration: none;
+    color: black;
+}
+.texto-fondo a:hover{
+    text-decoration: underline;
 }
 .texto-fondo h1{
     font-size: 45px;
@@ -1319,82 +1326,6 @@ transition: all 2s;
 }
 /*fin de media querys de servicios*/
 
-/* propiedades informacion Empresa */
-.contenedor-info-medio{
-    width: 100%;
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-.separador-info-medio{
-    height: 100%;
-    width: var(--espacio-pantalla);
-    max-width: var(--maximo-espacio-pantalla);
-    position: relative;
-    left: 100%;
-    display: flex;
-    margin: 2% auto;
-    justify-content: space-between
-}
-.separador-info-medio h3{
-    text-align: center;
-    font-weight: 400;
-}
-.separador-info-medio p{
-    color: var(--color-texto);
-    font-weight: var(--ancho-letra-parrafo);
-    line-height: var(--interlineado-parrafo);
-}
-.info-empresa{
-height: 100%;
-width: calc(33.3333% - 20px);
-position: relative;
-text-align: justify;
-line-height: 25px;
-}
-.img-info-empresa{
-height: 30vh;
-max-height: 200px;
-width: 40%;
-position: relative;
-vertical-align: text-bottom;
-margin: 0 auto;
-}
-.img-info-empresa img{
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-}
-/*fin de las propiedades de informacion empresa */
-
-/*media querys de informacion empresa*/
-@media screen and (max-width:1130px){
-    .separador-info-medio h3{
-        text-align: center;
-        font-weight: 400;
-        font-size: 15px;
-    }
-    .separador-info-medio p{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width:970px){ 
-    .separador-info-medio{
-        display:block;
-    }
-    .info-empresa{
-        height: auto;
-        width: calc(100%);
-        margin-bottom: 10px;
-        }
-        .img-info-empresa{
-        height: 120px;
-        width: 40%;
-        margin: 0 auto;
-        }
-}
-
-/*fin de las media querys de informacion empresa*/
 
 /*propiedades de galeria de proyectos*/
 .seccion-galeria{
