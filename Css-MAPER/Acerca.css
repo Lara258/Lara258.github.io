@@ -119,119 +119,79 @@
     max-height: 500px;
 
 }
-
-/*propiedades de contenedor de cualidades*/
 .div-cualidades{
     width: 100%;
-    height:auto;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 20px;
-} 
+    height: auto;
+    display: block;
+}
 .div-cualidades h1{
     font-size: 40px;
-    font-weight: 500;
-
+}
+.div-cualidades h4{
+    font-size: 20px;
+    margin-bottom: 2%;
 }
 .div-cualidades p{
-    text-align: justify;
-    color:var(--color-texto);
-    margin: 0;
+    line-height: var(--interlineado-parrafo);
+    color: var(--color-texto);
+    font-weight: var(--ancho-letra-parrafo);
+}
+.div-contenedor-cualidades{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.acordeon{
+    width: calc(50% - 20px);
+}
+.btn-mv{
+    width: 100%;
+    height: auto;
+    display: flex;
+    background: var(--fondo-oscuro);
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+}
+.btn-mv:hover .icono-acordeon span{
+    transform: rotate(180deg);
+    transition: all linear 0.5s;
+}
+.div-info-cualidades{
+    width: 100%;
+    height: auto;
+    border-left: 2px solid #80ff00;
+    display: none;
+}
+.div-info-cualidades p{
+    margin: 3% 4%;
+    padding: 0;
+    color: var(--color-texto);
     line-height: var(--interlineado-parrafo);
     font-weight: var(--ancho-letra-parrafo);
 }
-.contenedor-info-cualidades {
-position: relative;
-width: 100%;
-height: auto;
-display: block;
-}
-.contenedor-info-cualidades h2 {
-    margin: 0 auto;
-    margin-top: 10px;
-}
-.contenedor-info-cualidades h4{
-    text-align: left;
-    color:black;
-    font-size: 25px;
-    margin-top: 10px;
-}
+.icono-acordeon{
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: var(--color-texto);
+    }
+    .icono-acordeon span{
+        font-size: 35px;
+        width: 35px;
+        height: 35px;
+    align-items: center;
+    justify-content: center;
+    }
 
-.div-contenedor-cualidades{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-.div-contenedor-cualidades img{
-width: 100%;
-height: 30vh;
-max-height: 250px;
-}
-.equipo{
-    width: calc(25% - 20px);
-    height: auto;
-    text-align: center;
-    border-radius: 10px;
-}
-.equipo img{
-    width: 100%;
-    height: 35vh;
-    max-height: 300px;
-    border-radius: 50%;
- 
-}
+/*propiedades de contenedor de cualidades*/
+
 
 /*fin de propiedades de servicios*/
 
 /* media querys de acerca de la empresa */
-@media screen and (max-width:970px){
-    .contenedor-info-cualidades {
-        width: calc(100%);
-        margin-bottom: 10px;
-    }
-    .contenedor-info-cualidades img{
-        height: 300px;
-    }
-    .div-contenedor-cualidades{
-        align-items: center;
-        text-align: center;
-    }
-    .div-contenedor-cualidades img{
-        width: 70%;
-        height: 150px;
-    }
-    .div-contenedor-cualidades h4{
-        text-align:center;
-    }
-    .div-cualidades h1{
-        font-size: 40px;
-    }
-    .div-cualidades p{
-        font-size: 15px;
-    }
-    .equipo{
-        width: calc(50% - 20px);
-        margin-bottom: 30px;
-}
 
-}
-@media screen and (max-width:450px){
-    .div-cualidades h1{
-        font-size: 30px;
-    }
-    .div-cualidades p{
-        font-size: 13px;
-    }
-    .div-contenedor-cualidades img{
-        width: 100%;
-        height: 150px;
-    }
-    .equipo{
-        width: calc(100%);
-    }
-    .equipo img{
-        height: 350px;
-    }
-}

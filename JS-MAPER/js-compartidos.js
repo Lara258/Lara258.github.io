@@ -48,18 +48,18 @@ $('.ir-arriba').click(function(){
 })
 
 
-/* activar/desactivar acordeon*/
+/* activar/desactivar acordeon de servicios*/
 $('.btn-acordeon').click(function(){
    if ($(this).next('.info-acordeon').hasClass('activo')){
     $(this).next('.info-acordeon').removeClass('activo').slideUp('slow')
     $(this).find('span').removeClass('icon-minus').addClass('icon-plus')
     
     $(this).css({
-        'border-left': '4px solid #6d6c6c',
+        'border-left': '4px solid #80ff00',
         'background':'white'
            })
     $(this).find('span').css({
-        'color':'#6d6c6c'
+        'color':'#80ff00'
     })
    }
    else{
@@ -67,11 +67,11 @@ $('.btn-acordeon').click(function(){
        $('.info-acordeon').removeClass('activo').slideUp('slow')
        $('.btn-acordeon').find('span').removeClass('icon-minus').addClass('icon-plus') 
     $('.btn-acordeon').css({
-        'border-left': '4px solid #6d6c6c',
+        'border-left': '4px solid #80ff00',
         'background':'white'
            })
     $('.btn-acordeon').find('span').css({
-        'color':'#6d6c6c'
+        'color':'#80ff00'
     })
 
     /*agregar la clase 'activo' y cambiar el tipo de icono, mostrar el 'info acordeon' que este activo*/
@@ -88,3 +88,31 @@ $('.btn-acordeon').click(function(){
     })
    }
 })
+
+//Activar/Desactivar el acordeon de mision/vision
+$('.btn-mv').click(function(){
+    $(this).next('.div-info-cualidades').toggle("slow");
+
+    if ($(this).find('span').hasClass('icon-plus')){
+
+     $(this).find('span').removeClass('icon-plus').addClass('icon-minus')
+
+     $(this).css({
+         'border-left': '2px solid #7dfe00'
+            })
+
+     $(this).find('span').css({
+         'color':'#7dfe00'
+     })
+    }
+   else{
+    $(this).find('span').removeClass('icon-minus').addClass('icon-plus')
+    $(this).css({
+        'border-left': 'none'
+           })
+    $(this).find('span').css({
+        'color':'#6d6c6c'
+    })
+ 
+    }
+ })
