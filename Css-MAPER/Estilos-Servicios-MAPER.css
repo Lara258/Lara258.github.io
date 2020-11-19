@@ -91,35 +91,15 @@
     position: relative;
     width: 75%;
     height: auto;
-    display: block;
 }
-.div-mitad-servicios{
+.carousel-servicios{
     width: 100%;
-    height:auto;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-   margin-bottom: 10px;
-} 
-.div-mitad-servicios a:hover{
-    text-decoration: underline;
+    height: auto;
 }
-.contenedor-servicio {
-position: relative;
-width: calc(33.333% - 20px);
-height: auto;
-background: var(--fondo-claro);
-border-radius: 5px;
-margin-bottom: 5px;
-display: block;
-        }
-       
-.contenedor-servicio-img {
+  .img-servicio{
+    height: 45vh;
+    max-height: 300px;
     width: 100%;
-    height: 200px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
     background: rgb(230, 229, 229);
     overflow: hidden;
     position: relative;
@@ -127,22 +107,23 @@ display: block;
     align-items: center;
     justify-content: center;
 }
-.contenedor-servicio-img img{
+  
+.img-servicio img{
     width: 100%;
     height: 100%;
     object-fit: fill;
     transition:all linear 0.3s;
 }
-.contenedor-servicio-img img:hover{
+.img-servicio img:hover{
     transform: scale(1.05);
     opacity: 0.4;
 }
-.contenedor-servicio-img:hover::before{
+.img-servicio:hover::before{
     transform: scale(0.10);
     transition:all linear 0.3s;
     opacity: 1;
 }
-.contenedor-servicio-img::before{
+.img-servicio::before{
     content:url("/Imagenes-MAPER/lupa.png");
     position: absolute;
     transform: scale(0);
@@ -152,6 +133,7 @@ display: block;
 position: relative;
 width: 100%;
 height: auto;
+background: var(--fondo-oscuro);
 }
 .informacion-servicio h3{
     font-size: 16px;
@@ -161,6 +143,7 @@ height: auto;
     font-weight: 500;
     position: relative;
     color: blue;
+    display: block;
 
 }
 .informacion-servicio h4::after{
@@ -169,8 +152,8 @@ height: auto;
     width: 0;
     height: 0;
     left: 100%;
+    margin-left: 20%;
     bottom: 3px;
-    margin-left: 10px;
     border-top: 6px solid transparent ;
     border-left: 6px solid blue;
     border-right: 6px solid transparent;
@@ -186,6 +169,57 @@ height: auto;
     color:black;
     display: inline-block;
     text-align: center;
+}
+.informacion-servicio a:hover h4{
+    text-decoration: underline;
+    text-decoration-color:blue;
+}
+.informacion-servicio a:hover h3{
+    text-decoration: underline;
+}
+.navegacion-btn-servicio{
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    bottom: 45%;
+    visibility: hidden;
+}   
+.btns-sv{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btnssv span{
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+}
+.NextBtn-servicio{
+   position: absolute;
+  right: 0px;
+   height: 100%;
+   width: 4%;
+    background: rgba(158, 150, 150, .80);
+    z-index: 100;
+    cursor: pointer;
+    visibility: visible;
+}
+.PrevBtn-servicio{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+   height: 100%;
+   width: 4%;
+   background: rgba(158, 150, 150, .80);
+   z-index: 100;
+   cursor: pointer;
+   visibility: visible;
+}
+.NextBtn-servicio:hover, .PrevBtn-servicio:hover{
+    background: rgba(238, 229, 229, 0.8);
 }
 /*fin de propiedades de servicios*/
 
@@ -209,13 +243,13 @@ height: auto;
         width: calc(100%);
         margin-bottom: 10px;
     }
-    .contenedor-servicio-img {
+    .img-servicio {
         height: 300px;
     }
 }
 
 @media screen and (max-width:580px){
-    .contenedor-servicio-img {
+    .img-servicio {
         height: 250px;
     }
 }
