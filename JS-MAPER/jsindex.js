@@ -3,7 +3,6 @@
 $(window).scroll(function(){
     var scrollT= $(this).scrollTop();
  var service= $('.separador-seccion-servicios').offset();
- var info= $('.separador-info-medio').offset();
  var galeria= $('.centrado-galeria').offset();
 /*scroll si la pantalla mide mas de 970 px*/
     if($(window).width() > 970){
@@ -14,13 +13,7 @@ $(window).scroll(function(){
     },1300)
  }/*if scroll service*/
 
- if((info.top - 550) < scrollT){
-   $('.separador-info-medio').animate({
-       left:'0'
-   },1300)
-}/*if scroll info*/
-
-if((galeria.top - 700) < scrollT){
+if((galeria.top - 550) < scrollT){
     $('.centrado-galeria').css({
        transform:'scale(1)',
        transition:'all linear 0.5s'
@@ -35,12 +28,6 @@ if((galeria.top - 700) < scrollT){
                 right:'0'
             },1300)
          }/*if scroll service*/
-        
-         if((info.top - 600) < scrollT){
-           $('.separador-info-medio').animate({
-               left:'0'
-           },1300)
-        }/*if scroll info*/
         
         if((galeria.top - 600) < scrollT){
             $('.centrado-galeria').css({
