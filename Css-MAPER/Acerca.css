@@ -122,14 +122,14 @@
 .div-cualidades{
     width: 100%;
     height: auto;
-    display: block;
 }
 .div-cualidades h1{
     font-size: 40px;
 }
-.div-cualidades h4{
-    font-size: 20px;
-    margin-bottom: 2%;
+
+.div-cualidades h2{
+    font-size: 40px;
+    text-align: center;
 }
 .div-cualidades p{
     line-height: var(--interlineado-parrafo);
@@ -139,8 +139,16 @@
 .div-contenedor-cualidades{
     width:100%;
     height: auto;
+    margin-top: 2%;
     display: flex;
     justify-content: space-between;
+}
+.div-contenedor-cualidades h4{
+    font-size: 20px;
+    margin-bottom: 2%;
+    padding: 10px;
+    background: var(--fondo-oscuro);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .acordeon{
     width: calc(50% - 20px);
