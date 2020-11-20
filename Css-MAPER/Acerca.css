@@ -139,10 +139,14 @@
 .div-contenedor-cualidades{
     width:100%;
     height: auto;
-    margin-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+.espacio{
+    margin-top: 4%;
 }
 .div-contenedor-cualidades h4{
     font-size: 20px;
