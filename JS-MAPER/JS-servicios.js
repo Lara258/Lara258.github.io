@@ -1,5 +1,5 @@
 /*carousel proyectos remodelacion*/
-$('.carousel-servicios').owlCarousel({
+$('.carousel-ser').owlCarousel({
     loop:true,
     margin:10,
     nav:false,
@@ -13,22 +13,22 @@ $('.carousel-servicios').owlCarousel({
         600:{
             items:2
         },
-        1150:{
+        1300:{
             items:3
         }
     }
-})
+});
 
 /*botones proyectos remodelacion*/
-var owlprr = $('.carousel-servicios');
-owlprr.owlCarousel();
+var owlser = $('.carousel-ser');
+owlser.owlCarousel();
 // Go to the next item
 $('#next-servicio').click(function() {
-    owlprr.trigger('next.owl.carousel');
+    owlser.trigger('next.owl.carousel');
 })
 // Go to the previous item
 $('#prev-servicio').click(function() {
     // With optional speed parameter
     // Parameters has to be in square bracket '[]'
-    owlprr.trigger('prev.owl.carousel');
+    owlser.trigger('prev.owl.carousel');
 })

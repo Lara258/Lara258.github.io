@@ -190,8 +190,14 @@
 
 /*propiedades de contenedor de cualidades*/
 
-
-/*fin de propiedades de servicios*/
-
 /* media querys de acerca de la empresa */
+@media screen and (max-width:780px){
+    .div-contenedor-cualidades{
+        display: block;
+    }
+    .acordeon{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
 

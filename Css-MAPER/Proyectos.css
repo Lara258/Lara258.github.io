@@ -66,13 +66,17 @@
         position: absolute;
         width: 0;
         height: 0;
-        margin-left: 20px;
+        margin-left: 10px;
         left: 100%;
         bottom: 17px;
         border-top:8px solid transparent ;
         border-left:8px solid var(--triangulos-indicador-color);
         border-right: 8px solid transparent;
         border-bottom: 8px solid transparent;
+    }
+    .div-info-posicion p{
+        margin-left: 5px;
+        margin-top: 0px;
     }
 /*fin de las propiedades info posicion */
 
@@ -216,10 +220,6 @@
     margin-bottom: 20px;
 
 }
-.item-proyecto a{
-    width: 100%;
-    height: 100%;
-}
 .item-proyecto-img{
     width: 100%;
     height: 32vh;
@@ -275,7 +275,8 @@
   
 }
 .info-proyecto h4,p{
-    margin-left: 20px;
+    margin-top: 3%;
+    margin-left: 3%;
     display: inline-block;
 }
 

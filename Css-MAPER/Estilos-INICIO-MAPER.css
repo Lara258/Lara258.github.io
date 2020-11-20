@@ -1215,6 +1215,9 @@ transition: all 2s;
     width: 100%;
     height: auto;
 }
+.seccion-servicios-txt h4{
+    margin-top: 2%;
+}
 .seccion-servicios-txt p{
     margin-top:10px;
     padding: 0;
