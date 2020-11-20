@@ -141,11 +141,13 @@
     height: auto;
     margin-top: 2%;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .div-contenedor-cualidades h4{
     font-size: 20px;
     margin-bottom: 2%;
+    margin-right: 10px;
     padding: 10px;
     background: var(--fondo-oscuro);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -200,9 +202,6 @@
 
 /* media querys de acerca de la empresa */
 @media screen and (max-width:780px){
-    .div-contenedor-cualidades{
-        display: block;
-    }
     .acordeon{
         width: 100%;
         margin-bottom: 20px;
