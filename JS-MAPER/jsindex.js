@@ -13,7 +13,7 @@ $(window).scroll(function(){
     },1300)
  }/*if scroll service*/
 
-if((galeria.top - 550) < scrollT){
+if((galeria.top - 500) < scrollT){
     $('.centrado-galeria').css({
        transform:'scale(1)',
        transition:'all linear 0.5s'
