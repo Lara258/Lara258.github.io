@@ -163,6 +163,20 @@
     </div>
     </section>
 
+    <section class="div-contenedor">
+        <form action="Correo.php" method="post" id="form-cotizar" onsubmit="return validar();">
+            <h2>¿Necesitas cotizar algun proyecto?</h2>
+            <h1>Nosotros te ayudamos!</h1>
+            <input type="text" name="nombre" id="name" placeholder="Nombre" maxlength="100" onkeypress="return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122)|| (event.charCode == 32))"  required>
+            <input type="email" name="correo" id="mail" placeholder="Correo electronico"maxlength="70" required>
+            <input type="text" name="telefono" id="cellphone" placeholder="Telefono" pattern="[0-9]{10}" maxlength="10" onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" title="Solo numeros" required>
+            <textarea name="mensaje" id="msg" placeholder="Escriba aqui su mensaje" required></textarea>
+            <h4>suba un archivo explicandonos sobre el proyecto que tiene en mente</h4>
+            <input type="file" name="archivo" id="file">
+            <input type="submit" value="Enviar" id="boton">
+        </form>
+    </section>
+
     <footer class="pie-pagina" >
         <div class="div-pie-pagina">
             <div class="divicion-column">
@@ -216,7 +230,8 @@
        <a class="derechos"></a> 
        <div class="figura-pdp-der"></div>
     </div>
-    
+
+<script src="/JS-MAPER/validacion-form-cotizacion.js"></script>
 <script src="/JS-MAPER/jquery-3.5.1.min.js"></script>
 <script src="/JS-MAPER/js-compartidos.js"></script>
 </body>

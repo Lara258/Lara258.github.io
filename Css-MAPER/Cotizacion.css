@@ -85,55 +85,7 @@ background: var(--fondo-claro);
     font-weight: var(--ancho-letra-parrafo);
 }
 
-.btn-acordeon{
-    height: auto;
-    border: 1px solid var(--color-texto);
-    border-left: 4px solid var(--color-texto);
-    display: flex;
-    cursor: pointer;
-    transition: all 0.7s;
-}
-.btn-acordeon:hover .icono-acordeon span{
-    transition: all 0.7s;
-    transform: rotate(180deg);
-}
-.icono-acordeon{
-    text-decoration: none;
-    width: 55px;
-    height: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    color: var(--color-texto);
-    }
-    .icono-acordeon span{
-        font-size: 35px;
-        width: 35px;
-        height: 35px;
-    align-items: center;
-    justify-content: center;
-    }
 
-.txt-btn-acordeon{
-    width: 100%;
-    height: 55px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    font-size: 16px;
-}
-.info-acordeon{
-    height:auto;
-    display: none;
-    text-align: justify;
-    color:black;
-    border-left: 4px solid #fec701;
-}
-.info-acordeon p{
-    margin:10px 15px;
-    padding: 0px;
-    font-size: 15px;
-}
 /*fin de propiedades de servicios*/
 
 /*medias querys de informacion servicio*/
@@ -191,3 +143,58 @@ background: var(--fondo-claro);
     }
 }
 /*fin de la medias querys de info servicio*/
+
+#form-cotizar{
+    width: calc(75% - 20px);
+    margin-left: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: var(--fondo-oscuro);
+}
+#form-cotizar h1, #form-cotizar h2, #form-cotizar h4{
+    text-align: center;
+    margin-bottom: 15px;
+}
+#form-cotizar input{
+    width: 80%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name:valid, #mail:valid, #cellphone:valid{
+   border:2px solid green;
+   border-radius: 5px;
+   height: 35px;
+}
+#form-cotizar textarea{
+    width: 80%;
+    max-width: 80%;
+    min-width: 200px;
+    max-height: 300px;
+    min-height: 50px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#boton{
+    cursor: pointer;
+    background: var(--color-texto);
+    height: 50px;
+    color: white;
+    font-weight: 800;
+    font-size: 20px;
+    transition: all linear 0.4s;
+}
+#boton:hover{
+    background: #caa009;
+    transition: all linear 0.4s;
+}
+@media screen and (max-width:970px){
+    #form-cotizar{
+        width: 100%;
+    }
+}
